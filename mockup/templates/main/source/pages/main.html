@@ -1,257 +1,1094 @@
-{% include 'head/head.html' %}
+<!DOCTYPE HTML>
+<!--[if IE 8]>      <html class="no-js lt-ie9" lang="ru-RU"> <![endif]-->
+<!--[if IE 9]>      <html class="no-js ie9" lang="ru-RU"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="page" lang="ru-RU">
+<!--<![endif]-->
+
+<head>
+	<title>Grohe на официальном сайте grohe.l-rus.ru в России - купить холодильники Грохе в Москве.</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="description"
+		content="Каталог бытовой техники Грохе с официальной гарантией производителя и бесплатной доставкой по Москве. Купить холодильник Grohe по официальным ценам в интернет-магазине grohe.l-rus.ru" />
+	<link href="/bitrix/js/main/core/css/core.css?15404766103963" type="text/css" rel="stylesheet" />
+	<link href="/bitrix/js/ui/fonts/opensans/ui.font.opensans.css?15445607232003" type="text/css" rel="stylesheet" />
+	<link href="/bitrix/js/main/core/css/core_popup.css?155569646117731" type="text/css" rel="stylesheet" />
+	<link href="/mockup/templates/main/build/css/style.css?1565619754492066" type="text/css" data-template-style="true"
+		rel="stylesheet" />
+	<link href="/mockup/templates/main/build/js/jquery-ui-1.12.1/jquery-ui.css?156561545337326" type="text/css"
+		data-template-style="true" rel="stylesheet" />
+	<link href="/tpl/css/style_k.css?15635595153930" type="text/css" data-template-style="true" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic" type="text/css"
+		rel="stylesheet" />
+	<script type="text/javascript">
+		if (!window.BX) window.BX = {};
+		if (!window.BX.message) window.BX.message = function (mess) {
+			if (typeof mess == 'object')
+				for (var i in mess) BX.message[i] = mess[i];
+			return true;
+		};
+	</script>
+	<script type="text/javascript">
+		(window.BX || top.BX).message({
+			'JS_CORE_LOADING': 'Загрузка...',
+			'JS_CORE_NO_DATA': '- Нет данных -',
+			'JS_CORE_WINDOW_CLOSE': 'Закрыть',
+			'JS_CORE_WINDOW_EXPAND': 'Развернуть',
+			'JS_CORE_WINDOW_NARROW': 'Свернуть в окно',
+			'JS_CORE_WINDOW_SAVE': 'Сохранить',
+			'JS_CORE_WINDOW_CANCEL': 'Отменить',
+			'JS_CORE_WINDOW_CONTINUE': 'Продолжить',
+			'JS_CORE_H': 'ч',
+			'JS_CORE_M': 'м',
+			'JS_CORE_S': 'с',
+			'JSADM_AI_HIDE_EXTRA': 'Скрыть лишние',
+			'JSADM_AI_ALL_NOTIF': 'Показать все',
+			'JSADM_AUTH_REQ': 'Требуется авторизация!',
+			'JS_CORE_WINDOW_AUTH': 'Войти',
+			'JS_CORE_IMAGE_FULL': 'Полный размер'
+		});
+	</script>
+	<script type="text/javascript">
+		(window.BX || top.BX).message({
+			'LANGUAGE_ID': 'ru',
+			'FORMAT_DATE': 'DD.MM.YYYY',
+			'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS',
+			'COOKIE_PREFIX': 'BITRIX_SM',
+			'SERVER_TZ_OFFSET': '10800',
+			'SITE_ID': 's5',
+			'SITE_DIR': '/',
+			'USER_ID': '',
+			'SERVER_TIME': '1565784922',
+			'USER_TZ_OFFSET': '0',
+			'USER_TZ_AUTO': 'Y',
+			'bitrix_sessid': '6c73757545d9d4f3d29b5a35196f55d6'
+		});
+	</script>
+
+	<script type="text/javascript" src="/bitrix/js/main/core/core.js?1555696459123541"></script>
+	<script type="text/javascript" src="/bitrix/js/main/core/core_promise.js?15556964725220"></script>
+	<script type="text/javascript" src="/bitrix/js/main/polyfill/promise/js/promise.js?15404797338241"></script>
+	<script type="text/javascript" src="/bitrix/js/main/core/core_ajax.js?155569647241997"></script>
+	<script type="text/javascript" src="/bitrix/js/main/loadext/loadext.js?15427526292917"></script>
+	<script type="text/javascript" src="/bitrix/js/main/loadext/extension.js?15427526292895"></script>
+	<script type="text/javascript" src="/bitrix/js/main/core/core_fx.js?154047661016888"></script>
+	<script type="text/javascript" src="/bitrix/js/main/json/json2.min.js?15404766103467"></script>
+	<script type="text/javascript" src="/bitrix/js/main/core/core_ls.js?154047661010430"></script>
+	<script type="text/javascript" src="/bitrix/js/main/jquery/jquery-1.8.3.min.js?154047661093637"></script>
+	<script type="text/javascript" src="/bitrix/js/main/core/core_popup.js?155569647276073"></script>
+	<script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+	<script type="text/javascript" src="//yastatic.net/share2/share.js"></script>
+	<script type="text/javascript">
+		(function () {
+			"use strict";
+			var counter = function () {
+				var cookie = (function (name) {
+					var parts = ("; " + document.cookie).split("; " + name + "=");
+					if (parts.length == 2) {
+						try {
+							return JSON.parse(decodeURIComponent(parts.pop().split(";").shift()));
+						} catch (e) {}
+					}
+				})("BITRIX_CONVERSION_CONTEXT_s5");
+				if (cookie && cookie.EXPIRE >= BX.message("SERVER_TIME"))
+					return;
+				var request = new XMLHttpRequest();
+				request.open("POST", "/bitrix/tools/conversion/ajax_counter.php", true);
+				request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+				request.send(
+					"SITE_ID=" + encodeURIComponent("s5") +
+					"&sessid=" + encodeURIComponent(BX.bitrix_sessid()) +
+					"&HTTP_REFERER=" + encodeURIComponent(document.referrer)
+				);
+			};
+			if (window.frameRequestStart === true)
+				BX.addCustomEvent("onFrameDataReceived", counter);
+			else
+				BX.ready(counter);
+		})();
+	</script>
+
+	<script type="text/javascript" src="/mockup/templates/main/build/js/mobile.js?15656154541010"></script>
+	<script type="text/javascript" src="/mockup/templates/main/build/js/jquery-3.3.1.min.js?156561545286927"></script>
+	<script type="text/javascript"
+		src="/mockup/templates/main/build/js/jquery-ui-1.12.1/jquery-ui.min.js?1565615453253669"></script>
+	<script type="text/javascript" src="/tpl/js/lazyload.min.js?15588830385585"></script>
+	<script type="text/javascript" src="/mockup/templates/main/build/js/script.min.js?1565615453497504"></script>
+	<script type="text/javascript" src="/mockup/templates/main/build/js/frontend-works.js?1565615454257"></script>
+	<script type="text/javascript" src="/mockup/templates/main/build/js/jquery.ui.touch-punch.min.js?15656154521301">
+	</script>
+	<script type="text/javascript" src="/tpl/js/jquery.cookie.js?15445600193140"></script>
+	<script type="text/javascript" src="/tpl/js/inputmask.js?1544560019112767"></script>
+	<script type="text/javascript" src="/tpl/js/core.js?15634683198878"></script>
+	<script type="text/javascript" src="/tpl/js/custom.js?156571378821238"></script>
+	<script type="text/javascript"
+		src="/local/components/inter.olsc/city.change/templates/.default/script.js?1559072434614"></script>
+	<script type="text/javascript"
+		src="/local/templates/gr_main/components/bitrix/news.list/slider.main/script.js?154456006229"></script>
+	<script type="text/javascript"
+		src="/local/components/inter.olsc/catalog.section/templates/tovs.list.main.new/script.js?154456002544"></script>
+	<script type="text/javascript"
+		src="/local/components/inter.olsc/catalog.section/templates/tovs.list.main.sale/script.js?155586647444">
+	</script>
+	<script type="text/javascript">
+		var _ba = _ba || [];
+		_ba.push(["aid", "0a7b75f424e42550242f6332dbb64b5e"]);
+		_ba.push(["host", "grohe.l-rus.ru"]);
+		(function () {
+			var ba = document.createElement("script");
+			ba.type = "text/javascript";
+			ba.async = true;
+			ba.src = (document.location.protocol == "https:" ? "https://" : "http://") + "bitrix.info/ba.js";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(ba, s);
+		})();
+	</script>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<link rel="icon" href="/favicon.png" type="image/png">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+
+</head>
 
 <body>
+	<div id="panel"></div>
 
 	<div class="wrapper" id="js-wrapper">
 
-		{% include 'header/global/header.html' %}
+		<header class="header">
 
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+
+						<div class="menu" aria-expanded="false">
+							<div class="city-change js-city-change">
+								<div class="city-change__title">Москва</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link js-city_change" data-code="MSK"
+										href="https://grohe.l-rus.ru/?K_REGION=MSK">Москва</a>
+									<a class="city-change__link js-city_change" data-code="SPB"
+										href="https://grohe.l-rus.ru/?K_REGION=SPB">Санкт-Петербург</a>
+									<a class="city-change__link js-city_change" data-code="REGIONS"
+										href="https://grohe.l-rus.ru/?K_REGION=REGIONS">Регионы</a>
+								</div>
+							</div>
+
+							<ul class="menu__list">
+
+								<li class="menu__item">
+									<a href="/delivery-and-payment/" title="Доставка и оплата"
+										class="menu__link">Доставка и оплата</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/services/" title="Подключение" class="menu__link">Подключение</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/guarantee/" title="Сервисные центры Grohe" class="menu__link">Сервисные
+										центры Grohe</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/news/" title="Статьи" class="menu__link">Статьи</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/catalog/category/type-nov/" title="Новинки" class="menu__link">Новинки</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/contacts/" title="Контакты" class="menu__link">Контакты</a>
+								</li>
+
+							</ul>
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать
+									звонок</a>
+								<div class="telephones">
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">
+										Пн-Пт: 08:00—22:00<br>
+										Сб-Вс: 09:00—22:00 </div>
+									<a href="mailto:shop@gr-russia.ru"
+										class="time-work__email"><i>Email:</i>shop@gr-russia.ru</a>
+								</div>
+
+							</div>
+							<a href="" class="abuse__button js-abuse__button js-viewForm" data-action="guideback"
+								id="js-abuse-opener">Обратиться к руководству</a>
+						</div>
+						<!--end menu-->
+						<div class="header__icons">
+							<div class="header__search js-header__search"></div>
+							<a class="header__mobile-tel" href="tel:74956461460"></a>
+
+							<a href="/favorites/" title="Перейти в отложенные" class="header__favorite"><span
+									class="header__number js-GoodsInFavorites">0</span></a>
+							<a href="/compare/" title="Перейти в сравнение" class="header__compare"><span
+									class="header__number js-GoodsInCompare">0</span></a>
+							<a href="/cart/" title="Перейти в корзину" class="header__basket"><span
+									class="header__number js-GoodsInBasket">2</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id="js-header__block_bottom">
+					<div class="container">
+
+						<div class="logo">
+							<a href="/" title="Liebherr" class="logo__link">
+								<img src="/mockup/templates/main/build/images/logo-new.svg" alt="Liebherr"
+									class="logo__pic" />
+							</a>
+						</div>
+						<div class="header__dropdown-menu" id="js-menu">
+
+							<nav class="dropdown-menu" id="js-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Техника</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/smesiteli/"
+												title="Смесители">Смесители</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/dushi/"
+												title="Души">Души</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/termostaty/"
+												title="Термостаты">Термостаты</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link"
+												href="/catalog/category/sistemy-installyatsii/"
+												title="Системы инсталляции">Системы инсталляции</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/aksessuary/"
+												title="Аксессуары">Аксессуары</a>
+
+										</li>
+									</ul>
+								</div>
+							</nav>
+
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="/guarantee/#services-list" title="Сервис">Сервис</a>
+								</span>
+							</nav>
+
+							<!-- end menu-content -->
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать
+									звонок</a>
+								<div class="telephones">
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">Пн-Пт: 08:00—22:00<br>
+										Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i> shop@gr-russia.ru</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu" aria-expanded="false">
+
+							<div class="city-change js-city-change">
+								<div class="city-change__title">Москва</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link js-city_change" data-code="MSK"
+										href="https://grohe.l-rus.ru/?K_REGION=MSK">Москва</a>
+									<a class="city-change__link js-city_change" data-code="SPB"
+										href="https://grohe.l-rus.ru/?K_REGION=SPB">Санкт-Петербург</a>
+									<a class="city-change__link js-city_change" data-code="REGIONS"
+										href="https://grohe.l-rus.ru/?K_REGION=REGIONS">Регионы</a>
+								</div>
+							</div>
+
+							<ul class="menu__list">
+
+								<li class="menu__item">
+									<a href="/delivery-and-payment/" title="Доставка и оплата"
+										class="menu__link">Доставка и оплата</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/services/" title="Подключение" class="menu__link">Подключение</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/guarantee/" title="Сервисные центры Grohe" class="menu__link">Сервисные
+										центры Grohe</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/news/" title="Статьи" class="menu__link">Статьи</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/catalog/category/type-nov/" title="Новинки" class="menu__link">Новинки</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/contacts/" title="Контакты" class="menu__link">Контакты</a>
+								</li>
+
+							</ul>
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать
+									звонок</a>
+								<div class="telephones">
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">Пн-Пт: 08:00—22:00<br>
+										Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i> shop@gr-russia.ru</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="search__popup">
+				<form action="/search/" class="header__form">
+					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+					<div class="header__button js-header__button"></div>
+				</form>
+			</div>
+			<div class="header__overlay"></div>
+
+		</header>
 
 		<div class="section">
-			<div class="content">
-				<!-- WORKAREA -->
-				{% include 'slider/main/slider-main.html' %}
-				<div class="special-offers">
-					<div class="container">
-						<span class="special-offers__title">Популярные модели</span>
-						<!-- Slider main container -->
-						<div class="swiper-container swiper-container-two js-swiper-two">
-							<!-- Additional required wrapper -->
-							<div class="swiper-wrapper special-offers__wrapper">
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"><img src="images/foto_1.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">Холодильник Liebherr IKF 3510
-										Comfort</a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price catalog__price price__dashed">
 
-											139 500 <i class="special-offers__rub catalog__rub">руб.</i>
-											<span class="price__absolute">140 500 руб.</span>
-										</span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"><img src="images/foto_2.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">
-										Холодильник Liebherr SBSes
-										7353 (SBNes 32100+SKes 42100)
-										Premium BioFresh NoFrost
-									</a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price">98 400<i
-												class="special-offers__rub">руб.</i></span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"><img src="images/foto_3.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">Холодильник Liebherr SBS
-										66I2</a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price">115 000<i
-												class="special-offers__rub">руб.</i></span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"> <img src="images/foto_4.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">Морозильник Liebherr GN 2723
-										Comfort NoFrost</a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price">134 200<i
-												class="special-offers__rub">руб.</i></span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"><img src="images/foto_1.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">Холодильник Liebherr IKF 3510
-										Comfort</a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price">134 200<i
-												class="special-offers__rub">руб.</i></span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"><img src="images/foto_2.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">Винный шкаф Liebherr EWTgw
-										3583 Vinidor</a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price">98 400<i
-												class="special-offers__rub">руб.</i></span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"><img src="images/foto_3.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">Premium NoFrost (SICN 3386 + </a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price">115 000<i
-												class="special-offers__rub">руб.</i></span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"> <img src="images/foto_4.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">Морозильник Liebherr GN 2723
-										Comfort NoFrost</a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price">134 200<i
-												class="special-offers__rub">руб.</i></span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"><img src="images/foto_1.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">Холодильник Liebherr IKF 3510
-										Comfort</a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price">134 200<i
-												class="special-offers__rub">руб.</i></span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"><img src="images/foto_2.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">Винный шкаф Liebherr EWTgw
-										3583 Vinidor</a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price">98 400<i
-												class="special-offers__rub">руб.</i></span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"><img src="images/foto_3.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">ICN 3386)</a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price">115 000<i
-												class="special-offers__rub">руб.</i></span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide">
-									<a class="special-offers__pic" href="#"> <img src="images/foto_4.jpg"
-											class="special-offers__img"></a>
-									<a href="#" class="special-offers__text">Морозильник Liebherr GN 2723
-										Comfort NoFrost</a>
-									<div class="special-offers__sale">
-										<span class="special-offers__price">134 200<i
-												class="special-offers__rub">руб.</i></span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">купить</a>
+			<div class="content">
+
+				<!-- WORKAREA -->
+				<div class="gallery">
+
+					<div class="swiper-container-main js-swiper-main">
+						<!-- Additional required wrapper -->
+						<div class="swiper-wrapper">
+
+							<div class="swiper-slide" id="bx_3218110189_6242">
+								<img class="lazyload" data-src="/upload/iblock/968/968341269685651b1188f46d2b22109a.jpg"
+									alt="Термостаты Grohe Grohtherm" />
+
+								<div class="swiper__item">
+									<div class="swiper__title">
+										<span class="span span__small">
+											<p>Термостаты Grohe Grohtherm</p>
+										</span> <span class="span span__big">
+											<p>Всегда комфортное принятие душа </p>
+										</span> <a href="/catalog/category/termostaty/"
+											title="Термостаты Grohe Grohtherm" class="swiper__link">Посмотреть</a>
 									</div>
 								</div>
 							</div>
-							<!-- If we need pagination -->
 
-							<!-- If we need navigation buttons -->
-							<!-- If we need scrollbar -->
-							<div class="swiper-scrollbar"></div>
+							<div class="swiper-slide" id="bx_3218110189_6243">
+								<img class="lazyload" data-src="/upload/iblock/c03/c03922be513007175b8240deefe04c1f.jpg"
+									alt="Души Grohe Rainshower" />
+
+								<div class="swiper__item">
+									<div class="swiper__title">
+										<span class="span span__small">
+											<p>Души Grohe Rainshower</p>
+										</span> <span class="span span__big">
+											<p>Технология DreamSpray для превосходного потока воды</p>
+										</span> <a
+											href="/catalog/category/dushi/dushevoy-garnitur-grohe-rainshower-cosmopolitan-400-28778000.html"
+											title="Души Grohe Rainshower" class="swiper__link">Посмотреть</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="swiper-slide" id="bx_3218110189_6244">
+								<img class="lazyload" data-src="/upload/iblock/424/424143187cbfdb6762022b38d8c8d2a2.jpg"
+									alt="Смесители Grohe Eurosmart" />
+
+								<div class="swiper__item">
+									<div class="swiper__title">
+										<span class="span span__small">
+											<p>Смесители Grohe Eurosmart</p>
+										</span> <span class="span span__big">
+											<p>Идеальное решение для любой ванной комнаты</p>
+										</span> <a
+											href="/catalog/category/smesiteli/smesitel-grohe-eurosmart-new-23372002-dlya-rakoviny.html"
+											title="Смесители Grohe Eurosmart" class="swiper__link">Посмотреть</a>
+									</div>
+								</div>
+							</div>
+
 						</div>
-						<div class="swiper-pagination_2"></div>
-						<div class="swiper-button-prev special-offers_prev"></div>
-						<div class="swiper-button-next special-offers_next"></div>
+						<!-- If we need pagination -->
+						<div class="swiper-pagination"></div>
+
+						<!-- If we need navigation buttons -->
+						<div class="swiper-button-prev swiper-button-main main_prev"></div>
+						<div class="swiper-button-next swiper-button-main main_next"></div>
+
+						<!-- If we need scrollbar -->
+						<div class="swiper-scrollbar"></div>
+					</div>
+					<div class="gallery__items">
+
+						<div class="gallery__tablet">
+
+							<div class="gallery__el" id="bx_651765591_6230">
+								<a class="gallery__link" href="/guarantee/" title="Официальная гарантия">
+									<img class="lazyload"
+										data-src="/upload/iblock/978/9784a1cfc78239465a00be19958e7de8.png"
+										alt="Официальная гарантия" />
+									<div class="gallery__parent">
+										<span class="gallery__article">Официальная гарантия</span>
+										<span class="gallery__text">Гарантийный сервис Grohe</span>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__el" id="bx_651765591_6231">
+								<a class="gallery__link" href="/services/" title="Сервис и обслуживание">
+									<img class="lazyload"
+										data-src="/upload/iblock/864/8645831f60c9c8f84485ec1daf07232d.png"
+										alt="Сервис и обслуживание" />
+									<div class="gallery__parent">
+										<span class="gallery__article">Сервис и обслуживание</span>
+										<span class="gallery__text">Об установке и подключении</span>
+									</div>
+								</a>
+							</div>
+
+							<div class="gallery__el" id="bx_651765591_6232">
+								<a class="gallery__link" href="/glossary/" title="Глоссарий">
+									<img class="lazyload"
+										data-src="/upload/iblock/835/835c8d41f783baa5820e7c693294d26c.png"
+										alt="Глоссарий" />
+									<div class="gallery__parent">
+										<span class="gallery__article">Глоссарий</span>
+										<span class="gallery__text">Технологии компании Grohe</span>
+									</div>
+								</a>
+							</div>
+						</div>
+
 					</div>
 
 				</div>
-				<div class="tags main-tags">
-					<div class="tags__title">
-						Подборки популярных запросов
-					</div>
-					<div class="tags__container">
-						<ul class="tags__list">
-							<li class="tags__item">
-								<a href="#" class="tags__link">
-									Однокамерные холодильники
-								</a>
-							</li>
-							<li class="tags__item">
-								<a href="#" class="tags__link">
-									Двухкамерные холодильники
-								</a>
-							</li>
-							<li class="tags__item">
-								<a href="#" class="tags__link">
-									Холодильники Side-by-Side
-								</a>
-							</li>
-							<li class="tags__item">
-								<a href="#" class="tags__link">
-									Морозильные камеры
-								</a>
-							</li>
-							<li class="tags__item">
-								<a href="#" class="tags__link">
-									Холодильники Side-by-Side
-								</a>
-							</li>
-							<li class="tags__item">
-								<a href="#" class="tags__link">
-									Функция отпуск
-								</a>
-							</li>
-							<li class="tags__item">
-								<a href="#" class="tags__link">
-									Холодильники Side-by-Side
-								</a>
-							</li>
-							<li class="tags__item">
-								<a href="#" class="tags__link">
-									Морозильные камеры
-								</a>
-							</li>
-							<li class="tags__item">
-								<a href="#" class="tags__link">
-									Однокамерные холодильники
-								</a>
-							</li>
-							<li class="tags__item">
-								<a href="#" class="tags__link">
-									Холодильники Side-by-Side
-								</a>
-							</li>
-							<li class="tags__item">
-								<a href="#" class="tags__link">
-									Многокамерные холодильники с отсеком для
-									вина
-								</a>
-							</li>
-						</ul>
+
+				<div class="js-ecom_product-list" data-list="Main Result">
+					<div class="special-offers">
+						<div class="container">
+							<span class="special-offers__title">Популярные модели</span>
+							<!-- Slider main container -->
+							<div class="swiper-container swiper-container-two js-swiper-two">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper special-offers__wrapper">
+
+									<div class="swiper-slide special-offers__slide js-ecom_product-item" data-id="6253"
+										id="bx_1373509569_6253">
+										<a class="special-offers__pic"
+											href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html"
+											title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003">
+											<img data-src="/upload/resize_cache/iblock/bcb/205_205_1/bcb0da928271d7cd428a8dacfaae2f76.jpg"
+												data-srcset="/upload/resize_cache/iblock/bcb/410_410_1/bcb0da928271d7cd428a8dacfaae2f76.jpg 2x,/upload/resize_cache/iblock/bcb/615_615_1/bcb0da928271d7cd428a8dacfaae2f76.jpg 3x"
+												class="special-offers__img lazyload" />
+										</a>
+										<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html"
+											title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003"
+											class="special-offers__text">Термостат Grohe Grohtherm 1000 для душа DN 15
+											34143003</a>
+										<div class="special-offers__sale catalog__sale">
+
+											<span class="special-offers__price catalog__price ">
+
+												14 250 <i class="special-offers__rub catalog__rub">руб.</i>
+											</span>
+
+											<a href="" class="special-offers__buy js-add2basket" data-id="6253">В
+												корзину</a>
+
+										</div>
+
+										<!-- begin label -->
+										<div class="announcing">
+
+											<div class="announcing__item"><img class="lazyload"
+													data-src="/mockup/templates/main/build/images/small/s_sale.svg"
+													alt="Акция" title="Акция" /></div>
+
+											<div class="announcing__item"><img class="lazyload"
+													data-src="/mockup/templates/main/build/images/small/new.svg"
+													alt="Новинка" title="Новинка" /></div>
+											<div class="announcing__item"><img class="lazyload"
+													data-src="/mockup/templates/main/build/images/small/best.svg"
+													alt="Хит продаж" title="Хит продаж" /></div>
+
+										</div>
+										<!-- end label -->
+
+									</div>
+
+									<div class="swiper-slide special-offers__slide js-ecom_product-item" data-id="4553"
+										id="bx_1373509569_4553">
+										<a class="special-offers__pic"
+											href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-s-tsepochkoy-23336000.html"
+											title="Смеситель Grohe BauLoop для раковины, с цепочкой 23336000">
+											<img data-src="/upload/resize_cache/iblock/159/205_205_1/1598146a7b3d82341a57f4968d67fc05.jpg"
+												data-srcset="/upload/resize_cache/iblock/159/410_410_1/1598146a7b3d82341a57f4968d67fc05.jpg 2x,/upload/iblock/159/1598146a7b3d82341a57f4968d67fc05.jpg 3x"
+												class="special-offers__img lazyload" />
+										</a>
+										<a href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-s-tsepochkoy-23336000.html"
+											title="Смеситель Grohe BauLoop для раковины, с цепочкой 23336000"
+											class="special-offers__text">Смеситель Grohe BauLoop для раковины, с
+											цепочкой 23336000</a>
+										<div class="special-offers__sale catalog__sale">
+
+											<span class="special-offers__price catalog__price ">
+
+												4 550 <i class="special-offers__rub catalog__rub">руб.</i>
+											</span>
+
+											<a href="" class="special-offers__buy js-add2basket" data-id="4553">В
+												корзину</a>
+
+										</div>
+
+										<!-- begin label -->
+										<div class="announcing">
+
+										</div>
+										<!-- end label -->
+
+									</div>
+
+									<div class="swiper-slide special-offers__slide js-ecom_product-item" data-id="6085"
+										id="bx_1373509569_5219">
+										<a class="special-offers__pic"
+											href="/catalog/category/dushi/ruchnoy-dush-grohe-rainshower-icon-150-27628000.html?sku=6085"
+											title="Ручной душ Grohe Rainshower Icon 150 27628000">
+											<img data-src="/upload/resize_cache/iblock/6f1/205_205_1/6f126a6371e31b7cd031455f8436f484.jpg"
+												data-srcset="/upload/resize_cache/iblock/6f1/410_410_1/6f126a6371e31b7cd031455f8436f484.jpg 2x,/upload/iblock/6f1/6f126a6371e31b7cd031455f8436f484.jpg 3x"
+												class="special-offers__img lazyload" />
+										</a>
+										<a href="/catalog/category/dushi/ruchnoy-dush-grohe-rainshower-icon-150-27628000.html?sku=6085"
+											title="Ручной душ Grohe Rainshower Icon 150 27628000"
+											class="special-offers__text">Ручной душ Grohe Rainshower Icon 150
+											27628000</a>
+										<div class="special-offers__sale catalog__sale">
+
+											<span class="special-offers__price catalog__price ">
+
+												5 550 <i class="special-offers__rub catalog__rub">руб.</i>
+											</span>
+
+											<a href="" class="special-offers__buy js-add2basket" data-id="6085">В
+												корзину</a>
+
+										</div>
+
+										<!-- begin label -->
+										<div class="announcing">
+
+										</div>
+										<!-- end label -->
+
+									</div>
+
+									<div class="swiper-slide special-offers__slide js-ecom_product-item" data-id="6258"
+										id="bx_1373509569_6258">
+										<a class="special-offers__pic"
+											href="/catalog/category/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html"
+											title="Термостат Grohe Rapido Smartbox универсальный 35600000">
+											<img data-src="/upload/resize_cache/iblock/208/205_205_1/20826193f6dad7356dfe6ce0577f9efa.jpg"
+												data-srcset="/upload/resize_cache/iblock/208/410_410_1/20826193f6dad7356dfe6ce0577f9efa.jpg 2x,/upload/resize_cache/iblock/208/615_615_1/20826193f6dad7356dfe6ce0577f9efa.jpg 3x"
+												class="special-offers__img lazyload" />
+										</a>
+										<a href="/catalog/category/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html"
+											title="Термостат Grohe Rapido Smartbox универсальный 35600000"
+											class="special-offers__text">Термостат Grohe Rapido Smartbox универсальный
+											35600000</a>
+										<div class="special-offers__sale catalog__sale">
+
+											<span class="special-offers__price catalog__price ">
+
+												5 050 <i class="special-offers__rub catalog__rub">руб.</i>
+											</span>
+
+											<a href="" class="special-offers__buy js-add2basket" data-id="6258">В
+												корзину</a>
+
+										</div>
+
+										<!-- begin label -->
+										<div class="announcing">
+
+											<div class="announcing__item"><img class="lazyload"
+													data-src="/mockup/templates/main/build/images/small/new.svg"
+													alt="Новинка" title="Новинка" /></div>
+
+										</div>
+										<!-- end label -->
+
+									</div>
+
+									<div class="swiper-slide special-offers__slide js-ecom_product-item" data-id="5934"
+										id="bx_1373509569_5934">
+										<a class="special-offers__pic"
+											href="/catalog/category/smesiteli/smesitel-grohe-concetto-dlya-kukhni-dn-15-31128001.html?sku=5934"
+											title="Смеситель Grohe Concetto для кухни DN 15 31128001">
+											<img data-src="/upload/resize_cache/iblock/129/205_205_1/129fd0a79951c2a4ea46a9f92232e6ee.jpg"
+												data-srcset="/upload/iblock/129/129fd0a79951c2a4ea46a9f92232e6ee.jpg 2x,/upload/iblock/129/129fd0a79951c2a4ea46a9f92232e6ee.jpg 3x"
+												class="special-offers__img lazyload" />
+										</a>
+										<a href="/catalog/category/smesiteli/smesitel-grohe-concetto-dlya-kukhni-dn-15-31128001.html?sku=5934"
+											title="Смеситель Grohe Concetto для кухни DN 15 31128001"
+											class="special-offers__text">Смеситель Grohe Concetto для кухни DN 15
+											31128001</a>
+										<div class="special-offers__sale catalog__sale">
+
+											<span class="special-offers__price catalog__price ">
+
+												9 700 <i class="special-offers__rub catalog__rub">руб.</i>
+											</span>
+
+											<a href="" class="special-offers__buy js-add2basket" data-id="5934">В
+												корзину</a>
+
+										</div>
+
+										<!-- begin label -->
+										<div class="announcing">
+
+										</div>
+										<!-- end label -->
+
+									</div>
+
+									<div class="swiper-slide special-offers__slide js-ecom_product-item" data-id="5516"
+										id="bx_1373509569_5516">
+										<a class="special-offers__pic"
+											href="/catalog/category/sistemy-installyatsii/nakladnaya-panel-grohe-nova-cosmopolitan-38847ls0.html"
+											title="Накладная панель Grohe Nova Cosmopolitan 38847LS0">
+											<img data-src="/upload/resize_cache/iblock/df8/205_205_1/df83f55a6425ba0286e952de2724f29a.jpg"
+												data-srcset="/upload/iblock/df8/df83f55a6425ba0286e952de2724f29a.jpg 2x,/upload/iblock/df8/df83f55a6425ba0286e952de2724f29a.jpg 3x"
+												class="special-offers__img lazyload" />
+										</a>
+										<a href="/catalog/category/sistemy-installyatsii/nakladnaya-panel-grohe-nova-cosmopolitan-38847ls0.html"
+											title="Накладная панель Grohe Nova Cosmopolitan 38847LS0"
+											class="special-offers__text">Накладная панель Grohe Nova Cosmopolitan
+											38847LS0</a>
+										<div class="special-offers__sale catalog__sale">
+
+											<span class="special-offers__price catalog__price ">
+
+												5 350 <i class="special-offers__rub catalog__rub">руб.</i>
+											</span>
+
+											<a href="" class="special-offers__buy js-add2basket" data-id="5516">В
+												корзину</a>
+
+										</div>
+
+										<!-- begin label -->
+										<div class="announcing">
+
+										</div>
+										<!-- end label -->
+
+									</div>
+
+								</div>
+								<div class="swiper-scrollbar"></div>
+
+							</div>
+
+							<div class="swiper-pagination_2"></div>
+							<div class="swiper-button-prev special-offers_prev"></div>
+							<div class="swiper-button-next special-offers_next"></div>
+
+						</div>
 					</div>
 
-					<a class="tags__all" href="#">
-						Все теги
-					</a>
+					<div class="tags main-tags">
+						<div class="tags__title">Подборки популярных запросов</div>
+						<div class="tags__container">
+							<ul class="tags__list">
+
+								<li class="tags__item " id="bx_3485106786_6283">
+									<a href="/catalog/category/termostaty/recommend/nastennye/dlya-vannoi/"
+										title="Настенные для ванной" class="tags__link">Настенные для ванной</a>
+								</li>
+
+							</ul>
+						</div>
+
+						<a class="tags__all" title="Все теги" href="/tags/holodilniki/">Все теги</a>
+
+					</div>
+
+					<div class="new-items special-offers">
+						<div class="container">
+							<div class="new-items__caption">
+								<span class="special-offers__title new-items__title">Новинки</span>
+								<span class="new-items__how"><i>5</i>новинок</span>
+							</div>
+
+							<!-- Slider main container -->
+							<div class="swiper-container swiper-container-three js-swiper-three">
+								<!-- Additional required wrapper -->
+								<div class="swiper-wrapper special-offers__wrapper">
+
+									<div class="swiper-slide special-offers__slide new-items__slide js-ecom_product-item"
+										data-id="6260" id="bx_3589829689_6260">
+										<a class="special-offers__pic"
+											href="/catalog/category/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html"
+											title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)">
+											<img data-src="/upload/resize_cache/iblock/d30/205_205_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg"
+												data-srcset="/upload/resize_cache/iblock/d30/410_410_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg 2x,/upload/resize_cache/iblock/d30/615_615_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg 3x"
+												class="special-offers__img lazyload" />
+										</a>
+										<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html"
+											title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)"
+											class="special-offers__text">Термостат Grohe Grohtherm SmartControl для душа
+											29123000 (верхняя монтажная часть)</a>
+										<div class="special-offers__sale">
+
+											<span class="special-offers__price">32 500 <i
+													class="special-offers__rub">руб.</i></span>
+
+											<a href="" title="купить" class="js-add2basket special-offers__buy"
+												data-id="6260">купить</a>
+
+										</div>
+
+										<!-- begin label -->
+										<div class="announcing">
+
+											<div class="announcing__item"><img class="lazyload"
+													data-src="/mockup/templates/main/build/images/small/new.svg"
+													alt="Новинка" title="Новинка" /></div>
+
+										</div>
+										<!-- end label -->
+
+									</div>
+
+									<div class="swiper-slide special-offers__slide new-items__slide js-ecom_product-item"
+										data-id="6258" id="bx_3589829689_6258">
+										<a class="special-offers__pic"
+											href="/catalog/category/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html"
+											title="Термостат Grohe Rapido Smartbox универсальный 35600000">
+											<img data-src="/upload/resize_cache/iblock/208/205_205_1/20826193f6dad7356dfe6ce0577f9efa.jpg"
+												data-srcset="/upload/resize_cache/iblock/208/410_410_1/20826193f6dad7356dfe6ce0577f9efa.jpg 2x,/upload/resize_cache/iblock/208/615_615_1/20826193f6dad7356dfe6ce0577f9efa.jpg 3x"
+												class="special-offers__img lazyload" />
+										</a>
+										<a href="/catalog/category/termostaty/termostat-grohe-rapido-smartbox-universalnyy-35600000.html"
+											title="Термостат Grohe Rapido Smartbox универсальный 35600000"
+											class="special-offers__text">Термостат Grohe Rapido Smartbox универсальный
+											35600000</a>
+										<div class="special-offers__sale">
+
+											<span class="special-offers__price">5 050 <i
+													class="special-offers__rub">руб.</i></span>
+
+											<a href="" title="купить" class="js-add2basket special-offers__buy"
+												data-id="6258">купить</a>
+
+										</div>
+
+										<!-- begin label -->
+										<div class="announcing">
+
+											<div class="announcing__item"><img class="lazyload"
+													data-src="/mockup/templates/main/build/images/small/new.svg"
+													alt="Новинка" title="Новинка" /></div>
+
+										</div>
+										<!-- end label -->
+
+									</div>
+
+									<div class="swiper-slide special-offers__slide new-items__slide js-ecom_product-item"
+										data-id="6257" id="bx_3589829689_6257">
+										<a class="special-offers__pic"
+											href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-vanny-dn-15-34155003.html"
+											title="Термостат Grohe Grohtherm 1000 для ванны DN 15 34155003">
+											<img data-src="/upload/resize_cache/iblock/620/205_205_1/62079db2fe6367c762c79721e25e0158.jpg"
+												data-srcset="/upload/resize_cache/iblock/620/410_410_1/62079db2fe6367c762c79721e25e0158.jpg 2x,/upload/resize_cache/iblock/620/615_615_1/62079db2fe6367c762c79721e25e0158.jpg 3x"
+												class="special-offers__img lazyload" />
+										</a>
+										<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-vanny-dn-15-34155003.html"
+											title="Термостат Grohe Grohtherm 1000 для ванны DN 15 34155003"
+											class="special-offers__text">Термостат Grohe Grohtherm 1000 для ванны DN 15
+											34155003</a>
+										<div class="special-offers__sale">
+
+											<span class="special-offers__price">18 250 <i
+													class="special-offers__rub">руб.</i></span>
+
+											<a href="" title="купить" class="js-add2basket special-offers__buy"
+												data-id="6257">купить</a>
+
+										</div>
+
+										<!-- begin label -->
+										<div class="announcing">
+
+											<div class="announcing__item"><img class="lazyload"
+													data-src="/mockup/templates/main/build/images/small/new.svg"
+													alt="Новинка" title="Новинка" /></div>
+
+										</div>
+										<!-- end label -->
+
+									</div>
+
+									<div class="swiper-slide special-offers__slide new-items__slide js-ecom_product-item"
+										data-id="6253" id="bx_3589829689_6253">
+										<a class="special-offers__pic"
+											href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html"
+											title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003">
+											<img data-src="/upload/resize_cache/iblock/bcb/205_205_1/bcb0da928271d7cd428a8dacfaae2f76.jpg"
+												data-srcset="/upload/resize_cache/iblock/bcb/410_410_1/bcb0da928271d7cd428a8dacfaae2f76.jpg 2x,/upload/resize_cache/iblock/bcb/615_615_1/bcb0da928271d7cd428a8dacfaae2f76.jpg 3x"
+												class="special-offers__img lazyload" />
+										</a>
+										<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html"
+											title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003"
+											class="special-offers__text">Термостат Grohe Grohtherm 1000 для душа DN 15
+											34143003</a>
+										<div class="special-offers__sale">
+
+											<span class="special-offers__price">14 250 <i
+													class="special-offers__rub">руб.</i></span>
+
+											<a href="" title="купить" class="js-add2basket special-offers__buy"
+												data-id="6253">купить</a>
+
+										</div>
+
+										<!-- begin label -->
+										<div class="announcing">
+
+											<div class="announcing__item"><img class="lazyload"
+													data-src="/mockup/templates/main/build/images/small/s_sale.svg"
+													alt="Акция" title="Акция" /></div>
+
+											<div class="announcing__item"><img class="lazyload"
+													data-src="/mockup/templates/main/build/images/small/new.svg"
+													alt="Новинка" title="Новинка" /></div>
+											<div class="announcing__item"><img class="lazyload"
+													data-src="/mockup/templates/main/build/images/small/best.svg"
+													alt="Хит продаж" title="Хит продаж" /></div>
+
+										</div>
+										<!-- end label -->
+
+									</div>
+
+									<div class="swiper-slide special-offers__slide new-items__slide js-ecom_product-item"
+										data-id="6085" id="bx_3589829689_5219">
+										<a class="special-offers__pic"
+											href="/catalog/category/dushi/ruchnoy-dush-grohe-rainshower-icon-150-27628000.html?sku=6085"
+											title="Ручной душ Grohe Rainshower Icon 150 27628000">
+											<img data-src="/upload/resize_cache/iblock/6f1/205_205_1/6f126a6371e31b7cd031455f8436f484.jpg"
+												data-srcset="/upload/resize_cache/iblock/6f1/410_410_1/6f126a6371e31b7cd031455f8436f484.jpg 2x,/upload/iblock/6f1/6f126a6371e31b7cd031455f8436f484.jpg 3x"
+												class="special-offers__img lazyload" />
+										</a>
+										<a href="/catalog/category/dushi/ruchnoy-dush-grohe-rainshower-icon-150-27628000.html?sku=6085"
+											title="Ручной душ Grohe Rainshower Icon 150 27628000"
+											class="special-offers__text">Ручной душ Grohe Rainshower Icon 150
+											27628000</a>
+										<div class="special-offers__sale">
+
+											<span class="special-offers__price">5 550 <i
+													class="special-offers__rub">руб.</i></span>
+
+											<a href="" title="купить" class="js-add2basket special-offers__buy"
+												data-id="6085">купить</a>
+
+										</div>
+
+										<!-- begin label -->
+										<div class="announcing">
+
+										</div>
+										<!-- end label -->
+
+									</div>
+
+								</div>
+
+								<!-- If we need navigation buttons -->
+
+								<!-- If we need scrollbar -->
+								<div class="swiper-scrollbar"></div>
+							</div>
+							<div class="swiper-pagination_3"></div>
+
+							<a href="/catalog/category/type-novelty/" title="Посмотреть все новинки"
+								class="new-items__link">Посмотреть все новинки</a>
+
+							<div class="swiper-button-prev new-items_prev"></div>
+							<div class="swiper-button-next new-items_next"></div>
+						</div>
+
+					</div>
 
 				</div>
-				{% include 'section/new-items/new-items.html' %}
-				{% include 'section/articles/articles.html' %}
-				{% include 'section/seo-text/seo-text.html' %}
+
+				<div class="articles">
+					<div class="container">
+						<span class="articles__title">Статьи</span>
+						<a href="/news/" title="Все Статьи" class="articles__link">Все Статьи</a>
+
+						<div class="articles__items">
+
+							<div class="articles__item" id="bx_3099439860_">
+								<a href="/news/grohe-blue-chistaya-voda-vsegda-pod-rukoy.html"
+									title="Grohe Blue — чистая вода всегда под рукой" class="articles__pic">
+									<img data-src="/upload/resize_cache/iblock/20b/272_168_2/20b377f51e399b6173913a8c9a7cad97.jpg"
+										data-srcset="/upload/resize_cache/iblock/20b/272_168_2/20b377f51e399b6173913a8c9a7cad97.jpg 2x,/upload/resize_cache/iblock/20b/272_168_2/20b377f51e399b6173913a8c9a7cad97.jpg 3x"
+										class="articles__img lazyload" />
+								</a>
+								<a href="/news/grohe-blue-chistaya-voda-vsegda-pod-rukoy.html"
+									title="Grohe Blue — чистая вода всегда под рукой" class="articles__text">Grohe Blue
+									— чистая вода всегда под рукой</a>
+								<span class="articles__date"></span>
+								<span class="articles__info">
+									<p>Кухонные системы Grohe Blue преобразуют водопроводную воду в&nbsp;питьевую путем
+										очистки ее&nbsp;от&nbsp;механических примесей, вредных микроорганизмов
+										и&nbsp;солей тяжелых металлов. Компания представляет модели, с&nbsp;помощью
+										которых можно получить фильтрованную или газированную охлажденную питьевую воду.
+									</p>
+								</span>
+							</div>
+
+							<div class="articles__item" id="bx_3099439860_">
+								<a href="/news/grohe-rainshower-f-series-komfortnyy-dush-dlya-kazhdogo.html"
+									title="Grohe Rainshower F-series: комфортный душ для каждого" class="articles__pic">
+									<img data-src="/upload/resize_cache/iblock/733/272_168_2/7332be6f3356e40e51d0c351a6b886e1.jpg"
+										data-srcset="/upload/resize_cache/iblock/733/272_168_2/7332be6f3356e40e51d0c351a6b886e1.jpg 2x,/upload/resize_cache/iblock/733/272_168_2/7332be6f3356e40e51d0c351a6b886e1.jpg 3x"
+										class="articles__img lazyload" />
+								</a>
+								<a href="/news/grohe-rainshower-f-series-komfortnyy-dush-dlya-kazhdogo.html"
+									title="Grohe Rainshower F-series: комфортный душ для каждого"
+									class="articles__text">Grohe Rainshower F-series: комфортный душ для каждого</a>
+								<span class="articles__date"></span>
+								<span class="articles__info">
+									<p>Верхние и&nbsp;боковые души Grohe Rainshower F-series&nbsp;&mdash; новое слово
+										в&nbsp;оснащении душевой кабины. Данные модели гармонично сочетаются
+										со&nbsp;смесителями и&nbsp;термостатами коллекций Grohe SPA и&nbsp;обеспечивают
+										удобство настройки направления и&nbsp;интенсивности потока воды.</p>
+								</span>
+							</div>
+
+							<div class="articles__item" id="bx_3099439860_">
+								<a href="/news/grohe-red-kipyatok-pryamo-iz-pod-krana.html"
+									title="Grohe Red: горячая вода прямо из-под крана" class="articles__pic">
+									<img data-src="/upload/resize_cache/iblock/861/272_168_2/86185de36b3f935303bcf4d2f63fb85d.jpg"
+										data-srcset="/upload/resize_cache/iblock/861/272_168_2/86185de36b3f935303bcf4d2f63fb85d.jpg 2x,/upload/resize_cache/iblock/861/272_168_2/86185de36b3f935303bcf4d2f63fb85d.jpg 3x"
+										class="articles__img lazyload" />
+								</a>
+								<a href="/news/grohe-red-kipyatok-pryamo-iz-pod-krana.html"
+									title="Grohe Red: горячая вода прямо из-под крана" class="articles__text">Grohe Red:
+									горячая вода прямо из-под крана</a>
+								<span class="articles__date"></span>
+								<span class="articles__info">
+									<p>Смесители для кухни для кухни Grohe Red позволяют получить горячую питьевую воду,
+										когда это необходимо. Модели данной коллекции выполнены в двух вариантах: Duo
+										могут подавать как кипящую, так и смешанную водопроводную воду, а Mono — только
+										кипяток.</p>
+								</span>
+							</div>
+
+							<div class="articles__item" id="bx_3099439860_">
+								<a href="/news/grohe-rainshower-dlya-komfortnogo-prinyatiya-dusha.html"
+									title="Grohe Rainshower: для комфортного принятия душа" class="articles__pic">
+									<img data-src="/upload/resize_cache/iblock/49e/272_168_2/49e46bcc465991b010e7fb46b8bc8b44.jpg"
+										data-srcset="/upload/resize_cache/iblock/49e/272_168_2/49e46bcc465991b010e7fb46b8bc8b44.jpg 2x,/upload/resize_cache/iblock/49e/272_168_2/49e46bcc465991b010e7fb46b8bc8b44.jpg 3x"
+										class="articles__img lazyload" />
+								</a>
+								<a href="/news/grohe-rainshower-dlya-komfortnogo-prinyatiya-dusha.html"
+									title="Grohe Rainshower: для комфортного принятия душа" class="articles__text">Grohe
+									Rainshower: для комфортного принятия душа</a>
+								<span class="articles__date"></span>
+								<span class="articles__info">Ручные и верхние души Grohe Rainshower — дизайн и
+									функциональность. Компания Grohe представляет модели в двух стилевых направлениях —
+									современном и классическом.&nbsp;&nbsp;Функция DreamSpray равномерно распределяет
+									поток воды по душевым форсункам, что повышает комфорт использования.</span>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<article class="about-brand">
+					<div class="container">
+						<h2 class="about-brand__title"><b>О бренде Grohe</b></h2>
+						<img width="1200" alt="Души Grohe"
+							src="/upload/medialibrary/616/61615a77f2c5aba7d2472583d87298db.jpg" height="391"
+							title="Души Grohe" align="top">
+						<p style="text-align: justify;"><br></p>
+						<p style="text-align: justify;">
+							<b>GROHE&nbsp;— это дизайн, качество, технологии и&nbsp;экологичность. Немецкая компания
+								устанавливает самые высокие стандарты, чтобы обеспечить максимальное удобство
+								и&nbsp;безопасность эксплуатации.</b>
+						</p>
+						<!--<h2>Идеальное сочетание формы и&nbsp;содержания</h2>-->
+						<p style="text-align: justify;">
+							Стильный дизайн&nbsp;— непременный атрибут высококачественной продукции GROHE. В&nbsp;2007
+							году GROHE впервые была удостоена престижной премии «Red dot» в&nbsp;номинации «Лучшие
+							из&nbsp;лучших» за&nbsp;безупречное исполнение коллекции Ondus<sup class="reg">®</sup>.
+							На&nbsp;сегодняшний день GROHE получила 15&nbsp;таких премий.
+						</p>
+						<p style="text-align: justify;">
+							Долговечность обеспечивается за&nbsp;счет применения покрытия GROHE StarLight<sup
+								class="reg">®</sup>, которое отличается удобством в&nbsp;обслуживании и&nbsp;стойкостью
+							к&nbsp;загрязнениям и&nbsp;механическим повреждениям. Эстетичный внешний вид GROHE
+							сохраняется на&nbsp;протяжении многих лет.
+						</p>
+					</div>
+				</article>
+
 				<div class="promotional-goods special-offers">
 					<div class="container">
 						<span class="special-offers__title">Акционные товары</span>
@@ -259,403 +1096,333 @@
 						<div class="swiper-container swiper-container-promotional-goods  js-swiper-promotional-goods">
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper special-offers__wrapper">
-								<!-- <div class="swiper-slide special-offers__slide new-items__slide">
-									<a class="special-offers__pic" href="#">
-										<img src="images/new-items_1.jpg"
-											srcset="images/new-items_1@2x.jpg 2x,images/new-items_1@3x.jpg 3x"
-											class="special-offers__img">
+
+								<div class="swiper-slide special-offers__slide new-items__slide js-ecom_product-item"
+									data-id="6085" id="bx_1290872195_5219">
+									<a class="special-offers__pic"
+										href="/catalog/category/dushi/ruchnoy-dush-grohe-rainshower-icon-150-27628000.html?sku=6085"
+										title="Ручной душ Grohe Rainshower Icon 150 27628000">
+										<img data-src="/upload/resize_cache/iblock/6f1/205_205_1/6f126a6371e31b7cd031455f8436f484.jpg"
+											data-srcset="/upload/resize_cache/iblock/6f1/410_410_1/6f126a6371e31b7cd031455f8436f484.jpg 2x,/upload/iblock/6f1/6f126a6371e31b7cd031455f8436f484.jpg 3x"
+											class="special-offers__img lazyload" />
 									</a>
-									<a href="#" class="special-offers__text">
-										Холодильник Liebherr IKF 3510
-										Comfort
-									</a>
-									<div class="special-offers__sale catalog__sale price__dashed">
-										<span class="special-offers__price catalog__price">
-											199 000
-											<i class="special-offers__rub catalog__rub">руб.</i>
-											<span class="price__absolute">
-												250 000 руб.
-											</span>
-										</span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">В корзину</a>
-									</div>
-								</div> -->
-								<div class="swiper-slide special-offers__slide new-items__slide js-ecom_product-item swiper-slide-next"
-									data-id="1611" id="bx_1290872195_1611" style="width: 273.75px; margin-right: 27px;">
-									<a class="special-offers__pic js-ecom_product-link"
-										href="/liebherr/holodilniki/dvukhkamernye-kholodilniki-s-morozilnikom/kholodilnik-liebherr-cn-4713-nofrost.html"
-										title="Холодильник Liebherr CN 4713 NoFrost">
-										<img data-src="https://l-rus.ru/upload/resize_cache/iblock/a31/205_205_1/a31ba2426881adb14b5a3896afd4ad84.jpg"
-											data-srcset="https://l-rus.ru/upload/resize_cache/iblock/a31/410_410_1/a31ba2426881adb14b5a3896afd4ad84.jpg 2xhttps://l-rus.ru,/upload/resize_cache/iblock/a31/615_615_1/a31ba2426881adb14b5a3896afd4ad84.jpg 3x"
-											class="special-offers__img loaded lazyloaded"
-											srcset="https://l-rus.ru/upload/resize_cache/iblock/a31/410_410_1/a31ba2426881adb14b5a3896afd4ad84.jpg 2xhttps://l-rus.ru,/upload/resize_cache/iblock/a31/615_615_1/a31ba2426881adb14b5a3896afd4ad84.jpg 3x"
-											src="https://l-rus.ru/upload/resize_cache/iblock/a31/205_205_1/a31ba2426881adb14b5a3896afd4ad84.jpg"
-											data-was-processed="true">
-									</a>
-									<a href="https://l-rus.ru/liebherr/holodilniki/dvukhkamernye-kholodilniki-s-morozilnikom/kholodilnik-liebherr-cn-4713-nofrost.html"
-										title="Холодильник Liebherr CN 4713 NoFrost"
-										class="special-offers__text js-ecom_product-link">Холодильник
-										Liebherr CN 4713
-										NoFrost</a>
+									<a href="/catalog/category/dushi/ruchnoy-dush-grohe-rainshower-icon-150-27628000.html?sku=6085"
+										title="Ручной душ Grohe Rainshower Icon 150 27628000"
+										class="special-offers__text">Ручной душ Grohe Rainshower Icon 150 27628000</a>
 
 									<div class="special-offers__sale catalog__sale">
 
+										<span class="special-offers__price catalog__price ">
 
-										<span class="special-offers__price catalog__price price__dashed">
-
-											39 500 <i class="special-offers__rub catalog__rub">руб.</i>
-											<span class="price__absolute">40 500 руб.</span>
+											5 550 <i class="special-offers__rub catalog__rub">руб.</i>
 										</span>
 
-
-
-										<a href="" class="special-offers__buy js-add2basket" data-id="1611">В
+										<a href="" class="special-offers__buy js-add2basket" data-id="6085">В
 											корзину</a>
-
-
 
 									</div>
 
 									<!-- begin label -->
 									<div class="announcing">
-										<div class="announcing__item"><img class="lazyloaded loaded"
-												data-src="https://l-rus.ru/mockup/templates/main/build/images/small/tools.svg"
-												alt="Бесплатное подключение"
-												title="Бесплатное подключение"
-												src="https://l-rus.ru/mockup/templates/main/build/images/small/tools.svg"
-												data-was-processed="true"></div>
-										<div class="announcing__item"><img class="lazyloaded loaded"
-												data-src="https://l-rus.ru/mockup/templates/main/build/images//small/truck.svg"
-												alt="Бесплатная доставка"
-												title="Бесплатное доставка"
-												src="https://l-rus.ru/mockup/templates/main/build/images//small/truck.svg"
-												data-was-processed="true"></div>
-
-										<div class="announcing__item"><img class="lazyloaded loaded"
-												data-src="https://l-rus.ru/mockup/templates/main/build/imagessmall/new.svg"
-												alt="Новинка"
-												src="https://l-rus.ru/mockup/templates/main/build/imagessmall/new.svg"
-												data-was-processed="true"></div>
-
-
 
 									</div>
 									<!-- end label -->
 
+								</div>
+
+								<div class="swiper-slide special-offers__slide new-items__slide js-ecom_product-item"
+									data-id="6253" id="bx_1290872195_6253">
+									<a class="special-offers__pic"
+										href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html"
+										title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003">
+										<img data-src="/upload/resize_cache/iblock/bcb/205_205_1/bcb0da928271d7cd428a8dacfaae2f76.jpg"
+											data-srcset="/upload/resize_cache/iblock/bcb/410_410_1/bcb0da928271d7cd428a8dacfaae2f76.jpg 2x,/upload/resize_cache/iblock/bcb/615_615_1/bcb0da928271d7cd428a8dacfaae2f76.jpg 3x"
+											class="special-offers__img lazyload" />
+									</a>
+									<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-dusha-dn-15-34143003.html"
+										title="Термостат Grohe Grohtherm 1000 для душа DN 15 34143003"
+										class="special-offers__text">Термостат Grohe Grohtherm 1000 для душа DN 15
+										34143003</a>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											14 250 <i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="6253">В
+											корзину</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+
+										<div class="announcing__item"><img class="lazyload"
+												data-src="/mockup/templates/main/build/images/small/s_sale.svg"
+												alt="Акция" title="Акция" /></div>
+
+										<div class="announcing__item"><img class="lazyload"
+												data-src="/mockup/templates/main/build/images/small/new.svg"
+												alt="Новинка" title="Новинка" /></div>
+										<div class="announcing__item"><img class="lazyload"
+												data-src="/mockup/templates/main/build/images/small/best.svg"
+												alt="Хит продаж" title="Хит продаж" /></div>
+
+									</div>
+									<!-- end label -->
 
 								</div>
-								<div class="swiper-slide special-offers__slide new-items__slide">
-									<a class="special-offers__pic" href="#">
-										<img src="images/new-items_2.jpg"
-											srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x"
-											class="special-offers__img">
-									</a>
-									<a href="#" class="special-offers__text">
-										Винный шкаф Liebherr EWTgw 3583 Vinidor
-									</a>
-									<div class="special-offers__sale catalog__sale price__dashed">
-										<span class="special-offers__price catalog__price">
-											199 000
-											<i class="special-offers__rub catalog__rub">руб.</i>
-											<span class="price__absolute">
-												250 000 руб.
-											</span>
-										</span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">В корзину</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide new-items__slide">
-									<a class="special-offers__pic" href="#">
-										<img src="images/new-items_3.jpg"
-											srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x"
-											class="special-offers__img">
-									</a>
-									<a href="#" class="special-offers__text">
-										Холодильник Liebherr SBS 66I2 Premium NoFrost (SICN 3386 + ICN 3386)
-									</a>
-									<div class="special-offers__sale catalog__sale price__dashed">
-										<span class="special-offers__price catalog__price">
-											199 000
-											<i class="special-offers__rub catalog__rub">руб.</i>
-											<span class="price__absolute">
-												250 000 руб.
-											</span>
-										</span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">В корзину</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide new-items__slide">
-									<a class="special-offers__pic" href="#">
-										<img src="images/new-items_4.jpg"
-											srcset="images/new-items_4@2x.jpg 2x,images/new-items_4@3x.jpg 3x"
-											class="special-offers__img">
-									</a>
-									<a href="#" class="special-offers__text">
-										Морозильник Liebherr GN 2723
-										Comfort NoFrost</a>
-									<div class="special-offers__sale catalog__sale price__dashed">
-										<span class="special-offers__price catalog__price">
-											199 000
-											<i class="special-offers__rub catalog__rub">руб.</i>
-											<span class="price__absolute">
-												250 000 руб.
-											</span>
-										</span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">В корзину</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide new-items__slide">
-									<a class="special-offers__pic" href="#">
-										<img src="images/new-items_1.jpg"
-											srcset="images/new-items_1@2x.jpg 2x,images/new-items_1@3x.jpg 3x"
-											class="special-offers__img">
-									</a>
-									<a href="#" class="special-offers__text">
-										Холодильник Liebherr SBSes 7353 (SBNes 32100+SKes 42100) Premium
-										BioFresh
-									</a>
-									<div class="special-offers__sale catalog__sale price__dashed">
-										<span class="special-offers__price catalog__price">
-											199 000
-											<i class="special-offers__rub catalog__rub">руб.</i>
-											<span class="price__absolute">
-												250 000 руб.
-											</span>
-										</span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">В корзину</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide new-items__slide">
-									<a class="special-offers__pic" href="#">
-										<img src="images/new-items_2.jpg"
-											srcset="images/new-items_2@2x.jpg 2x,images/new-items_2@3x.jpg 3x"
-											class="special-offers__img">
-									</a>
-									<a href="#" class="special-offers__text">
-										Винный шкаф Liebherr EWTgw 3583 Vinidor
-									</a>
-									<div class="special-offers__sale catalog__sale price__dashed">
-										<span class="special-offers__price catalog__price">
-											199 000
-											<i class="special-offers__rub catalog__rub">руб.</i>
-											<span class="price__absolute">
-												250 000 руб.
-											</span>
-										</span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">В корзину</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide new-items__slide">
-									<a class="special-offers__pic" href="#">
-										<img src="images/new-items_3.jpg"
-											srcset="images/new-items_3@2x.jpg 2x,images/new-items_3@3x.jpg 3x"
-											class="special-offers__img">
-									</a>
-									<a href="#" class="special-offers__text">
-										Холодильник Liebherr SBS 66I2
-										Premium NoFrost (SICN 3386 +
-										ICN 3386)
-									</a>
-									<div class="special-offers__sale catalog__sale price__dashed">
-										<span class="special-offers__price catalog__price">
-											199 000
-											<i class="special-offers__rub catalog__rub">руб.</i>
-											<span class="price__absolute">
-												250 000 руб.
-											</span>
-										</span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">В корзину</a>
-									</div>
-								</div>
-								<div class="swiper-slide special-offers__slide new-items__slide">
-									<a class="special-offers__pic" href="#">
-										<img src="images/new-items_4.jpg"
-											srcset="images/new-items_4@2x.jpg 2x,images/new-items_4@3x.jpg 3x"
-											class="special-offers__img">
-									</a>
-									<a href="#" class="special-offers__text">
-										Холодильник Liebherr SBSbs 8673 Premium BioFresh NoFrost</a>
-									<div class="special-offers__sale catalog__sale price__dashed">
-										<span class="special-offers__price catalog__price">
-											199 000
-											<i class="special-offers__rub catalog__rub">руб.</i>
-											<span class="price__absolute">
-												250 000 руб.
-											</span>
-										</span>
-										<a href="#" data-url="ajax/add-cart.html" data-ajax
-											class="special-offers__buy">В корзину</a>
-									</div>
-								</div>
+
 							</div>
-							<!-- If we need navigation buttons -->
-							<!-- If we need scrollbar -->
 							<div class="swiper-scrollbar"></div>
+
 						</div>
+
 						<div class="swiper-pagination js-promotional-goods-pagination"></div>
 						<div class="swiper-button-prev promotional-goods_prev js-promotional-goods_prev"></div>
 						<div class="swiper-button-next promotional-goods_next js-promotional-goods_next"></div>
+
 					</div>
 				</div>
-				<div class="reviews reviews-main js-reviews-main">
+
+				<article class="seo-text text-default">
 					<div class="container">
-						<div class="reviews-main__title">
-							Отзывы об интернет-магазине L-RUS
-						</div>
-						<div class="reviews__section">
-							<div class="ratings">
-								<div class="ratings__star"></div>
-								<div class="ratings__star"></div>
-								<div class="ratings__star"></div>
-								<div class="ratings__star"></div>
-								<div class="ratings__star ratings__none"></div>
-								<b class="ratings__number">4,5</b>
-							</div>
-							<a href="#" class="reviews__all">5 отзывов</a>
-						</div>
-						<div class="swiper-pagination-reviews-main"></div>
-						<div class="swiper-button-prev reviews-main__prev"></div>
-						<div class="swiper-button-next reviews-main__next"></div>
+						<h1 class="title">Grohe на сайте официального специализированного магазина grohe.l-rus.ru</h1>
+						<h2>Увереность в&nbsp;качестве и&nbsp;надежности</h2>
+						<p style="text-align: justify;">
+							Испытание готовой продукции GROHE проводится в&nbsp;условиях, которые имитируют 20&nbsp;лет
+							ежедневного использования в&nbsp;системах с&nbsp;особо жесткой водой. Высокие требования
+							к&nbsp;надежности изделий позволяют обеспечить их&nbsp;эксплуатацию в&nbsp;течение времени,
+							которое намного превышает стандартный срок службы.
+						</p>
+						<p style="text-align: justify;">
+							В&nbsp;результате испытаний немецкой контролирующей организацией TÜV&nbsp;SÜD смеситель
+							Eurodisc GROHE был признан лучшим&nbsp;— по&nbsp;сравнению с&nbsp;аналогичными товарами.
+							Среди преимуществ смесителей GROHE отмечают плавность хода рычага, которая обеспечивает
+							точность и&nbsp;легкость управления, что повышает комфорт использования.
+						</p>
+						<p>
+							<img width="1200" alt="Grohe Grandera"
+								src="/upload/medialibrary/2f7/2f750316ea27f849638a6093cb875828.jpg" height="599"
+								title="Grohe Grandera"><br>
+						</p>
+						<h2>Забота об&nbsp;окружающей среде</h2>
+						<p style="text-align: justify;">
+							Инновационная технология GROHE EcoJoy™ позволяет экономить до&nbsp;50% воды
+							и&nbsp;электроэнергии при сохранении потребительских свойств приборов. Рационально
+							использовать воду и&nbsp;электроэнергию помогает технология GROHE SilkMove<sup
+								class="reg">®</sup>. Рабочее положение рычага по&nbsp;центру обеспечивает
+							по&nbsp;умолчанию подачу холодной воды, что приводит к&nbsp;снижению расхода энергии,
+							например, когда нужно ополоснуть зубную щетку или руки.
+						</p>
+						<p style="text-align: justify;">
+							Система GROHE EcoJoy™ применяется и&nbsp;на&nbsp;кухне. Функция GROHE Red™ обеспечивает
+							подачу кипящей воды из&nbsp;кухонного смесителя, которая требует намного меньше энергии
+							по&nbsp;сравнению со&nbsp;стандартным кипячением. С&nbsp;помощью системы GROHE Blue<sup
+								class="reg">®</sup> можно в&nbsp;любую минуту получить прохладную питьевую или
+							освежающую минеральную воду.
+						</p>
+						<p>
+							<b><img width="1200" alt="Коллекция Grohe Ondus"
+									src="/upload/medialibrary/fcd/fcd27618c11640a9d11997b7cf922da4.jpg" height="598"
+									title="Коллекция Grohe Ondus"><br>
+							</b>
+						</p>
+						<h2>Инновационные технологии для душа</h2>
+						<p style="text-align: justify;">
+							Новая технология GROHE DreamSpray<sup class="reg">®</sup> обеспечивает оптимальное
+							распределение воды по&nbsp;каждой душевой форсунке, что повышает комфорт использования.
+							Настроить нужную комбинацию температуры, напора и&nbsp;продолжительности подачи воды можно
+							в&nbsp;одно касание с&nbsp;помощью удобного цифрового дисплея или пульта дистанционного
+							управления.
+						</p>
+						<p style="text-align: justify;">
+							Система поддержания температуры воды на&nbsp;заданном уровне обеспечивает максимальный
+							комфорт и&nbsp;безопасность. А&nbsp;благодаря применению технологии GROHE CoolTouch<sup
+								class="reg">®</sup> температура внешней поверхности смесителя не&nbsp;превышает
+							выбранную пользователем температуру воды, что предотвращает возможность ожогов.
+						</p>
+						<p style="text-align: justify;">
+							Главная цель компании GROHE&nbsp;— производить функциональную, практичную и&nbsp;надежную
+							технику, качество которой проверено временем и&nbsp;подтверждено в&nbsp;ходе испытаний.
+						</p>
 
-						<div class="swiper-container">
-							<div class="swiper-wrapper">
-								<div class="swiper-slide reviews-main__item">
-									<div class="reviews-list__field reviews-list__field_header">
-										<div itemprop="author" itemscope="" itemtype="" class="reviews-list__col">
-											<strong itemprop="name">Ирина</strong>
-										</div>
-										<div class="reviews-list__col reviews-list__col_desc">
-											<div class="ratings ratings_small" itemprop="reviewRating" itemscope=""
-												itemtype="">
-												<div class="ratings__star"></div>
-												<div class="ratings__star"></div>
-												<div class="ratings__star"></div>
-												<div class="ratings__star"></div>
-												<div class="ratings__star ratings__none"></div>
-											</div>
-										</div>
-										<div class="reviews-list__col reviews-list__col_date">
-											<meta itemprop="datePublished" content="2018-08-30">28 января 2018
-										</div>
-									</div>
-									<div class="reviews-list__field reviews-list__field_footer">
-										Покупали специально на дачу - маленький, но
-										все необходимые продукты и небольшие
-										кастрюли вмещаются. Морозит хорошо,
-										достаточно тихий. Да, небольшая морозилка,
-										но такой холодильничек и не для заморозки
-										контейнеров ягод на зиму. В настоящее
-										время спектр бытовой техники Liebherr
-										невероятно широк. Ассортимент компании
-										составляют устройства, встраиваемые под
-										столешницу или в мебельные ниши кухонных
-										гарнитуров, отдельностоящие приборы,
-										морозильные лари, холодильно-морозильные
-										комбинации, климатические шкафы для
-										хранения вина
-									</div>
-								</div>
-								<div class="swiper-slide reviews-main__item">
-									<div class="reviews-list__field reviews-list__field_header">
-										<div itemprop="author" itemscope="" itemtype="" class="reviews-list__col">
-											<strong itemprop="name">Ирина</strong>
-										</div>
-										<div class="reviews-list__col reviews-list__col_desc">
-											<div class="ratings ratings_small" itemprop="reviewRating" itemscope=""
-												itemtype="">
-												<div class="ratings__star"></div>
-												<div class="ratings__star"></div>
-												<div class="ratings__star"></div>
-												<div class="ratings__star"></div>
-												<div class="ratings__star ratings__none"></div>
-											</div>
-										</div>
-										<div class="reviews-list__col reviews-list__col_date">
-											<meta itemprop="datePublished" content="2018-08-30">28 января 2018
-										</div>
-									</div>
-									<div class="reviews-list__field reviews-list__field_footer">
-										Покупали специально на дачу - маленький, но
-										все необходимые продукты и небольшие
-										кастрюли вмещаются. Морозит хорошо,
-										достаточно тихий. Да, небольшая морозилка,
-										но такой холодильничек и не для заморозки
-										контейнеров ягод на зиму. В настоящее
-										время спектр бытовой техники Liebherr
-										невероятно широк. Ассортимент компании
-										составляют устройства, встраиваемые под
-										столешницу или в мебельные ниши кухонных
-										гарнитуров, отдельностоящие приборы,
-										морозильные лари, холодильно-морозильные
-										комбинации, климатические шкафы для
-										хранения вина
-									</div>
-								</div>
-								<div class="swiper-slide reviews-main__item">
-									<div class="reviews-list__field reviews-list__field_header">
-										<div itemprop="author" itemscope="" itemtype="" class="reviews-list__col">
-											<strong itemprop="name">Ирина</strong>
-										</div>
-										<div class="reviews-list__col reviews-list__col_desc">
-											<div class="ratings ratings_small" itemprop="reviewRating" itemscope=""
-												itemtype="">
-												<div class="ratings__star"></div>
-												<div class="ratings__star"></div>
-												<div class="ratings__star"></div>
-												<div class="ratings__star"></div>
-												<div class="ratings__star ratings__none"></div>
-											</div>
-										</div>
-										<div class="reviews-list__col reviews-list__col_date">
-											<meta itemprop="datePublished" content="2018-08-30">28 января 2018
-										</div>
-									</div>
-									<div class="reviews-list__field reviews-list__field_footer">
-										Покупали специально на дачу - маленький, но
-										все необходимые продукты и небольшие
-										кастрюли вмещаются. Морозит хорошо,
-										достаточно тихий. Да, небольшая морозилка,
-										но такой холодильничек и не для заморозки
-										контейнеров ягод на зиму. В настоящее
-										время спектр бытовой техники Liebherr
-										невероятно широк. Ассортимент компании
-										составляют устройства, встраиваемые под
-										столешницу или в мебельные ниши кухонных
-										гарнитуров, отдельностоящие приборы,
-										морозильные лари, холодильно-морозильные
-										комбинации, климатические шкафы для
-										хранения вина
-									</div>
+						<a data-fancybox="iframe" href="https://www.youtube.com/embed/ZC_H2Fo5j3g" frameborder="0"
+							class="iframe js-fancybox">
+							<div class="video__image">
+								<img src="images/gr_yt_zagl.jpg" alt="" class="video__pic">
+								<div class="video__play"></div>
+								<!-- /.video__play -->
+								<div class="video__name">
+									Кухонные водные системы GROHE Blue Chilled & Sparkling
 								</div>
 							</div>
-						</div>
-						<a href="#" class="reviews-main__link">
-							Посмотреть все отзывы
 						</a>
-					</div>
 
-				</div>
-				{% include 'section/seo-text/seo-text_2.html' %}
+					</div>
+				</article>
+
 				<!-- END WORKAREA -->
+
 			</div>
 			<!-- /.content -->
+
 		</div>
 		<!-- /.middle -->
-
 	</div>
 	<!-- /.wrapper -->
 
-	{% include 'footer/global/footer.html' %}
-	{% include 'connect/script.html' %}
-	{% include 'connect/stylesheet.html' %}
+	<div class="footer" id="js-footer">
+		<div class="container">
+			<div class="footer__inner">
 
+				<div class="footer__col">
+
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Техника</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/smesiteli/"
+									title="Смесители">Смесители</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/dushi/" title="Души">Души</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/termostaty/"
+									title="Термостаты">Термостаты</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/sistemy-installyatsii/"
+									title="Системы инсталляции">Системы инсталляции</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/aksessuary/"
+									title="Аксессуары">Аксессуары</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+
+				<!-- end menu-content -->
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Информация</li>
+
+							<li class="menu-footer__item">
+								<a href="/delivery-and-payment/" title="Доставка и оплата"
+									class="menu-footer__link">Доставка и оплата</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/glossary/" title="Глоссарий" class="menu-footer__link">Глоссарий</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/services/" title="Сервис" class="menu-footer__link">Сервис</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/guarantee/" title="Сервисные центры Grohe" class="menu-footer__link">Сервисные
+									центры Grohe</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/news/" title="Статьи" class="menu-footer__link">Статьи</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/video/" title="Видео" class="menu-footer__link">Видео</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/kachestvo/" title="Возврат и обмен" class="menu-footer__link">Возврат и
+									обмен</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/help/" title="Помощь" class="menu-footer__link">Помощь</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/contacts/" title="Контакты" class="menu-footer__link">Контакты</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<div class="footer__text footer__text_first">Интернет-магазин Grohe</div>
+					<a href="tel:74956461460" class="footer__tel">+7 495 646-14-60</a>
+					<a href="tel:" class="footer__tel"></a>
+
+					<a href="" class="footer__call-phone-button js-viewForm" data-action="callback"><span>Заказать
+							звонок</span></a>
+
+					<a href="mailto:shop@gr-russia.ru" class="footer__email"><i>Email:</i>shop@gr-russia.ru</a>
+
+					<div class="footer__text footer__text_two">Режим работы</div>
+					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00<br>
+						Сб-Вс: 09:00—22:00</div>
+				</div>
+				<!-- /.footer__col -->
+			</div>
+
+			<div class="footer__row">
+				<div class="footer__copyright">
+					© 2004 – 2019 Магазин GROHE.
+					<br>«NTK LTD TM all rights reserved»
+					<div itemscope itemtype="https://schema.org/LocalBusiness" itemref="microdata-shop-reviews">
+						<div class="hide">
+							<a href="https://grohe.l-rus.ru" itemprop="url"><span itemprop="name">Специализированный
+									магазин Grohe</span></a>
+							<img itemprop="logo"
+								src="https://grohe.l-rus.ru/mockup/templates/main/build/images/Grohe.png" alt="Grohe" />
+							<img itemprop="image"
+								src="https://grohe.l-rus.ru/mockup/templates/main/build/images/Grohe.png" alt="Grohe" />
+							<meta itemprop="legalName" content="ООО «НТК Трейд»" />
+							<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+								<meta itemprop="streetAddress" content="проспект Маршала Жукова, дом 59" />
+								<meta itemprop="postalCode" content="123103" />
+								<meta itemprop="addressLocality" content="Москва" />
+							</div>
+							<meta itemprop="PriceRange" content="1000-134400RUB" />
+							<meta itemprop="openingHours" content="Mo-Fr 08:00-22:00" />
+							<meta itemprop="openingHours" content="Sa-Su 09:00-22:00" />
+							<meta itemprop="telephone" content="74956461460" />
+							<meta itemprop="telephone" content="" />
+						</div>
+					</div>
+
+				</div>
+				<a class="privacy-policy" title="Политика конфиденциальности" href="/personal-data/">Политика
+					конфиденциальности</a>
+				<div class="footer__telephones">
+					<div class="l-abuse">
+						<a href="" class="footer__button abuse__button js-viewForm" data-action="guideback">Пожаловаться
+							руководству</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- /.footer__row -->
+		</div>
+
+		<!-- /.footer__inner -->
+
+	</div>
+
+	<!-- end footer -->
 </body>
-
 </html>
