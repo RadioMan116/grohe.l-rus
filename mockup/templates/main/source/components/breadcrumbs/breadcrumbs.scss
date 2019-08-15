@@ -10,17 +10,18 @@
 	div {
 		display: flex;
 		flex-wrap: wrap;
-		
+
 	}
+
 	&__link {
-		color: #999999;
+		color: #122d52;
 	}
-	
+
 	&__link>a {
 		color: #394791;
 		text-decoration: none;
 	}
-	
+
 	&__sep {
 		margin: 0 5px;
 	}
@@ -36,4 +37,3 @@
 
 
 }
-
