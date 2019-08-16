@@ -873,6 +873,7 @@
 		width: calc(25% - 16px);
 		margin-left: auto;
 		padding: 85px 0 0 0;
+		// height: -webkit-fill-available;
 
 		.documentation {
 			margin: 0 0 40px 0;
@@ -2354,6 +2355,18 @@
 		}
 	}
 
+	.tabs {
+		.practical-features {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		.reviews {
+			width: 100%;
+			max-width: 100%;
+		}
+	}
+
 	.diagram {
 		position: relative;
 		max-width: 100%;
@@ -2609,18 +2622,19 @@
 		}
 
 		&__pic {
-			width: 60px;
+			width: 65px;
 			height: 60px;
 			flex-shrink: 0;
 			display: flex;
 			justify-content: center;
+			align-items: center;
 			border: 1px solid #f8f8f8;
-			padding: 5px;
+			padding: 0px;
 			// display: none;
 
 			img {
 				width: auto;
-				height: 100%;
+				height: auto;
 			}
 		}
 
