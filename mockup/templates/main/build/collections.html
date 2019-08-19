@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Example</title>
+	<script src="js/mobile.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+
+	<!-- <link rel="icon" type="image/png" href="images/Icon-16.png"> -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<header class="header">
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+						<div class="menu" aria-expanded="false">
+							<div class="city-change js-city-change">
+								<div class="city-change__title">Москва</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link js-city_change" data-code="MSK" href="https://grohe.l-rus.ru/?K_REGION=MSK">Москва</a>
+									<a class="city-change__link js-city_change" data-code="SPB" href="https://grohe.l-rus.ru/?K_REGION=SPB">Санкт-Петербург</a>
+									<a class="city-change__link js-city_change" data-code="REGIONS" href="https://grohe.l-rus.ru/?K_REGION=REGIONS">Регионы</a>
+								</div>
+							</div>
+
+							<ul class="menu__list">
+
+								<li class="menu__item">
+									<a href="/delivery-and-payment/" title="Доставка и оплата" class="menu__link">Доставка и оплата</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/services/" title="Подключение" class="menu__link">Подключение</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/guarantee/" title="Сервисные центры Grohe" class="menu__link">Сервисные центры Grohe</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/news/" title="Статьи" class="menu__link">Статьи</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/catalog/category/type-nov/" title="Новинки" class="menu__link">Новинки</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/contacts/" title="Контакты" class="menu__link">Контакты</a>
+								</li>
+
+							</ul>
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок
+								</a>
+								<div class="telephones">
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">
+										Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i>shop@gr-russia.ru</a>
+								</div>
+
+							</div>
+							<a href="" class="abuse__button js-abuse__button js-viewForm" data-action="guideback" id="js-abuse-opener">Обратиться к руководству</a>
+						</div>
+
+						<div class="header__icons">
+							<div class="header__search js-header__search"></div>
+							<a class="header__mobile-tel" href="tel:+74959297078"></a>
+							<a title="Перейти в отложенные" href="#" class="header__favorite">
+								<span class="header__number">3</span>
+							</a>
+							<a title="Перейти в сравнение" href="04 - Comparison_desktop.html" class="header__compare">
+								<span class="header__number">2</span>
+							</a>
+							<a href="03 - Order Form.html" class="header__basket">
+								<span class="header__number">0</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+					<div class="container">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/logo-new.svg" alt="" class="logo__pic">
+							</a>
+						</div>
+						<!-- /.logo -->
+						<div class="header__dropdown-menu" id="js-menu">
+
+							<nav class="dropdown-menu" id="js-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Сантехника Grohe</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/smesiteli/" title="Смесители">Смесители</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/dushi/" title="Души">Души</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/termostaty/" title="Термостаты">Термостаты</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/sistemy-installyatsii/" title="Системы инсталляции">Системы инсталляции</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/aksessuary/" title="Аксессуары">Аксессуары</a>
+
+										</li>
+									</ul>
+								</div>
+							</nav>
+							<nav class="dropdown-menu" id="js-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Сферы применения</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/grohe-spa/" title="Ванная Grohe SPA">Ванная Grohe SPA</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/vannaya-komnata/" title="Ванная комната">
+												Ванная комната</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/tualetnaya-komnata/" title="Туалетная комната">
+												Туалетная комната</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/kukhnya/" title="Кухня">
+												Кухня</a>
+
+										</li>
+									</ul>
+								</div>
+							</nav>
+
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="/guarantee/#services-list" title="Коллекции">Коллекции</a>
+								</span>
+							</nav>
+
+							<!-- end menu-content -->
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок
+								</a>
+								<div class="telephones">
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i>shop@gr-russia.ru</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="menu" aria-expanded="false">
+							<div class="city-change js-city-change">
+								<div class="city-change__title">Москва</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link js-city_change" data-code="MSK" href="https://grohe.l-rus.ru/?K_REGION=MSK">Москва</a>
+									<a class="city-change__link js-city_change" data-code="SPB" href="https://grohe.l-rus.ru/?K_REGION=SPB">Санкт-Петербург</a>
+									<a class="city-change__link js-city_change" data-code="REGIONS" href="https://grohe.l-rus.ru/?K_REGION=REGIONS">Регионы</a>
+								</div>
+							</div>
+
+							<ul class="menu__list">
+
+								<li class="menu__item">
+									<a href="/delivery-and-payment/" title="Доставка и оплата" class="menu__link">Доставка и оплата</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/services/" title="Подключение" class="menu__link">Подключение</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/guarantee/" title="Сервисные центры Grohe" class="menu__link">Сервисные центры Grohe</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/news/" title="Статьи" class="menu__link">Статьи</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/catalog/category/type-nov/" title="Новинки" class="menu__link">Новинки</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/contacts/" title="Контакты" class="menu__link">Контакты</a>
+								</li>
+
+							</ul>
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок
+								</a>
+								<div class="telephones">
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">
+										Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i>shop@gr-russia.ru</a>
+								</div>
+
+							</div>
+							<a href="" class="abuse__button js-abuse__button js-viewForm" data-action="guideback" id="js-abuse-opener">Обратиться к руководству</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="search__popup">
+				<form action="/search/" class="header__form">
+					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+					<div class="header__button js-header__button"></div>
+				</form>
+			</div>
+			<div class="header__overlay"></div>
+		</header>
+
+		<div class="section">
+			<div class="content-top" style="background-image: url(https://grohe.l-rus.ru/upload/iblock/b3b/b3b26b941b3c4b84882f2793645a344c.jpg);">
+				<div class="content-top__inner">
+					<div class="container">
+
+						<div class="breadcrumbs">
+							<div itemscope="" itemtype="http://schema.org/BreadcrumbList">
+								<div class="breadcrumbs__link" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<a href="/" title="Главная" itemprop="item">
+										<span itemprop="name">Grohe</span>
+									</a>
+									<meta itemprop="position" content="1">
+								</div>
+								<div class="breadcrumbs__sep">»</div>
+								<div class="breadcrumbs__link" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<span itemprop="name">Смесители</span>
+									<a itemprop="item" href="/catalog/category/smesiteli/" title="Смесители"></a>
+									<meta itemprop="position" content="2">
+								</div>
+							</div>
+						</div>
+						<div class="content-top__aside">
+							<h1 class="page__title content-top__title content-top__title_top">
+								Смесители Grohe</h1>
+
+							<div class="page__title content-top__title content-top__title_bottom">
+
+								<p style="text-align: justify;">
+									Смесители Grohe надолго сохраняют эстетичный внешний вид за&nbsp;счет защитного покрытия StarLight. Керамический картридж SilkMove обеспечивает плавный ход рычага на&nbsp;протяжение всего срока службы изделия. Даже через несколько лет использования настроить
+									температуру и&nbsp;напор воды будет так&nbsp;же просто, как и&nbsp;в&nbsp;день покупки.
+								</p>
+								<p style="text-align: justify;">
+									Среди новинок Грохе&nbsp;— приборы с&nbsp;функцией подачи фильтрованной питьевой воды: горячей, холодной или газированной. В&nbsp;интернет-магазине представлены модели для ванной, для душа, для кухни и&nbsp;для туалетной комнаты разного способа установки.
+								</p>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="container">
+					<div class="d-flex flex-column-reverse flex-md-row">
+						<div class="col-md-3">
+
+							<div class="sidebar">
+
+								<ul class="work-link">
+
+									<li class="work-link__item">
+										<a href="/guarantee/#services-list" title="Сервисные центры" class="work-link__a">Сервисные центры
+										</a>
+									</li>
+
+									<li class="work-link__item">
+										<a href="/technical-documentation/" title="Техническая документация" class="work-link__a">Техническая документация</a>
+									</li>
+
+									<li class="work-link__item">
+										<a href="/guarantee/" title="Гарантия Grohe" class="work-link__a">Гарантия Grohe
+										</a>
+									</li>
+
+								</ul>
+
+								<div class="yandex">
+									<div class="yandex__inner">
+										<div class="yandex__logo">
+											<img src="images/ylogo.png" alt="" class="yandex__img">
+										</div>
+										<div class="yandex__ratings">
+											<img src="/mockup/templates/main/build/images/5-stars.png" alt="">
+										</div>
+										<a href="https://market.yandex.ru/shop/394451/reviews/add?retpath=https%3A%2F%2Fmarket.yandex.ru%2Fshop%2F394451%2Freviews&amp;track=rev_sh" target="_blank" class="yandex__button">Оставить отзыв</a>
+										<a href=" https://market.yandex.ru/shop/394451/reviews" target="_blank" class="yandex__button">Читать все отзывы</a>
+									</div>
+								</div>
+								<div class="quality">
+									<span class="quality__title">Контроль качества</span>
+									<span class="quality__text">Номер для претензий и предложений:</span>
+									<a href="tel:+74951201196" class="quality__number">+7 (495) 120-11-96</a>
+									<span class="quality__worktime">с 9:00 до 18:00 по будням</span>
+									<a href="/kachestvo/" class="quality__button">Написать</a>
+								</div>
+
+							</div>
+						</div>
+						<div class="special-offers catalog">
+
+							<div class="collections">
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+								<a href="" class="collections__link">Grohtherm 1000 Cosmopolitan</a>
+							</div>
+							<div class="all-video__bottom">
+								<a class="load-more" href="#">Загрузить еще</a>
+								<div class="pagination">
+									<a href="#" class="pagination__prev"></a>
+									<a href="#" class="pagination__item pagination__item_state_current">1</a>
+									<a href="#" class="pagination__item">2</a>
+									<a href="#" class="pagination__item">3</a>
+									<a href="#" class="pagination__more">...</a>
+									<a href="#" class="pagination__item">12</a>
+									<a href="#" class="pagination__next"></a>
+								</div>
+								<!-- /.pagination -->
+							</div>
+							<div class="catalog__description description">
+
+								<!-- begin seo-text -->
+
+								<div class="description__text">
+
+									<h2>Особенности однокамерных</h2>
+									<p>
+										Холодильник с&nbsp;одной камерой может иметь как компактные размер, так и&nbsp;быть полноразмерным. Небольшие приборы без морозилки удобно использовать в&nbsp;малогабаритном помещении. Их&nbsp;можно размещать под столешницей, чтобы сохранить полезную
+										площадь. Полноразмерные модели пригодятся для запасливых людей и&nbsp;больших семей. Технику средних размеров (высотой до&nbsp;165&nbsp;см) можно разместить рядом с&nbsp;такой&nbsp;же морозильной камерой, создав комплект. Тем более, что модели
+										представлены в&nbsp;различных цветах. Это позволяет подобрать выгодное сочетание для любого интерьера.
+									</p>
+									<p>
+										<b>Система управления</b>
+									</p>
+									<p>
+										Морозилки Либхер оснащены по последнему слову техники. К примеру , в модели G 1223 Comfort есть функция SuperFrost. Она служит для быстрого замораживания и будет полезна для тех, кто делает заготовки на зиму: замороженные ягоды и овощи. Благодаря такой
+										опции продукты меньше слипаются и способны лучше сохранять цвет и вкус. После окончания процесса программа отключается автоматически.
+
+									</p>
+
+									<p>
+										FrostSafe — система прозрачных выдвижных контейнеров. Герметичность ящиков не позволяет проникнуть внутрь влажному теплому воздуху при открывании дверцы. Это значит, что не происходит снижения температуры внутри контейнера и оттаивания продуктов. Как
+										следствие, они лучше и дольше хранятся. Такие контейнеры предусмотрены в моделях: GP 1376 Premium — 4 контейнера, GX 823 Comfort — 2 контейнера.
+
+									</p>
+
+									<p>
+										Прибор GN 1923 оснащен дополнительно такой системой как VarioSpace. В камере используются контейнеры, которые можно выдвинуть, освободив пространство для крупных продуктов. Особая конструкция не позволяет соприкасаться продуктам, а специальное покрытие
+										защищает от прилипания к стенкам.
+
+									</p>
+
+									<p>
+										Дачи также не обделены вниманием. Есть отличное морозильное оборудование и для них. К примеру, небольшие отдельностоящие агрегаты с возможностью работы при температурных условиях до −15 °С. Такую морозильную камеру можно поставить в неотапливаемом помещении
+										или не утепленной лоджии.
+
+									</p>
+
+									<p>
+										Для лоджии или дачи также можно использовать морозильные лари. Сейчас они повсеместно применяются для хранения продуктов в торговых залах и складских помещениях. Прибор быстро замораживает продукцию при температуре −32 °С и потребляет мало энергии.
+
+									</p>
+
+									<p>
+										Компания Либхерр внимательно относится ко всем нюансам в конструкции техники. Например, топовые модели ларей оснащены системой SoftSystem. Эта технология призвана обеспечить плотное, но при этом аккуратное и безопасное запирание дверцы. Это продвинутый
+										доводчик, который не даст крышке резко упасть. Она будет закрываться плавно, без хлопков, что не только очень удобно, но и снижает негативное механическое воздействие на уплотнители и твердые элементы дверцы, продлевая срок службы агрегата.
+									</p>
+
+								</div>
+
+								<!-- end seo-text -->
+
+							</div>
+							<div class="recently-watched js-recently-watched js-catalog_viewed">
+								<div class="recently-watched__title">
+									Вы недавно смотрели
+								</div>
+								<div class="swiper-pagination-recently-watched swiper-pagination"></div>
+								<div class="swiper-button-prev recently-watched__prev"></div>
+								<div class="swiper-button-next recently-watched__next"></div>
+								<div class="recently-watched__reset js-viewed_remove-all">Сбросить просмотренное</div>
+								<div class="swiper-container js-ecom_product-list" data-list="ViewsList">
+									<div class="swiper-wrapper">
+
+										<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="6260">
+											<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)" class="recently-watched__pic">
+												<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/d30/110_128_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" alt="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)" />
+											</a>
+											<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)" class="recently-watched__text">
+												Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)
+												<span class="recently-watched__price">32 500
+													<i class="recently-watched__rub">руб.</i>
+												</span>
+											</a>
+											<div class="recently-watched__close js-viewed_remove"></div>
+
+										</div>
+
+										<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="6257">
+											<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-vanny-dn-15-34155003.html" title="Термостат Grohe Grohtherm 1000 для ванны DN 15 34155003" class="recently-watched__pic">
+												<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/620/110_128_1/62079db2fe6367c762c79721e25e0158.jpg" alt="Термостат Grohe Grohtherm 1000 для ванны DN 15 34155003" />
+											</a>
+											<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-vanny-dn-15-34155003.html" title="Термостат Grohe Grohtherm 1000 для ванны DN 15 34155003" class="recently-watched__text">
+												Термостат Grohe Grohtherm 1000 для ванны DN 15 34155003
+												<span class="recently-watched__price">18 250
+													<i class="recently-watched__rub">руб.</i>
+												</span>
+											</a>
+											<div class="recently-watched__close js-viewed_remove"></div>
+
+										</div>
+
+										<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="4554">
+											<a href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-gladkiy-korpus-23337000.html" title="Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000" class="recently-watched__pic">
+												<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/819/110_128_1/819ab0972ce43e872c179e9667e6c00a.jpg" alt="Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000" />
+											</a>
+											<a href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-gladkiy-korpus-23337000.html" title="Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000" class="recently-watched__text">
+												Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000
+												<span class="recently-watched__price">4 450
+													<i class="recently-watched__rub">руб.</i>
+												</span>
+											</a>
+											<div class="recently-watched__close js-viewed_remove"></div>
+
+										</div>
+
+										<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="4542">
+											<a href="/catalog/category/smesiteli/smesitel-grohe-allure-brilliant-23029000-.html" title="Смеситель Grohe Allure brilliant 23029000" class="recently-watched__pic">
+												<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/b04/110_128_1/b04d211fd7a73af02fa240982adf981f.jpg" alt="Смеситель Grohe Allure brilliant 23029000" />
+											</a>
+											<a href="/catalog/category/smesiteli/smesitel-grohe-allure-brilliant-23029000-.html" title="Смеситель Grohe Allure brilliant 23029000" class="recently-watched__text">
+												Смеситель Grohe Allure brilliant 23029000
+												<span class="recently-watched__price">28 350
+													<i class="recently-watched__rub">руб.</i>
+												</span>
+											</a>
+											<div class="recently-watched__close js-viewed_remove"></div>
+
+										</div>
+
+										<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="4573">
+											<a href="/catalog/category/smesiteli/smesitel-grohe-atrio-jota-dlya-bide-dn-15-24010000.html" title="Смеситель Grohe Atrio jota для биде DN 15 24010000" class="recently-watched__pic">
+												<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/a51/110_128_1/a51258d1f119f852c635d329855e8c68.jpg" alt="Смеситель Grohe Atrio jota для биде DN 15 24010000" />
+											</a>
+											<a href="/catalog/category/smesiteli/smesitel-grohe-atrio-jota-dlya-bide-dn-15-24010000.html" title="Смеситель Grohe Atrio jota для биде DN 15 24010000" class="recently-watched__text">
+												Смеситель Grohe Atrio jota для биде DN 15 24010000
+												<span class="recently-watched__price">17 150
+													<i class="recently-watched__rub">руб.</i>
+												</span>
+											</a>
+											<div class="recently-watched__close js-viewed_remove"></div>
+
+										</div>
+
+										<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="5598">
+											<a href="/catalog/category/aksessuary/mekhanizm-skrytogo-ventilya-grohe-29802000.html" title="Механизм скрытого вентиля Grohe 29802000" class="recently-watched__pic">
+												<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/000/110_128_1/00096eb9158722d47c548f978c5aaee4.jpg" alt="Механизм скрытого вентиля Grohe 29802000" />
+											</a>
+											<a href="/catalog/category/aksessuary/mekhanizm-skrytogo-ventilya-grohe-29802000.html" title="Механизм скрытого вентиля Grohe 29802000" class="recently-watched__text">
+												Механизм скрытого вентиля Grohe 29802000
+												<span class="recently-watched__price">2 750
+													<i class="recently-watched__rub">руб.</i>
+												</span>
+											</a>
+											<div class="recently-watched__close js-viewed_remove"></div>
+
+										</div>
+
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	<div class="footer" id="js-footer">
+		<div class="container">
+			<div class="footer__inner">
+
+				<div class="footer__col">
+
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Сантехника Grohe</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/smesiteli/" title="Смесители">Смесители</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/dushi/" title="Души">Души</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/termostaty/" title="Термостаты">Термостаты</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/sistemy-installyatsii/" title="Системы инсталляции">Системы инсталляции</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/aksessuary/" title="Аксессуары">Аксессуары</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+
+				<!-- end menu-content -->
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Информация</li>
+
+							<li class="menu-footer__item">
+								<a href="/delivery-and-payment/" title="Доставка и оплата" class="menu-footer__link">Доставка и оплата</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/glossary/" title="Глоссарий" class="menu-footer__link">Глоссарий</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/services/" title="Сервис" class="menu-footer__link">Сервис</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/guarantee/" title="Сервисные центры Grohe" class="menu-footer__link">Сервисные центры Grohe</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/news/" title="Статьи" class="menu-footer__link">Статьи</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/video/" title="Видео" class="menu-footer__link">Видео</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/kachestvo/" title="Возврат и обмен" class="menu-footer__link">Возврат и обмен
+								</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/help/" title="Помощь" class="menu-footer__link">Помощь</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/contacts/" title="Контакты" class="menu-footer__link">Контакты</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<div class="footer__text footer__text_first">Интернет-магазин Grohe</div>
+					<a href="tel:74956461460" class="footer__tel">+7 495 646-14-60</a>
+					<a href="tel:" class="footer__tel"></a>
+
+					<a href="" class="footer__call-phone-button js-viewForm" data-action="callback">
+						<span>Заказать звонок
+						</span>
+					</a>
+
+					<a href="mailto:shop@gr-russia.ru" class="footer__email">
+						<i>Email:</i>shop@gr-russia.ru</a>
+
+					<div class="footer__text footer__text_two">Режим работы</div>
+					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00
+						<br>Сб-Вс: 09:00—22:00</div>
+				</div>
+				<!-- /.footer__col -->
+			</div>
+
+			<div class="footer__row">
+				<div class="footer__copyright">
+					© 2004 – 2019 Магазин GROHE.
+					<br>«NTK LTD TM all rights reserved»
+					<div itemscope itemtype="https://schema.org/LocalBusiness" itemref="microdata-shop-reviews">
+						<div class="hide">
+							<a href="https://grohe.l-rus.ru" itemprop="url">
+								<span itemprop="name">Специализированный магазин Grohe</span>
+							</a>
+							<img itemprop="logo" src="https://grohe.l-rus.ru/mockup/templates/main/build/images/Grohe.png" alt="Grohe" />
+							<img itemprop="image" src="https://grohe.l-rus.ru/mockup/templates/main/build/images/Grohe.png" alt="Grohe" />
+							<meta itemprop="legalName" content="ООО «НТК Трейд»" />
+							<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+								<meta itemprop="streetAddress" content="проспект Маршала Жукова, дом 59" />
+								<meta itemprop="postalCode" content="123103" />
+								<meta itemprop="addressLocality" content="Москва" />
+							</div>
+							<meta itemprop="PriceRange" content="1000-134400RUB" />
+							<meta itemprop="openingHours" content="Mo-Fr 08:00-22:00" />
+							<meta itemprop="openingHours" content="Sa-Su 09:00-22:00" />
+							<meta itemprop="telephone" content="74956461460" />
+							<meta itemprop="telephone" content="" />
+						</div>
+					</div>
+
+				</div>
+				<a class="privacy-policy" title="Политика конфиденциальности" href="/personal-data/">Политика конфиденциальности
+				</a>
+				<div class="footer__telephones">
+					<div class="l-abuse">
+						<a href="" class="footer__button abuse__button js-viewForm" data-action="guideback">Пожаловаться руководству
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- /.footer__row -->
+		</div>
+
+		<!-- /.footer__inner -->
+
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="js/frontend-works.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/script.min.js"></script>
+
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
+
+
+</body>
+
+</html>

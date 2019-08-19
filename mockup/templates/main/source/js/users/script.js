@@ -432,9 +432,11 @@ $(document).ready(function () {
 
 		});
 		if ($(".js-recently-watched .swiper-slide").length > 4) {
+			console.log('111')
 			$('.recently-watched__prev').show();
 			$('.recently-watched__next').show();
 		} else {
+			console.log('222')
 			$('.recently-watched__prev').hide();
 			$('.recently-watched__next').hide();
 		}
@@ -758,7 +760,7 @@ $(document).ready(function () {
 	$(".js-delete__table").click(function () {
 		$(this).parent().remove()
 	});
-	$(".js-filter__title").click(function (e) {
+	$(".js-filter__title,.filter__title").click(function (e) {
 		if ($(this).parent().hasClass("filter__close") == false) {
 			$(this).parent().addClass("filter__close");
 		} else {

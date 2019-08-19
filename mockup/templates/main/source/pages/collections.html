@@ -1,0 +1,83 @@
+{% include 'head/head.html' %}
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		{% include 'header/global/header.html' %}
+
+		<div class="section">
+			{% include 'section/content-top/content-top.html' %}
+			<div class="content">
+				<div class="container">
+					<div class="d-flex flex-column-reverse flex-md-row">
+						<div class="col-md-3">
+
+							<div class="sidebar">
+
+								<ul class="work-link">
+
+									<li class="work-link__item">
+										<a href="/guarantee/#services-list" title="Сервисные центры"
+											class="work-link__a">Сервисные
+											центры</a>
+									</li>
+
+									<li class="work-link__item">
+										<a href="/technical-documentation/" title="Техническая документация"
+											class="work-link__a">Техническая документация</a>
+									</li>
+
+									<li class="work-link__item">
+										<a href="/guarantee/" title="Гарантия Grohe" class="work-link__a">Гарантия
+											Grohe</a>
+									</li>
+
+								</ul>
+
+								<div class="yandex">
+									<div class="yandex__inner">
+										<div class="yandex__logo">
+											<img src="images/ylogo.png" alt="" class="yandex__img">
+										</div>
+										<div class="yandex__ratings">
+											<img src="/mockup/templates/main/build/images/5-stars.png" alt="">
+										</div>
+										<a href="https://market.yandex.ru/shop/394451/reviews/add?retpath=https%3A%2F%2Fmarket.yandex.ru%2Fshop%2F394451%2Freviews&amp;track=rev_sh"
+											target="_blank" class="yandex__button">Оставить отзыв</a>
+										<a href=" https://market.yandex.ru/shop/394451/reviews" target="_blank"
+											class="yandex__button">Читать все отзывы</a>
+									</div>
+								</div>
+								<div class="quality">
+									<span class="quality__title">Контроль качества</span>
+									<span class="quality__text">Номер для претензий и предложений:</span>
+									<a href="tel:+74951201196" class="quality__number">+7 (495) 120-11-96</a>
+									<span class="quality__worktime">с 9:00 до 18:00 по будням</span>
+									<a href="/kachestvo/" class="quality__button">Написать</a>
+								</div>
+
+							</div>
+						</div>
+						<div class="special-offers catalog">
+
+							{% include 'section/collections 02-06/collections.html' %}
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	{% include 'footer/global/footer.html' %}
+	{% include 'connect/script.html' %}
+	{% include 'connect/stylesheet.html' %}
+
+</body>
+
+</html>
