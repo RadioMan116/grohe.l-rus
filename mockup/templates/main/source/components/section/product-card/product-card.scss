@@ -475,7 +475,7 @@
 			line-height: 20px;
 			margin-right: 1rem;
 			width: 60px;
-			height: 60px;
+			// height: 60px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -560,6 +560,24 @@
 				background: #394791 !important;
 				box-sizing: border-box;
 			}
+		}
+
+		.rel__color,
+		.rel__text {
+			color: #2e2e2e;
+			font-family: Arial;
+			font-size: 14px;
+			line-height: 28px;
+			font-family: Arial;
+			font-weight: 300;
+
+			b {
+				font-weight: 700;
+			}
+		}
+
+		.rel__text {
+			margin-bottom: 10px;
 		}
 
 	}

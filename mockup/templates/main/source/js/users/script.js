@@ -138,7 +138,7 @@ $(document).ready(function () {
 		}
 	});
 	var mySwiper9 = new Swiper(".js-product-card__rel", {
-		slidesPerView: 3,
+		slidesPerView: 2,
 		slidesPerGroup: 1,
 		// spaceBetween: 27,
 		touchRatio: 1,
