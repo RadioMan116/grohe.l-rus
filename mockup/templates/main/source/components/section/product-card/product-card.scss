@@ -593,6 +593,8 @@
 	&__back {
 		// width: 100%;
 		display: flex;
+		flex-grow: 1;
+		padding-right: 14px;
 
 		// flex-direction: column;
 		// position: absolute;
@@ -2240,9 +2242,16 @@
 	.labels {
 		margin-left: 24px;
 		position: relative;
+		display: flex;
+		// justify-content;
+		flex-grow: 1;
 
 		img {
-			margin-left: 14px;
+
+			// margin-left: ;
+			&:nth-child(odd) {
+				margin: 0 5px;
+			}
 		}
 
 		&__popup {
