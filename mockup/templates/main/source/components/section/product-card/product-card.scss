@@ -2095,6 +2095,39 @@
 		}
 	}
 
+	.product-card__scope {
+		display: flex;
+		height: 64px;
+		width: 100%;
+		background-color: #f8f8f8;
+		padding: 20px 24px;
+
+		.scope__text {
+			font-size: 14px;
+			line-height: 24px;
+			color: #2e2e2e;
+			font-family: Arial;
+			font-weight: 700;
+
+			a {
+				color: #394791;
+				font-family: Arial;
+				font-size: 14px;
+				line-height: 24px;
+				font-weight: 300;
+			}
+
+			&:last-child {
+				margin: 0 auto;
+			}
+		}
+
+		&+div {
+			margin-top: 16px;
+		}
+	}
+
+
 	.middle__header {
 		display: flex;
 		width: 100%;
@@ -2141,6 +2174,7 @@
 				height: 48px;
 				border-radius: 3px;
 				padding: 0;
+				margin-bottom: 5px;
 			}
 
 			.popup-prop {
@@ -3194,7 +3228,7 @@
 
 			th {
 				width: 40px;
-				height: 40px;
+				// height: 40px;
 				margin-right: 8px;
 			}
 

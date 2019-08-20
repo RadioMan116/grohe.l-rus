@@ -254,31 +254,31 @@
 
 
 
-		&.active {
-			position: relative;
+		// &.active {
+		// 	position: relative;
 
-			.header__number {
-				display: block;
-				position: absolute;
-				font-size: 11px;
-				line-height: 1;
-				position: absolute;
-				z-index: 1;
-				top: -7px;
-				right: -5px;
-				display: inline-block;
-				box-sizing: border-box;
-				min-width: 14px;
-				height: 14px;
-				padding: 2px 4px;
-				-webkit-transition: opacity .3s;
-				transition: opacity .3s;
-				text-align: center;
-				color: #fff;
-				border-radius: 14px;
-				background: #f22c16
-			}
-		}
+		// 	.header__number {
+		// 		display: block;
+		// 		position: absolute;
+		// 		font-size: 11px;
+		// 		line-height: 1;
+		// 		position: absolute;
+		// 		z-index: 1;
+		// 		top: -7px;
+		// 		right: -5px;
+		// 		display: inline-block;
+		// 		box-sizing: border-box;
+		// 		min-width: 14px;
+		// 		height: 14px;
+		// 		padding: 2px 4px;
+		// 		-webkit-transition: opacity .3s;
+		// 		transition: opacity .3s;
+		// 		text-align: center;
+		// 		color: #fff;
+		// 		border-radius: 14px;
+		// 		background: #f22c16
+		// 	}
+		// }
 	}
 
 	&__compare {
@@ -291,31 +291,31 @@
 			background: url("../images/header-compare-active.svg") 0 /20px no-repeat;
 		}
 
-		&.active {
-			position: relative;
+		// &.active {
+		// 	position: relative;
 
-			.header__number {
-				display: block;
-				position: absolute;
-				font-size: 11px;
-				line-height: 1;
-				position: absolute;
-				z-index: 1;
-				top: -7px;
-				right: -5px;
-				display: inline-block;
-				box-sizing: border-box;
-				min-width: 14px;
-				height: 14px;
-				padding: 2px 4px;
-				-webkit-transition: opacity .3s;
-				transition: opacity .3s;
-				text-align: center;
-				color: #fff;
-				border-radius: 14px;
-				background: #f22c16
-			}
-		}
+		// 	.header__number {
+		// 		display: block;
+		// 		position: absolute;
+		// 		font-size: 11px;
+		// 		line-height: 1;
+		// 		position: absolute;
+		// 		z-index: 1;
+		// 		top: -7px;
+		// 		right: -5px;
+		// 		display: inline-block;
+		// 		box-sizing: border-box;
+		// 		min-width: 14px;
+		// 		height: 14px;
+		// 		padding: 2px 4px;
+		// 		-webkit-transition: opacity .3s;
+		// 		transition: opacity .3s;
+		// 		text-align: center;
+		// 		color: #fff;
+		// 		border-radius: 14px;
+		// 		background: #f22c16
+		// 	}
+		// }
 	}
 
 	&__basket {
@@ -337,6 +337,10 @@
 		align-items: center;
 		height: 100%;
 		text-decoration: none !important;
+
+		.active & {
+			color: rgb(242, 44, 22) !important;
+		}
 	}
 
 	.hamburger {
@@ -359,6 +363,7 @@
 	&__mobile-tel {
 		display: none;
 	}
+
 	.time-work {
 		display: none;
 	}

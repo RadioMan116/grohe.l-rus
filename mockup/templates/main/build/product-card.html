@@ -12,19 +12,14 @@
 	<meta name="MobileOptimized" content="320">
 	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
 
-	<link rel="icon" type="image/png" href="images/Icon-16.png">
+	<!-- <link rel="icon" type="image/png" href="images/Icon-16.png"> -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="icon" href="images/favicon.png" type="image/png">
 </head>
 
+
 <body>
-	<script id="__bs_script__">
-		//<![CDATA[
-		document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.3'><\/script>".replace("HOST", location
-			.hostname));
-		//]]>
-	</script>
 
 	<div class="wrapper" id="js-wrapper">
 
@@ -36,55 +31,72 @@
 							<div class="hamburger__img"></div>
 						</button>
 						<div class="menu" aria-expanded="false">
-							<div class="city-change js-city-change ">
-								<div class="city-change__title">Санкт-Петербург</div>
+							<div class="city-change js-city-change">
+								<div class="city-change__title">Москва</div>
 								<div class="city-change__bullet"></div>
 								<div class="city-change__popup">
-									<a class="city-change__link" href="https://spb.l-rus.ru/">Москва</a>
-									<a class="city-change__link" href="#">Регионы</a>
+									<a class="city-change__link js-city_change" data-code="MSK" href="https://grohe.l-rus.ru/?K_REGION=MSK">Москва</a>
+									<a class="city-change__link js-city_change" data-code="SPB" href="https://grohe.l-rus.ru/?K_REGION=SPB">Санкт-Петербург</a>
+									<a class="city-change__link js-city_change" data-code="REGIONS" href="https://grohe.l-rus.ru/?K_REGION=REGIONS">Регионы</a>
 								</div>
 							</div>
+
 							<ul class="menu__list">
+
 								<li class="menu__item">
-									<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
+									<a href="/delivery-and-payment/" title="Доставка и оплата" class="menu__link">Доставка и оплата</a>
 								</li>
+
 								<li class="menu__item">
-									<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата
-									</a>
+									<a href="/services/" title="Подключение" class="menu__link">Подключение</a>
 								</li>
+
 								<li class="menu__item">
-									<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
+									<a href="/guarantee/" title="Сервисные центры Grohe" class="menu__link">Сервисные центры Grohe</a>
 								</li>
+
 								<li class="menu__item">
-									<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
+									<a href="/news/" title="Статьи" class="menu__link">Статьи</a>
 								</li>
+
 								<li class="menu__item">
-									<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
+									<a href="/catalog/category/type-nov/" title="Новинки" class="menu__link">Новинки</a>
 								</li>
+
 								<li class="menu__item">
-									<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
+									<a href="/contacts/" title="Контакты" class="menu__link">Контакты</a>
 								</li>
-								<li class="menu__item">
-									<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
-								</li>
+
 							</ul>
+
 							<div class="header__telephones">
-								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок
+								</a>
 								<div class="telephones">
-									<a href="tel:+74959297078" class="header__phone">+7 495 929-70-78</a>
-									<a href="tel:+78003331936" class="header__phone">+7 800 333-19-36</a>
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
 								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">
+										Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i>shop@gr-russia.ru</a>
+								</div>
+
 							</div>
+							<a href="" class="abuse__button js-abuse__button js-viewForm" data-action="guideback" id="js-abuse-opener">Обратиться к руководству</a>
 						</div>
-						<!--end menu-->
+
 						<div class="header__icons">
 							<div class="header__search js-header__search"></div>
 							<a class="header__mobile-tel" href="tel:+74959297078"></a>
-							<a href="#" class="header__favorite">
-								<span class="header__number">0</span>
+							<a title="Перейти в отложенные" href="#" class="header__favorite active">
+								<span class="header__number">3</span>
 							</a>
-							<a href="04 - Comparison_desktop.html" class="header__compare">
-								<span class="header__number">0</span>
+							<a title="Перейти в сравнение" href="04 - Comparison_desktop.html" class="header__compare">
+								<span class="header__number">2</span>
 							</a>
 							<a href="03 - Order Form.html" class="header__basket">
 								<span class="header__number">0</span>
@@ -101,179 +113,154 @@
 						</div>
 						<!-- /.logo -->
 						<div class="header__dropdown-menu" id="js-menu">
-							<nav class="dropdown-menu">
-								<span class="dropdown-menu__title js-dropdown-menu__title">Бытовые холодильники</span>
+
+							<nav class="dropdown-menu" id="js-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Сантехника Grohe</span>
 								<div class="dropdown-menu__parent">
 									<ul class="dropdown-menu__list">
+
 										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" target="_blank" href="catalog.html">Холодильники</a>
-											<ul class="sub-menu__list">
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" target="_blank" href="#">
-														∙ Однокамерные
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Двухкамерные
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Side-by-Side
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Морозильные камеры
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Морозильные лари
-													</a>
-												</li>
-											</ul>
+											<a class="dropdown-menu__link" href="/catalog/category/smesiteli/" title="Смесители">Смесители</a>
+
 										</li>
+
 										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Отдельностоящие морозильные камеры
-											</a>
+											<a class="dropdown-menu__link" href="/catalog/category/dushi/" title="Души">Души</a>
+
 										</li>
+
 										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Встраиваемые холодильники</a>
-											<ul class="sub-menu__list">
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" target="_blank" href="#">
-														∙ Встраиваемые однокамерные
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Двухкамерные
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Встраиваемые двухкамерные
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Встраиваемые Side-by-Side
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Встраиваемые морозильные камеры
-													</a>
-												</li>
-											</ul>
+											<a class="dropdown-menu__link" href="/catalog/category/termostaty/" title="Термостаты">Термостаты</a>
+
 										</li>
+
 										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Встраиваемые морозильные камеры</a>
+											<a class="dropdown-menu__link" href="/catalog/category/sistemy-installyatsii/" title="Системы инсталляции">Системы инсталляции</a>
+
 										</li>
+
 										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Винные шкафы</a>
-											<ul class="sub-menu__list">
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" target="_blank" href="#">
-														∙ Встраиваемые
-													</a>
-												</li>
-												<li class="sub-menu__item">
-													<a class="sub-menu__link" href="#">
-														∙ Отдельностоящие
-													</a>
-												</li>
-											</ul>
-										</li>
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Хьюмидоры</a>
+											<a class="dropdown-menu__link" href="/catalog/category/aksessuary/" title="Аксессуары">Аксессуары</a>
+
 										</li>
 									</ul>
 								</div>
-
 							</nav>
-							<nav class="dropdown-menu">
-								<span class="dropdown-menu__title js-dropdown-menu__title">Профессиональная техника
-								</span>
+							<nav class="dropdown-menu" id="js-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Сферы применения</span>
 								<div class="dropdown-menu__parent">
 									<ul class="dropdown-menu__list">
+
 										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Медицинское и лабораторное оборудование
-											</a>
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/grohe-spa/" title="Ванная Grohe SPA">Ванная Grohe SPA</a>
+
 										</li>
+
 										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Для гостиниц и ресторанов</a>
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/vannaya-komnata/" title="Ванная комната">
+												Ванная комната</a>
+
 										</li>
+
 										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Для охлаждения напитков</a>
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/tualetnaya-komnata/" title="Туалетная комната">
+												Туалетная комната</a>
+
 										</li>
+
 										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Для пекарен</a>
-										</li>
-										<li class="dropdown-menu__item">
-											<a class="dropdown-menu__link" href="#">Для хранения замороженных продуктов и мороженого</a>
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/kukhnya/" title="Кухня">
+												Кухня</a>
+
 										</li>
 									</ul>
 								</div>
-
 							</nav>
+
 							<nav class="dropdown-menu">
 								<span class="dropdown-menu__title last">
-									<a href="#">Сервис</a>
+									<a href="/guarantee/#services-list" title="Коллекции">Коллекции</a>
 								</span>
 							</nav>
+
+							<!-- end menu-content -->
 							<div class="header__telephones">
-								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок
+								</a>
 								<div class="telephones">
-									<a href="tel:+74959297078" class="header__phone">+7 495 929-70-78</a>
-									<a href="tel:+78003331936" class="header__phone">+7 800 333-19-36</a>
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i>shop@gr-russia.ru</a>
 								</div>
 							</div>
+
 						</div>
+
 						<div class="menu" aria-expanded="false">
-							<div class="city-change js-city-change ">
-								<div class="city-change__title">Санкт-Петербург</div>
+							<div class="city-change js-city-change">
+								<div class="city-change__title">Москва</div>
 								<div class="city-change__bullet"></div>
 								<div class="city-change__popup">
-									<a class="city-change__link" href="https://spb.l-rus.ru/">Москва</a>
-									<a class="city-change__link" href="#">Регионы</a>
+									<a class="city-change__link js-city_change" data-code="MSK" href="https://grohe.l-rus.ru/?K_REGION=MSK">Москва</a>
+									<a class="city-change__link js-city_change" data-code="SPB" href="https://grohe.l-rus.ru/?K_REGION=SPB">Санкт-Петербург</a>
+									<a class="city-change__link js-city_change" data-code="REGIONS" href="https://grohe.l-rus.ru/?K_REGION=REGIONS">Регионы</a>
 								</div>
 							</div>
+
 							<ul class="menu__list">
+
 								<li class="menu__item">
-									<a href="06 - 01 - About us_desktop.html" class="menu__link">О Liebherr</a>
+									<a href="/delivery-and-payment/" title="Доставка и оплата" class="menu__link">Доставка и оплата</a>
 								</li>
+
 								<li class="menu__item">
-									<a href="06 - 02 - Shipping and payment_desktop.html" class="menu__link">Доставка и оплата
-									</a>
+									<a href="/services/" title="Подключение" class="menu__link">Подключение</a>
 								</li>
+
 								<li class="menu__item">
-									<a href="06 - 03 - Service_desktop.html" class="menu__link">Подключение</a>
+									<a href="/guarantee/" title="Сервисные центры Grohe" class="menu__link">Сервисные центры Grohe</a>
 								</li>
+
 								<li class="menu__item">
-									<a href="06 - 04 - Warranty_desktop.html" class="menu__link">Гарантия</a>
+									<a href="/news/" title="Статьи" class="menu__link">Статьи</a>
 								</li>
+
 								<li class="menu__item">
-									<a href="05 - 01 - Promotions and articles_desktop.html" class="menu__link">Статьи</a>
+									<a href="/catalog/category/type-nov/" title="Новинки" class="menu__link">Новинки</a>
 								</li>
+
 								<li class="menu__item">
-									<a href="06 - 05 - Help_desktop" class="menu__link">Новинки</a>
+									<a href="/contacts/" title="Контакты" class="menu__link">Контакты</a>
 								</li>
-								<li class="menu__item">
-									<a href="06 - 08 - Contacts_desktop.html" class="menu__link">Контакты</a>
-								</li>
+
 							</ul>
+
 							<div class="header__telephones">
-								<a href="#" data-url="ajax/callback.html" data-ajax class="header__call-phone-button js-callback">Заказать звонок</a>
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок
+								</a>
 								<div class="telephones">
-									<a href="tel:+74959297078" class="header__phone">+7 495 929-70-78</a>
-									<a href="tel:+78003331936" class="header__phone">+7 800 333-19-36</a>
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
 								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">
+										Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i>shop@gr-russia.ru</a>
+								</div>
+
 							</div>
+							<a href="" class="abuse__button js-abuse__button js-viewForm" data-action="guideback" id="js-abuse-opener">Обратиться к руководству</a>
 						</div>
-						<!--end menu-->
+
 					</div>
 				</div>
 			</div>
@@ -285,6 +272,7 @@
 			</div>
 			<div class="header__overlay"></div>
 		</header>
+
 
 		<div class="section">
 			<div class="content">
@@ -306,42 +294,42 @@
 								<div class="swiper-wrapper">
 
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="/upload/resize_cache/iblock/6f1/395_395_1/6f126a6371e31b7cd031455f8436f484.jpg" data-srcset='/upload/iblock/6f1/6f126a6371e31b7cd031455f8436f484.jpg 2x,/upload/iblock/6f1/6f126a6371e31b7cd031455f8436f484.jpg 3x'>
+										<a data-fancybox="gallery" href="https://grohe.l-rus.ru/upload/resize_cache/iblock/6f1/395_395_1/6f126a6371e31b7cd031455f8436f484.jpg" data-srcset='https://grohe.l-rus.ru/upload/iblock/6f1/6f126a6371e31b7cd031455f8436f484.jpg 2x,/upload/iblock/6f1/6f126a6371e31b7cd031455f8436f484.jpg 3x'>
 											<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/6f1/395_395_1/6f126a6371e31b7cd031455f8436f484.jpg" data-srcset="/upload/iblock/6f1/6f126a6371e31b7cd031455f8436f484.jpg 2x,/upload/iblock/6f1/6f126a6371e31b7cd031455f8436f484.jpg 3x" alt="Ручной душ Grohe Rainshower Icon 150 27628000 preview 1"
 											title="Ручной душ Grohe Rainshower Icon 150 27628000 фото 1" class="special-offers__img catalog__img lazyload" />
 										</a>
 									</div>
 
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="/upload/resize_cache/iblock/b1f/395_395_1/b1f904fe4b8f64f53c4088871e56acd8.jpg" data-srcset='/upload/resize_cache/iblock/b1f/790_790_1/b1f904fe4b8f64f53c4088871e56acd8.jpg 2x,/upload/resize_cache/iblock/b1f/1185_1185_1/b1f904fe4b8f64f53c4088871e56acd8.jpg 3x'>
+										<a data-fancybox="gallery" href="https://grohe.l-rus.ru/upload/resize_cache/iblock/b1f/395_395_1/b1f904fe4b8f64f53c4088871e56acd8.jpg" data-srcset='https://grohe.l-rus.ru/upload/resize_cache/iblock/b1f/790_790_1/b1f904fe4b8f64f53c4088871e56acd8.jpg 2x,/upload/resize_cache/iblock/b1f/1185_1185_1/b1f904fe4b8f64f53c4088871e56acd8.jpg 3x'>
 											<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/b1f/395_395_1/b1f904fe4b8f64f53c4088871e56acd8.jpg" data-srcset="/upload/resize_cache/iblock/b1f/790_790_1/b1f904fe4b8f64f53c4088871e56acd8.jpg 2x,/upload/resize_cache/iblock/b1f/1185_1185_1/b1f904fe4b8f64f53c4088871e56acd8.jpg 3x"
 											alt="Ручной душ Grohe Rainshower Icon 150 27628000 preview 2" title="Ручной душ Grohe Rainshower Icon 150 27628000 фото 2" class="special-offers__img catalog__img lazyload" />
 										</a>
 									</div>
 
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="/upload/resize_cache/iblock/302/395_395_1/3027183839682b24fd975453fd2d64d4.jpg" data-srcset='/upload/resize_cache/iblock/302/790_790_1/3027183839682b24fd975453fd2d64d4.jpg 2x,/upload/iblock/302/3027183839682b24fd975453fd2d64d4.jpg 3x'>
+										<a data-fancybox="gallery" href="https://grohe.l-rus.ru/upload/resize_cache/iblock/302/395_395_1/3027183839682b24fd975453fd2d64d4.jpg" data-srcset='https://grohe.l-rus.ru/upload/resize_cache/iblock/302/790_790_1/3027183839682b24fd975453fd2d64d4.jpg 2x,/upload/iblock/302/3027183839682b24fd975453fd2d64d4.jpg 3x'>
 											<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/302/395_395_1/3027183839682b24fd975453fd2d64d4.jpg" data-srcset="/upload/resize_cache/iblock/302/790_790_1/3027183839682b24fd975453fd2d64d4.jpg 2x,/upload/iblock/302/3027183839682b24fd975453fd2d64d4.jpg 3x"
 											alt="Ручной душ Grohe Rainshower Icon 150 27628000 preview 3" title="Ручной душ Grohe Rainshower Icon 150 27628000 фото 3" class="special-offers__img catalog__img lazyload" />
 										</a>
 									</div>
 
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="/upload/resize_cache/iblock/f2a/395_395_1/f2aef69bf3c7c9bd970ebebe5007dc1a.jpg" data-srcset='/upload/iblock/f2a/f2aef69bf3c7c9bd970ebebe5007dc1a.jpg 2x,/upload/iblock/f2a/f2aef69bf3c7c9bd970ebebe5007dc1a.jpg 3x'>
+										<a data-fancybox="gallery" href="https://grohe.l-rus.ru/upload/resize_cache/iblock/f2a/395_395_1/f2aef69bf3c7c9bd970ebebe5007dc1a.jpg" data-srcset='https://grohe.l-rus.ru/upload/iblock/f2a/f2aef69bf3c7c9bd970ebebe5007dc1a.jpg 2x,/upload/iblock/f2a/f2aef69bf3c7c9bd970ebebe5007dc1a.jpg 3x'>
 											<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/f2a/395_395_1/f2aef69bf3c7c9bd970ebebe5007dc1a.jpg" data-srcset="/upload/iblock/f2a/f2aef69bf3c7c9bd970ebebe5007dc1a.jpg 2x,/upload/iblock/f2a/f2aef69bf3c7c9bd970ebebe5007dc1a.jpg 3x" alt="Ручной душ Grohe Rainshower Icon 150 27628000 preview 4"
 											title="Ручной душ Grohe Rainshower Icon 150 27628000 фото 4" class="special-offers__img catalog__img lazyload" />
 										</a>
 									</div>
 
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="/upload/resize_cache/iblock/ee4/395_395_1/ee43cb7c6625bbbbd9b6ce448e6474dc.gif" data-srcset='/upload/iblock/ee4/ee43cb7c6625bbbbd9b6ce448e6474dc.gif 2x,/upload/iblock/ee4/ee43cb7c6625bbbbd9b6ce448e6474dc.gif 3x'>
+										<a data-fancybox="gallery" href="https://grohe.l-rus.ru/upload/resize_cache/iblock/ee4/395_395_1/ee43cb7c6625bbbbd9b6ce448e6474dc.gif" data-srcset='https://grohe.l-rus.ru/upload/iblock/ee4/ee43cb7c6625bbbbd9b6ce448e6474dc.gif 2x,/upload/iblock/ee4/ee43cb7c6625bbbbd9b6ce448e6474dc.gif 3x'>
 											<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/ee4/395_395_1/ee43cb7c6625bbbbd9b6ce448e6474dc.gif" data-srcset="/upload/iblock/ee4/ee43cb7c6625bbbbd9b6ce448e6474dc.gif 2x,/upload/iblock/ee4/ee43cb7c6625bbbbd9b6ce448e6474dc.gif 3x" alt="Ручной душ Grohe Rainshower Icon 150 27628000 preview 5"
 											title="Ручной душ Grohe Rainshower Icon 150 27628000 фото 5" class="special-offers__img catalog__img lazyload" />
 										</a>
 									</div>
 
 									<div class="swiper-slide">
-										<a data-fancybox="gallery" href="/upload/resize_cache/iblock/8e4/395_395_1/8e4598b0ec3fad060d24ead23c8ae9be.jpg" data-srcset='/upload/resize_cache/iblock/8e4/790_790_1/8e4598b0ec3fad060d24ead23c8ae9be.jpg 2x,/upload/resize_cache/iblock/8e4/1185_1185_1/8e4598b0ec3fad060d24ead23c8ae9be.jpg 3x'>
+										<a data-fancybox="gallery" href="https://grohe.l-rus.ru/upload/resize_cache/iblock/8e4/395_395_1/8e4598b0ec3fad060d24ead23c8ae9be.jpg" data-srcset='https://grohe.l-rus.ru/upload/resize_cache/iblock/8e4/790_790_1/8e4598b0ec3fad060d24ead23c8ae9be.jpg 2x,/upload/resize_cache/iblock/8e4/1185_1185_1/8e4598b0ec3fad060d24ead23c8ae9be.jpg 3x'>
 											<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/8e4/395_395_1/8e4598b0ec3fad060d24ead23c8ae9be.jpg" data-srcset="/upload/resize_cache/iblock/8e4/790_790_1/8e4598b0ec3fad060d24ead23c8ae9be.jpg 2x,/upload/resize_cache/iblock/8e4/1185_1185_1/8e4598b0ec3fad060d24ead23c8ae9be.jpg 3x"
 											alt="Ручной душ Grohe Rainshower Icon 150 27628000 preview 6" title="Ручной душ Grohe Rainshower Icon 150 27628000 фото 6" class="special-offers__img catalog__img lazyload" />
 										</a>
@@ -350,7 +338,7 @@
 								</div>
 								<!-- Add Arrows -->
 								<!-- <div class="swiper-button-next swiper-button-white"></div>
-				<div class="swiper-button-prev swiper-button-white"></div> -->
+									<div class="swiper-button-prev swiper-button-white"></div> -->
 							</div>
 							<div class="swiper-container gallery-thumbs js-gallery-thumbs">
 								<div class="thumbs-next"></div>
@@ -476,9 +464,9 @@
 												<div class="rel__color">
 													<b>
 
-														Цвет:
+										Цвет:
 
-													</b>песочный
+									</b>песочный
 												</div>
 												<div class="rel__text">
 													с системой Eco
@@ -495,9 +483,9 @@
 												<div class="rel__color">
 													<b>
 
-														Цвет:
+										Цвет:
 
-													</b>песочный
+									</b>песочный
 												</div>
 												<div class="rel__text">
 													с системой Eco
@@ -514,9 +502,9 @@
 												<div class="rel__color">
 													<b>
 
-														Цвет:
+										Цвет:
 
-													</b>песочный
+									</b>песочный
 												</div>
 												<div class="rel__text">
 													с системой Eco
@@ -533,9 +521,9 @@
 												<div class="rel__color">
 													<b>
 
-														Цвет:
+										Цвет:
 
-													</b>песочный
+									</b>песочный
 												</div>
 												<div class="rel__text">
 													с системой Eco
@@ -552,9 +540,9 @@
 												<div class="rel__color">
 													<b>
 
-														Цвет:
+										Цвет:
 
-													</b>песочный
+									</b>песочный
 												</div>
 												<div class="rel__text">
 													с системой Eco
@@ -565,13 +553,23 @@
 									</tbody>
 								</table>
 							</div>
-							<div class="product-card__promo">
-								<div class="item">
-									<img src="images/promo.png" alt="">
+							<!-- <div class="product-card__promo">
+				<div class="item">
+					<img src="images/promo.png" alt="">
+				</div>
+				<a href="#diagram" data-scroll class="item">
+					Cравни похожие товары!
+				</a>
+			</div> -->
+							<div class="product-card__scope scope">
+								<div class="scope__text">
+									Применение:
+									<a href="/catalog/group/vannaya-komnata/dushi/">Ванная комната</a>
 								</div>
-								<a href="#diagram" data-scroll class="item">
-									Cравни похожие товары!
-								</a>
+								<div class="scope__text">
+									Коллекция:
+									<a href="/catalog/collection/rainshower-solo/">Rainshower Solo</a>
+								</div>
 							</div>
 							<div class="product-card__description text-default">
 								<h2>Описание</h2>
@@ -602,7 +600,7 @@
 									<h6>Ключевые особенности 444</h6>
 
 									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2410">
-										<img data-src="https://l-rus.ru/upload/iblock/d27/d278fb9a6ee4236565727b7a432b4513.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="https://l-rus.ru/upload/iblock/d27/d278fb9a6ee4236565727b7a432b4513.svg" data-was-processed="true">
+										<img data-src="images/GROHE AquaDimmer.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/GROHE AquaDimmer.svg" data-was-processed="true">
 										<div class="popup-prop">
 											<img data-src="https://l-rus.ru/upload/iblock/a4b/a4b9bd89a429e045a31248febaa4ac88.jpg" alt="BiofreshPlus" class="popup-prop__img lazyload">
 
@@ -619,7 +617,7 @@
 									</div>
 
 									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2681">
-										<img data-src="https://l-rus.ru/upload/iblock/81d/81ddf5366e51d6dc9abe5a52d7932560.svg" class="icons-prop-item loaded lazyloaded" title="IceMaker" src="https://l-rus.ru/upload/iblock/81d/81ddf5366e51d6dc9abe5a52d7932560.svg" data-was-processed="true">
+										<img data-src="images/GROHE CoolTouch.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/GROHE CoolTouch.svg" data-was-processed="true">
 										<div class="popup-prop">
 											<img data-src="https://l-rus.ru/upload/iblock/d91/d91a4b986f69190a62ade6d907fb3809.jpg" alt="IceMaker" class="popup-prop__img lazyload">
 
@@ -631,7 +629,7 @@
 									</div>
 
 									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2680">
-										<img data-src="https://l-rus.ru/upload/iblock/5d3/5d360f7f95aee14384f0c0901588db8e.svg" class="icons-prop-item loaded lazyloaded" title="NoFrost" src="https://l-rus.ru/upload/iblock/5d3/5d360f7f95aee14384f0c0901588db8e.svg" data-was-processed="true">
+										<img data-src="images/GROHE EcoButton.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/GROHE EcoButton.svg" data-was-processed="true">
 										<div class="popup-prop">
 											<img data-src="https://l-rus.ru/upload/iblock/fc2/fc25dfc6444fe8b35dfa43fe708973da.jpg" alt="NoFrost" class="popup-prop__img lazyload">
 
@@ -645,7 +643,86 @@
 									</div>
 
 									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2669">
-										<img data-src="https://l-rus.ru/upload/iblock/daa/daad1bb98d6319577f6f96b031dff5d8.svg" class="icons-prop-item loaded lazyloaded" title="Энергоэффективность класса A++" src="https://l-rus.ru/upload/iblock/daa/daad1bb98d6319577f6f96b031dff5d8.svg" data-was-processed="true">
+										<img data-src="images/GROHE EcoJoy.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/GROHE EcoJoy.svg" data-was-processed="true">
+										<div class="popup-prop">
+											<img data-src="https://l-rus.ru/upload/resize_cache/iblock/d26/226_500_1/d260825c1cc8638844bd02f1e0d4ee53.jpg" alt="Энергоэффективность класса A++" class="popup-prop__img lazyload">
+
+											<div class="popup-prop__title">Энергоэффективность класса A++</div>
+											<div class="popup-prop__text">Класс А++ означает, что модель потребляет на 20% электроэнергии меньше, чем прибор экономичного класса А.</div>
+
+											<a href="/glossary/?param=2669" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+										</div>
+									</div>
+									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2410">
+										<img data-src="images/GROHE QuickFix.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/GROHE QuickFix.svg" data-was-processed="true">
+										<div class="popup-prop">
+											<img data-src="https://l-rus.ru/upload/iblock/a4b/a4b9bd89a429e045a31248febaa4ac88.jpg" alt="BiofreshPlus" class="popup-prop__img lazyload">
+
+											<div class="popup-prop__title">BiofreshPlus</div>
+											<div class="popup-prop__text">Обеспечивает еще большую функциональность и&nbsp;позволяет рационально использовать внутреннее пространство холодильника в&nbsp;зависимости от&nbsp;Ваших потребностей. Электронная система управления встроена в&nbsp;пластину, расположенную между
+												холодильной и&nbsp;морозильной камерами. С&nbsp;ее&nbsp;помощью, например, можно установить значение температуры в&nbsp;верхнем контейнере 2°С, создав тем самым оптимальные условия для хранения рыбы.&nbsp;
+												<br>
+												<br>Одновременная установка низкого уровня влажности позволит сохранить рыбу свежей на&nbsp;максимально длительный срок, в&nbsp;то&nbsp;время как установка в&nbsp;другом контейнере высокого уровня влажности при температуре +6°С создаст оптимальные
+												условия для хранения овощей и&nbsp;фруктов. Использование современных технологий позволяет устанавливать в&nbsp;верхнем контейнере секции BioFresh любое необходимое значение температуры. Для нижнего контейнера можно установить любой уровень
+												влажности при сохранении уровня температуры около 0°С.</div>
+
+											<a href="/glossary/?param=2410" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+										</div>
+									</div>
+
+									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2681">
+										<img data-src="images/GROHE SafeStop plus.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/GROHE SafeStop plus.svg" data-was-processed="true">
+										<div class="popup-prop">
+											<img data-src="https://l-rus.ru/upload/iblock/d91/d91a4b986f69190a62ade6d907fb3809.jpg" alt="IceMaker" class="popup-prop__img lazyload">
+
+											<div class="popup-prop__title">IceMaker</div>
+											<div class="popup-prop__text">IceMaker - инновационное решение для производства кубиков льда даже при отсутствии стационарной подачи или недостаточно высоком качестве питьевой воды. Для наполнения водой резервуар легко извлекается из холодильника.</div>
+
+											<a href="/glossary/?param=2681" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+										</div>
+									</div>
+
+									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2680">
+										<img data-src="images/GROHE SafeStop.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/GROHE SafeStop.svg" data-was-processed="true">
+										<div class="popup-prop">
+											<img data-src="https://l-rus.ru/upload/iblock/fc2/fc25dfc6444fe8b35dfa43fe708973da.jpg" alt="NoFrost" class="popup-prop__img lazyload">
+
+											<div class="popup-prop__title">NoFrost</div>
+											<div class="popup-prop__text">NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея на стенках
+												морозильного отделения, и тем самым забыть о процедуре размораживания.
+											</div>
+
+											<a href="/glossary/?param=2680" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+										</div>
+									</div>
+
+									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2669">
+										<img data-src="images/GROHE SmartControl.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/GROHE SmartControl.svg" data-was-processed="true">
+										<div class="popup-prop">
+											<img data-src="https://l-rus.ru/upload/resize_cache/iblock/d26/226_500_1/d260825c1cc8638844bd02f1e0d4ee53.jpg" alt="Энергоэффективность класса A++" class="popup-prop__img lazyload">
+
+											<div class="popup-prop__title">Энергоэффективность класса A++</div>
+											<div class="popup-prop__text">Класс А++ означает, что модель потребляет на 20% электроэнергии меньше, чем прибор экономичного класса А.</div>
+
+											<a href="/glossary/?param=2669" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+										</div>
+									</div>
+									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2680">
+										<img data-src="images/GROHE StarLight.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/GROHE StarLight.svg" data-was-processed="true">
+										<div class="popup-prop">
+											<img data-src="https://l-rus.ru/upload/iblock/fc2/fc25dfc6444fe8b35dfa43fe708973da.jpg" alt="NoFrost" class="popup-prop__img lazyload">
+
+											<div class="popup-prop__title">NoFrost</div>
+											<div class="popup-prop__text">NoFrost – благодаря этой современной системе продукты замораживаются с помощью циркулирующего охлажденного воздуха, подающегося специальным вентилятором. Влажный воздух выводится наружу, что позволяет предотвратить образование инея на стенках
+												морозильного отделения, и тем самым забыть о процедуре размораживания.
+											</div>
+
+											<a href="/glossary/?param=2680" title="Перейти в глоссарий" target="_blank" class="popup-prop__link">Перейти в глоссарий</a>
+										</div>
+									</div>
+
+									<div class="link-pop-glossary js-link-pop-glossary" id="bx_3218110189_2669">
+										<img data-src="images/GROHE TurboStat.svg" class="icons-prop-item loaded lazyloaded" title="BiofreshPlus" src="images/GROHE TurboStat.svg" data-was-processed="true">
 										<div class="popup-prop">
 											<img data-src="https://l-rus.ru/upload/resize_cache/iblock/d26/226_500_1/d260825c1cc8638844bd02f1e0d4ee53.jpg" alt="Энергоэффективность класса A++" class="popup-prop__img lazyload">
 
@@ -1180,12 +1257,12 @@
 								<div class="documentation">
 									<span class="documentation__title">Скачать инструкцию</span>
 
-									<a href="/upload/" class="doc_loading doc_loading_first" title="Схема встраивания">
+									<a href="https://grohe.l-rus.ru/upload/" class="doc_loading doc_loading_first" title="Схема встраивания">
 										<i class="icon_doc"></i>
 										<span>Инструкция на русском языке</span>
 										PDF, 1.24 Мб
 									</a>
-									<a href="/upload/" class="doc_loading" title="Инструкция на русском языке">
+									<a href="https://grohe.l-rus.ru/upload/" class="doc_loading" title="Инструкция на русском языке">
 
 										<i class="icon_doc"></i>
 										<span>Схема встраивания</span>
@@ -1957,6 +2034,7 @@
 							</div>
 						</div>
 					</div>
+
 				</div>
 				<!-- END WORKAREA -->
 			</div>
@@ -1966,7 +2044,8 @@
 
 	</div>
 	<!-- /.wrapper -->
-	<div class="footer" id="js-footer" style="margin-top: -313px;">
+
+	<div class="footer" id="js-footer">
 		<div class="container">
 			<div class="footer__inner">
 
@@ -2072,25 +2151,24 @@
 				<div class="footer__copyright">
 					© 2004 – 2019 Магазин GROHE.
 					<br>«NTK LTD TM all rights reserved»
-					<div itemscope="" itemtype="https://schema.org/LocalBusiness">
+					<div itemscope itemtype="https://schema.org/LocalBusiness" itemref="microdata-shop-reviews">
 						<div class="hide">
 							<a href="https://grohe.l-rus.ru" itemprop="url">
-								<span itemprop="name">Специализированный магазин Grohe
-								</span>
+								<span itemprop="name">Специализированный магазин Grohe</span>
 							</a>
-							<img itemprop="logo" src="https://grohe.l-rus.ru/mockup/templates/main/build/images/Grohe.png" alt="Grohe">
-							<img itemprop="image" src="https://grohe.l-rus.ru/mockup/templates/main/build/images/Grohe.png" alt="Grohe">
-							<meta itemprop="legalName" content="ООО «НТК Трейд»">
-							<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-								<meta itemprop="streetAddress" content="проспект Маршала Жукова, дом 59">
-								<meta itemprop="postalCode" content="123103">
-								<meta itemprop="addressLocality" content="Москва">
+							<img itemprop="logo" src="https://grohe.l-rus.ru/mockup/templates/main/build/images/Grohe.png" alt="Grohe" />
+							<img itemprop="image" src="https://grohe.l-rus.ru/mockup/templates/main/build/images/Grohe.png" alt="Grohe" />
+							<meta itemprop="legalName" content="ООО «НТК Трейд»" />
+							<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+								<meta itemprop="streetAddress" content="проспект Маршала Жукова, дом 59" />
+								<meta itemprop="postalCode" content="123103" />
+								<meta itemprop="addressLocality" content="Москва" />
 							</div>
-							<meta itemprop="PriceRange" content="1000-134400RUB">
-							<meta itemprop="openingHours" content="Mo-Fr 08:00-22:00">
-							<meta itemprop="openingHours" content="Sa-Su 09:00-22:00">
-							<meta itemprop="telephone" content="74956461460">
-							<meta itemprop="telephone" content="">
+							<meta itemprop="PriceRange" content="1000-134400RUB" />
+							<meta itemprop="openingHours" content="Mo-Fr 08:00-22:00" />
+							<meta itemprop="openingHours" content="Sa-Su 09:00-22:00" />
+							<meta itemprop="telephone" content="74956461460" />
+							<meta itemprop="telephone" content="" />
 						</div>
 					</div>
 
@@ -2111,12 +2189,13 @@
 		<!-- /.footer__inner -->
 
 	</div>
-	<!-- /.footer -->
+
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
 	<script src="js/frontend-works.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/script.min.js"></script>
+
 
 	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
 	<script>
@@ -2139,6 +2218,7 @@
 			"theme": "yellow"
 		});
 	</script>
+
 
 </body>
 
