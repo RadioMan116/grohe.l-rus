@@ -18,16 +18,39 @@
 				cursor: pointer;
 			}
 		}
+
 		&:nth-child(3n-1) {
 			margin: 0 28px 39px;
 		}
 	}
 
-	iframe {
+	iframe,
+	img {
 		max-height: 170px;
 		margin-bottom: 7px;
 		height: 170px;
 		pointer-events: none;
+	}
+
+	a[data-type="iframe"] {
+		display: flex;
+		flex-direction: column;
+		position: relative;
+
+		&:after {
+			content: '';
+			// content: url('../images/play btn.svg');
+			background-image: url('../images/play btn.svg');
+			position: absolute;
+			background-repeat: no-repeat;
+			background-size: 40px 40px;
+			background-color: rgba(0, 0, 0, 0.5);
+			background-position: center center;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 170px;
+		}
 	}
 
 	// .all-video__link
@@ -46,7 +69,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	
+
 
 		.load-more {
 			margin-top: 31px;
@@ -66,15 +89,27 @@
 	}
 
 	@media screen and (max-width: 767px) {
-		flex-direction: column;
-		flex-wrap: nowrap;
+		// flex-direction: column;
+		// flex-wrap: nowrap;
 
 		&__item {
-			width: 100%;
+			width: auto;
 			margin-bottom: 26px;
-			
+			flex-basis: 273px;
+
+			flex-grow: 1;
+
 			&:nth-child(3n-1) {
 				margin: 0 0px 26px;
+			}
+
+			&:nth-child(even) {
+				margin-left: 10px;
+			}
+
+			@media screen and (max-width: 587px) {
+				margin: 0 0 14px !important;
+				flex-basis: 100% !important;
 			}
 		}
 
@@ -86,7 +121,8 @@
 			line-height: 24px;
 		}
 
-		iframe {
+		iframe,
+		img {
 			margin-bottom: 13px;
 		}
 
