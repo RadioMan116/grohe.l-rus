@@ -1,0 +1,1494 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Example</title>
+	<script src="js/mobile.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<meta name="HandheldFriendly" content="True">
+	<meta name="format-detection" content="telephone=yes">
+	<meta name="MobileOptimized" content="320">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"> -->
+
+	<!-- <link rel="icon" type="image/png" href="images/Icon-16.png"> -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+<!-- <link rel="stylesheet" type="text/css" href="js/jquery-ui-1.12.1/jquery-ui.css"> -->
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<header class="header">
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+						<div class="menu" aria-expanded="false">
+							<div class="city-change js-city-change">
+								<div class="city-change__title">Москва</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link js-city_change" data-code="MSK" href="https://grohe.l-rus.ru/?K_REGION=MSK">Москва</a>
+									<a class="city-change__link js-city_change" data-code="SPB" href="https://grohe.l-rus.ru/?K_REGION=SPB">Санкт-Петербург</a>
+									<a class="city-change__link js-city_change" data-code="REGIONS" href="https://grohe.l-rus.ru/?K_REGION=REGIONS">Регионы</a>
+								</div>
+							</div>
+
+							<ul class="menu__list">
+
+								<li class="menu__item">
+									<a href="/delivery-and-payment/" title="Доставка и оплата" class="menu__link">Доставка и оплата</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/services/" title="Подключение" class="menu__link">Подключение</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/guarantee/" title="Сервисные центры Grohe" class="menu__link">Сервисные центры Grohe</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/news/" title="Статьи" class="menu__link">Статьи</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/catalog/category/type-nov/" title="Новинки" class="menu__link">Новинки</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/contacts/" title="Контакты" class="menu__link">Контакты</a>
+								</li>
+
+							</ul>
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок
+								</a>
+								<div class="telephones">
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">
+										Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i>shop@gr-russia.ru</a>
+								</div>
+
+							</div>
+							<a href="" class="abuse__button js-abuse__button js-viewForm" data-action="guideback" id="js-abuse-opener">Обратиться к руководству</a>
+						</div>
+
+						<div class="header__icons">
+							<div class="header__search js-header__search"></div>
+							<a class="header__mobile-tel" href="tel:+74959297078"></a>
+							<a title="Перейти в отложенные" href="#" class="header__favorite active">
+								<span class="header__number">3</span>
+							</a>
+							<a title="Перейти в сравнение" href="04 - Comparison_desktop.html" class="header__compare">
+								<span class="header__number">2</span>
+							</a>
+							<a href="03 - Order Form.html" class="header__basket">
+								<span class="header__number">0</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id='js-header__block_bottom'>
+					<div class="container">
+						<div class="logo">
+							<a href="#" class="logo__link">
+								<img src="images/logo-new.svg" alt="" class="logo__pic">
+							</a>
+						</div>
+						<!-- /.logo -->
+						<div class="header__dropdown-menu" id="js-menu">
+
+							<nav class="dropdown-menu" id="js-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Сантехника Grohe</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/smesiteli/" title="Смесители">Смесители</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/dushi/" title="Души">Души</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/termostaty/" title="Термостаты">Термостаты</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/sistemy-installyatsii/" title="Системы инсталляции">Системы инсталляции</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/category/aksessuary/" title="Аксессуары">Аксессуары</a>
+
+										</li>
+									</ul>
+								</div>
+							</nav>
+							<nav class="dropdown-menu" id="js-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Сферы применения</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/grohe-spa/" title="Ванная Grohe SPA">Ванная Grohe SPA</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/vannaya-komnata/" title="Ванная комната">
+												Ванная комната</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/tualetnaya-komnata/" title="Туалетная комната">
+												Туалетная комната</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="https://gr-russia.ru/catalog/group/kukhnya/" title="Кухня">
+												Кухня</a>
+
+										</li>
+									</ul>
+								</div>
+							</nav>
+
+							<nav class="dropdown-menu">
+								<span class="dropdown-menu__title last">
+									<a href="/guarantee/#services-list" title="Коллекции">Коллекции</a>
+								</span>
+							</nav>
+
+							<!-- end menu-content -->
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок
+								</a>
+								<div class="telephones">
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i>shop@gr-russia.ru</a>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="menu" aria-expanded="false">
+							<div class="city-change js-city-change">
+								<div class="city-change__title">Москва</div>
+								<div class="city-change__bullet"></div>
+								<div class="city-change__popup">
+									<a class="city-change__link js-city_change" data-code="MSK" href="https://grohe.l-rus.ru/?K_REGION=MSK">Москва</a>
+									<a class="city-change__link js-city_change" data-code="SPB" href="https://grohe.l-rus.ru/?K_REGION=SPB">Санкт-Петербург</a>
+									<a class="city-change__link js-city_change" data-code="REGIONS" href="https://grohe.l-rus.ru/?K_REGION=REGIONS">Регионы</a>
+								</div>
+							</div>
+
+							<ul class="menu__list">
+
+								<li class="menu__item">
+									<a href="/delivery-and-payment/" title="Доставка и оплата" class="menu__link">Доставка и оплата</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/services/" title="Подключение" class="menu__link">Подключение</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/guarantee/" title="Сервисные центры Grohe" class="menu__link">Сервисные центры Grohe</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/news/" title="Статьи" class="menu__link">Статьи</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/catalog/category/type-nov/" title="Новинки" class="menu__link">Новинки</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/contacts/" title="Контакты" class="menu__link">Контакты</a>
+								</li>
+
+							</ul>
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать звонок
+								</a>
+								<div class="telephones">
+									<a href="tel:74956461460" class="header__phone">+7 495 646-14-60</a>
+									<a href="tel:" class="header__phone"></a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">
+										Пн-Пт: 08:00—22:00
+										<br>Сб-Вс: 09:00—22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i>shop@gr-russia.ru</a>
+								</div>
+
+							</div>
+							<a href="" class="abuse__button js-abuse__button js-viewForm" data-action="guideback" id="js-abuse-opener">Обратиться к руководству</a>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="search__popup">
+				<form action="/search/" class="header__form">
+					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+					<div class="header__button js-header__button"></div>
+				</form>
+			</div>
+			<div class="header__overlay"></div>
+		</header>
+
+
+		<div class="section">
+			<div class="content-top" style="background-image: url(https://grohe.l-rus.ru/upload/iblock/b3b/b3b26b941b3c4b84882f2793645a344c.jpg);">
+				<div class="content-top__inner">
+					<div class="container">
+
+						<div class="breadcrumbs">
+							<div itemscope="" itemtype="http://schema.org/BreadcrumbList">
+								<div class="breadcrumbs__link" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<a href="/" title="Главная" itemprop="item">
+										<span itemprop="name">Grohe</span>
+									</a>
+									<meta itemprop="position" content="1">
+								</div>
+								<div class="breadcrumbs__sep">»</div>
+								<div class="breadcrumbs__link" itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+									<span itemprop="name">Смесители</span>
+									<a itemprop="item" href="/catalog/category/smesiteli/" title="Смесители"></a>
+									<meta itemprop="position" content="2">
+								</div>
+							</div>
+						</div>
+						<div class="content-top__aside">
+							<h1 class="page__title content-top__title content-top__title_top">
+								Смесители Grohe</h1>
+
+							<div class="page__title content-top__title content-top__title_bottom">
+
+								<p style="text-align: justify;">
+									Смесители Grohe надолго сохраняют эстетичный внешний вид за&nbsp;счет защитного покрытия StarLight. Керамический картридж SilkMove обеспечивает плавный ход рычага на&nbsp;протяжение всего срока службы изделия. Даже через несколько лет использования настроить
+									температуру и&nbsp;напор воды будет так&nbsp;же просто, как и&nbsp;в&nbsp;день покупки.
+								</p>
+								<p style="text-align: justify;">
+									Среди новинок Грохе&nbsp;— приборы с&nbsp;функцией подачи фильтрованной питьевой воды: горячей, холодной или газированной. В&nbsp;интернет-магазине представлены модели для ванной, для душа, для кухни и&nbsp;для туалетной комнаты разного способа установки.
+								</p>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+
+			<div class="content">
+				<div class="container">
+					<div class="special-offers catalog">
+						<div class="catalog__sorting">
+							<ul class="catalog__ul">
+								Сортировать по:
+
+								<li class="catalog__li active">
+									<a href="" data-sort="HIT" data-order="ASC" class="catalog__sort js-sort_change">
+										<span>популярности</span>
+										<i></i>
+									</a>
+								</li>
+								<li class="catalog__li ">
+									<a href="" data-sort="NEW" data-order="ASC" class="catalog__sort js-sort_change">
+										<span>новизне</span>
+										<i></i>
+									</a>
+								</li>
+								<li class="catalog__li ">
+									<a href="" data-sort="PRICE" data-order="ASC" class="catalog__sort js-sort_change">
+										<span>цене</span>
+										<i></i>
+									</a>
+								</li>
+							</ul>
+							<div class="sorting__info">
+								<span class="sorting__number js-catalog_count-blk"></span>
+							</div>
+						</div>
+
+						<div class="tags">
+							<ul class="tags__list">
+
+								<li class="tags__item active">
+									<a href="/catalog/category/smesiteli/" title="Все" class="tags__link">Все</a>
+								</li>
+
+								<li class="tags__item " id="bx_3485106786_6240">
+									<a href="/catalog/category/smesiteli/recommend/odnorichazhnii-s-vidvizhnoi-leikoi/" title="Однорычажные с выдвижной лейкой" class="tags__link">Однорычажные с выдвижной лейкой</a>
+								</li>
+
+							</ul>
+						</div>
+
+						<input type="hidden" class="js-catalog_count" name="catalog_count" value="561 позиция" />
+
+						<div class="js-news">
+							<div class="js-news__inner catalog__items js-ecom_product-list" data-list="Catalog Result">
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4542" id="bx_3966226736_4542">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/smesitel-grohe-allure-brilliant-23029000-.html" title="Смеситель Grohe Allure brilliant 23029000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/b04/245_230_1/b04d211fd7a73af02fa240982adf981f.jpg" alt="Смеситель Grohe Allure brilliant 23029000 preview 1" title="Смеситель Grohe Allure brilliant 23029000 фото 1" class="special-offers__img catalog__img lazyload"
+										/>
+									</a>
+									<a href="/catalog/category/smesiteli/smesitel-grohe-allure-brilliant-23029000-.html" title="Смеситель Grohe Allure brilliant 23029000" class="special-offers__text catalog__text">Смеситель Grohe Allure brilliant 23029000</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											28 350
+											<i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4542">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare active" data-id="4542"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4542"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4542">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4543" id="bx_3966226736_4543">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/izliv-dlya-vanny-grohe-allure-dn-20-13264000.html" title="Смеситель Grohe Allure DN 20 для ванны 13264000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/4f6/245_230_1/4f61d8bb88859c4e75e11fdedf5ec77d.jpg" alt="Смеситель Grohe Allure DN 20 для ванны 13264000 preview 1" title="Смеситель Grohe Allure DN 20 для ванны 13264000 фото 1" class="special-offers__img catalog__img lazyload"
+										/>
+									</a>
+									<a href="/catalog/category/smesiteli/izliv-dlya-vanny-grohe-allure-dn-20-13264000.html" title="Смеситель Grohe Allure DN 20 для ванны 13264000" class="special-offers__text catalog__text">Смеситель Grohe Allure DN 20 для ванны 13264000</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price price__dashed">
+											10 250
+											<i class="special-offers__rub catalog__rub">руб.</i>
+											<span class="price__absolute">12 250 руб.</span>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4543">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare active" data-id="4543"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4543"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4543">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4553" id="bx_3966226736_4553">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-s-tsepochkoy-23336000.html" title="Смеситель Grohe BauLoop для раковины, с цепочкой 23336000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/159/245_230_1/1598146a7b3d82341a57f4968d67fc05.jpg" alt="Смеситель Grohe BauLoop для раковины, с цепочкой 23336000 preview 1" title="Смеситель Grohe BauLoop для раковины, с цепочкой 23336000 фото 1"
+										class="special-offers__img catalog__img lazyload" />
+									</a>
+									<a href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-s-tsepochkoy-23336000.html" title="Смеситель Grohe BauLoop для раковины, с цепочкой 23336000" class="special-offers__text catalog__text">Смеситель Grohe BauLoop для раковины, с цепочкой 23336000
+									</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											4 550
+											<i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4553">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare active" data-id="4553"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4553"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4553">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4554" id="bx_3966226736_4554">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-gladkiy-korpus-23337000.html" title="Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/819/245_230_1/819ab0972ce43e872c179e9667e6c00a.jpg" alt="Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000 preview 1" title="Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000 фото 1"
+										class="special-offers__img catalog__img lazyload" />
+									</a>
+									<a href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-gladkiy-korpus-23337000.html" title="Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000" class="special-offers__text catalog__text">Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000
+									</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											4 450
+											<i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4554">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare active" data-id="4554"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4554"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4554">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4562" id="bx_3966226736_4562">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/smesitel-grohe-aria-dlya-bide-dn-15-24030000.html" title="Смеситель Grohe Aria для биде DN 15 24030000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/d51/245_230_1/d510037f7d6a2ec83b69cacd18e7100d.jpg" alt="Смеситель Grohe Aria для биде DN 15 24030000 preview 1" title="Смеситель Grohe Aria для биде DN 15 24030000 фото 1" class="special-offers__img catalog__img lazyload"
+										/>
+									</a>
+									<a href="/catalog/category/smesiteli/smesitel-grohe-aria-dlya-bide-dn-15-24030000.html" title="Смеситель Grohe Aria для биде DN 15 24030000" class="special-offers__text catalog__text">Смеситель Grohe Aria для биде DN 15 24030000</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											12 250
+											<i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4562">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare active" data-id="4562"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4562"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4562">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4564" id="bx_3966226736_4564">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/smesitel-grohe-aria-dlya-dusha-26008000.html" title="Смеситель Grohe Aria для душа 26008000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/466/245_230_1/46682de5a6dd9c2f1d9395f94fce4b02.jpg" alt="Смеситель Grohe Aria для душа 26008000 preview 1" title="Смеситель Grohe Aria для душа 26008000 фото 1" class="special-offers__img catalog__img lazyload"
+										/>
+									</a>
+									<a href="/catalog/category/smesiteli/smesitel-grohe-aria-dlya-dusha-26008000.html" title="Смеситель Grohe Aria для душа 26008000" class="special-offers__text catalog__text">Смеситель Grohe Aria для душа 26008000</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											12 250
+											<i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4564">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare active" data-id="4564"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4564"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4564">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4571" id="bx_3966226736_4571">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/vnutrenniy-mekhanizm-grohe-atrio-jota-universalnyy-na-dva-otverstiya-33769000.html" title="Внутренний механизм Grohe Atrio jota универсальный на два отверстия 33769000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/8a8/245_230_1/8a880fad96b6db6a1331157e52b14bf3.jpg" alt="Внутренний механизм Grohe Atrio jota универсальный на два отверстия 33769000 preview 1" title="Внутренний механизм Grohe Atrio jota универсальный на два отверстия 33769000 фото 1"
+										class="special-offers__img catalog__img lazyload" />
+									</a>
+									<a href="/catalog/category/smesiteli/vnutrenniy-mekhanizm-grohe-atrio-jota-universalnyy-na-dva-otverstiya-33769000.html" title="Внутренний механизм Grohe Atrio jota универсальный на два отверстия 33769000" class="special-offers__text catalog__text">Внутренний механизм Grohe Atrio jota универсальный на два отверстия 33769000</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											11 650
+											<i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4571">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare active" data-id="4571"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4571"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4571">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4573" id="bx_3966226736_4573">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/smesitel-grohe-atrio-jota-dlya-bide-dn-15-24010000.html" title="Смеситель Grohe Atrio jota для биде DN 15 24010000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/a51/245_230_1/a51258d1f119f852c635d329855e8c68.jpg" alt="Смеситель Grohe Atrio jota для биде DN 15 24010000 preview 1" title="Смеситель Grohe Atrio jota для биде DN 15 24010000 фото 1" class="special-offers__img catalog__img lazyload"
+										/>
+									</a>
+									<a href="/catalog/category/smesiteli/smesitel-grohe-atrio-jota-dlya-bide-dn-15-24010000.html" title="Смеситель Grohe Atrio jota для биде DN 15 24010000" class="special-offers__text catalog__text">Смеситель Grohe Atrio jota для биде DN 15 24010000
+									</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											17 150
+											<i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4573">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare active" data-id="4573"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4573"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4573">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4579" id="bx_3966226736_4579">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-so-slivnym-garniturom-23335000.html" title="Смеситель Grohe BauLoop для раковины со сливным гарнитуром 23335000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/0b6/245_230_1/0b6ab913a34c5e29c74f996c38e5543e.jpg" alt="Смеситель Grohe BauLoop для раковины со сливным гарнитуром 23335000 preview 1" title="Смеситель Grohe BauLoop для раковины со сливным гарнитуром 23335000 фото 1"
+										class="special-offers__img catalog__img lazyload" />
+									</a>
+									<a href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-so-slivnym-garniturom-23335000.html" title="Смеситель Grohe BauLoop для раковины со сливным гарнитуром 23335000" class="special-offers__text catalog__text">Смеситель Grohe BauLoop для раковины со сливным гарнитуром 23335000</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											4 550
+											<i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4579">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare active" data-id="4579"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4579"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4579">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4580" id="bx_3966226736_4580">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-moyki-31368000.html" title="Смеситель Grohe BauLoop для мойки 31368000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/75b/245_230_1/75bff6ccb7d31d34d3bc8842a104d4e4.jpg" alt="Смеситель Grohe BauLoop для мойки 31368000 preview 1" title="Смеситель Grohe BauLoop для мойки 31368000 фото 1" class="special-offers__img catalog__img lazyload"
+										/>
+									</a>
+									<a href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-moyki-31368000.html" title="Смеситель Grohe BauLoop для мойки 31368000" class="special-offers__text catalog__text">Смеситель Grohe BauLoop для мойки 31368000</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											4 850
+											<i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4580">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare " data-id="4580"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4580"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4580">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4581" id="bx_3966226736_4581">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-dusha-so-vstroennym-mekhanizmom-29080000.html" title="Смеситель Grohe BauLoop для душа со встроенным механизмом 29080000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/5a9/245_230_1/5a9b7f482f80a00cc39a15f7858b492b.jpg" alt="Смеситель Grohe BauLoop для душа со встроенным механизмом 29080000 preview 1" title="Смеситель Grohe BauLoop для душа со встроенным механизмом 29080000 фото 1"
+										class="special-offers__img catalog__img lazyload" />
+									</a>
+									<a href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-dusha-so-vstroennym-mekhanizmom-29080000.html" title="Смеситель Grohe BauLoop для душа со встроенным механизмом 29080000" class="special-offers__text catalog__text">Смеситель Grohe BauLoop для душа со встроенным механизмом 29080000</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											7 050
+											<i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4581">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare " data-id="4581"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4581"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4581">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+								<div class="catalog__item js-ecom_product-item js-catalog_item" data-id="4582" id="bx_3966226736_4582">
+
+									<a class="catalog__pic" href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-dusha-23340000.html" title="Смеситель Grohe BauLoop для душа 23340000">
+										<img data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/2dd/245_230_1/2dd022a5bb33e7dbd3a724182d3b33ea.jpg" alt="Смеситель Grohe BauLoop для душа 23340000 preview 1" title="Смеситель Grohe BauLoop для душа 23340000 фото 1" class="special-offers__img catalog__img lazyload"
+										/>
+									</a>
+									<a href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-dusha-23340000.html" title="Смеситель Grohe BauLoop для душа 23340000" class="special-offers__text catalog__text">Смеситель Grohe BauLoop для душа 23340000</a>
+
+									<span class="catalog__presence ">В наличии</span>
+
+									<div class="catalog__specification">
+
+									</div>
+
+									<div class="catalog__prop">
+									</div>
+
+									<div class="special-offers__sale catalog__sale">
+
+										<span class="special-offers__price catalog__price ">
+
+											4 650
+											<i class="special-offers__rub catalog__rub">руб.</i>
+										</span>
+
+										<a href="" class="special-offers__buy js-add2basket" data-id="4582">В корзину</a>
+
+									</div>
+
+									<div class="catalog__existence">
+
+										<a href="" class="catalog__simile js-compare " data-id="4582"></a>
+
+										<a href="" class="catalog__favorite  js-add2favorite" data-id="4582"></a>
+
+										<a href="" class="catalog__oneclick js-viewForm" data-action="BuyOneClick" data-id="4582">Купить&nbsp;в&nbsp;1&nbsp;клик</a>
+
+									</div>
+
+									<!-- begin label -->
+									<div class="announcing">
+										<div class="announcing__item">
+											<img src="images/small/flag_ger.svg" alt="сделано в Болгарии" title="сделано в Болгарии">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/new.svg" alt="Новинка" title="Новинка">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/stock.svg" alt="акция" title="акция">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/present.svg" alt="подарок" title="подарок">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/warranty.svg" alt="гарантия" title="гарантия">
+										</div>
+										<div class="announcing__item">
+											<img src="images/small/bestseller.svg" alt="хит" title="хит">
+										</div>
+									</div>
+									<!-- end label -->
+
+								</div>
+
+							</div>
+						</div>
+
+						<div class="all-video__bottom">
+
+							<a href="#" id="load-items" class="load-more">Загрузить еще</a>
+							<script>
+								$(function () {
+									var newsSetLoader = new newsLoader({
+										root: '.js-news',
+										newsBlock: '.js-news__inner',
+										newsLoader: '#load-items',
+										ajaxLoader: '#ajax-loader img',
+										loadSett: {
+											endPage: 47,
+											navNum: 2,
+											curPage: 1
+										}
+									});
+									newsSetLoader.init();
+								});
+							</script>
+
+							<!-- begin nav -->
+
+							<div class="pagination">
+
+								<span class="pagination__item pagination__item_state_current">1</span>
+								<a class="pagination__item" href="/catalog/category/smesiteli/?PAGEN_2=2">2</a>
+								<a class="pagination__item" href="/catalog/category/smesiteli/?PAGEN_2=3">3</a>
+								<a class="pagination__item" href="/catalog/category/smesiteli/?PAGEN_2=4">4</a>
+								<a class="pagination__item" href="/catalog/category/smesiteli/?PAGEN_2=5">5</a>
+								<a class="pagination__item" href="/catalog/category/smesiteli/?PAGEN_2=26">...</a>
+								<a class="pagination__item" href="/catalog/category/smesiteli/?PAGEN_2=47">47</a>
+								<a class="pagination__next" href="/catalog/category/smesiteli/?PAGEN_2=2"></a>
+							</div>
+						</div>
+
+						<div class="recently-watched js-recently-watched js-catalog_viewed">
+							<div class="recently-watched__title">
+								Вы недавно смотрели
+							</div>
+							<div class="swiper-pagination-recently-watched swiper-pagination"></div>
+							<div class="swiper-button-prev recently-watched__prev"></div>
+							<div class="swiper-button-next recently-watched__next"></div>
+							<div class="recently-watched__reset js-viewed_remove-all">Сбросить просмотренное</div>
+							<div class="swiper-container js-ecom_product-list" data-list="ViewsList">
+								<div class="swiper-wrapper">
+
+									<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="5598">
+										<a href="/catalog/category/aksessuary/mekhanizm-skrytogo-ventilya-grohe-29802000.html" title="Механизм скрытого вентиля Grohe 29802000" class="recently-watched__pic">
+											<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/000/110_128_1/00096eb9158722d47c548f978c5aaee4.jpg" alt="Механизм скрытого вентиля Grohe 29802000" />
+										</a>
+										<a href="/catalog/category/aksessuary/mekhanizm-skrytogo-ventilya-grohe-29802000.html" title="Механизм скрытого вентиля Grohe 29802000" class="recently-watched__text">
+											Механизм скрытого вентиля Grohe 29802000
+											<span class="recently-watched__price">2 750
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close js-viewed_remove"></div>
+
+									</div>
+
+									<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="5429">
+										<a href="/catalog/category/termostaty/termostat-grohe-allure-brilliant-dlya-dusha-19791000.html" title="Термостат Grohe Allure Brilliant для душа 19791000" class="recently-watched__pic">
+											<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/b38/110_128_1/b385137d6febee60021a8092953400fd.gif" alt="Термостат Grohe Allure Brilliant для душа 19791000" />
+										</a>
+										<a href="/catalog/category/termostaty/termostat-grohe-allure-brilliant-dlya-dusha-19791000.html" title="Термостат Grohe Allure Brilliant для душа 19791000" class="recently-watched__text">
+											Термостат Grohe Allure Brilliant для душа 19791000
+											<span class="recently-watched__price">32 500
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close js-viewed_remove"></div>
+
+									</div>
+
+									<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="4573">
+										<a href="/catalog/category/smesiteli/smesitel-grohe-atrio-jota-dlya-bide-dn-15-24010000.html" title="Смеситель Grohe Atrio jota для биде DN 15 24010000" class="recently-watched__pic">
+											<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/a51/110_128_1/a51258d1f119f852c635d329855e8c68.jpg" alt="Смеситель Grohe Atrio jota для биде DN 15 24010000" />
+										</a>
+										<a href="/catalog/category/smesiteli/smesitel-grohe-atrio-jota-dlya-bide-dn-15-24010000.html" title="Смеситель Grohe Atrio jota для биде DN 15 24010000" class="recently-watched__text">
+											Смеситель Grohe Atrio jota для биде DN 15 24010000
+											<span class="recently-watched__price">17 150
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close js-viewed_remove"></div>
+
+									</div>
+
+									<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="4554">
+										<a href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-gladkiy-korpus-23337000.html" title="Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000" class="recently-watched__pic">
+											<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/819/110_128_1/819ab0972ce43e872c179e9667e6c00a.jpg" alt="Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000" />
+										</a>
+										<a href="/catalog/category/smesiteli/smesitel-grohe-bauloop-dlya-rakoviny-gladkiy-korpus-23337000.html" title="Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000" class="recently-watched__text">
+											Смеситель Grohe BauLoop для раковины, гладкий корпус 23337000
+											<span class="recently-watched__price">4 450
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close js-viewed_remove"></div>
+
+									</div>
+
+									<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="4542">
+										<a href="/catalog/category/smesiteli/smesitel-grohe-allure-brilliant-23029000-.html" title="Смеситель Grohe Allure brilliant 23029000" class="recently-watched__pic">
+											<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/b04/110_128_1/b04d211fd7a73af02fa240982adf981f.jpg" alt="Смеситель Grohe Allure brilliant 23029000" />
+										</a>
+										<a href="/catalog/category/smesiteli/smesitel-grohe-allure-brilliant-23029000-.html" title="Смеситель Grohe Allure brilliant 23029000" class="recently-watched__text">
+											Смеситель Grohe Allure brilliant 23029000
+											<span class="recently-watched__price">28 350
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close js-viewed_remove"></div>
+
+									</div>
+
+									<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="6328">
+										<a href="/catalog/category/dushi/verkhniy-dush-grohe-rainshower-duo-26254000.html?sku=6328" title="Верхний душ Grohe Rainshower Duo 26254000" class="recently-watched__pic">
+											<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/6aa/110_128_1/6aa9fd236ed10399b9417cb2a77c78b0.jpg" alt="Верхний душ Grohe Rainshower Duo 26254000" />
+										</a>
+										<a href="/catalog/category/dushi/verkhniy-dush-grohe-rainshower-duo-26254000.html?sku=6328" title="Верхний душ Grohe Rainshower Duo 26254000" class="recently-watched__text">
+											Верхний душ Grohe Rainshower Duo 26254000
+											<span class="recently-watched__price">37 800
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close js-viewed_remove"></div>
+
+									</div>
+
+									<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="6260">
+										<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)" class="recently-watched__pic">
+											<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/d30/110_128_1/d30e7451d56c9592840ad9f2aa7c7ae6.jpg" alt="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)" />
+										</a>
+										<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-smartcontrol-dlya-dusha-29123000-verkhnyaya-montazhnaya-chast.html" title="Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)" class="recently-watched__text">
+											Термостат Grohe Grohtherm SmartControl для душа 29123000 (верхняя монтажная часть)
+											<span class="recently-watched__price">32 500
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close js-viewed_remove"></div>
+
+									</div>
+
+									<div class="swiper-slide js-catalog_item js-ecom_product-item" data-id="6257">
+										<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-vanny-dn-15-34155003.html" title="Термостат Grohe Grohtherm 1000 для ванны DN 15 34155003" class="recently-watched__pic">
+											<img class="lazyload" data-src="https://grohe.l-rus.ru/upload/resize_cache/iblock/620/110_128_1/62079db2fe6367c762c79721e25e0158.jpg" alt="Термостат Grohe Grohtherm 1000 для ванны DN 15 34155003" />
+										</a>
+										<a href="/catalog/category/termostaty/termostat-grohe-grohtherm-1000-dlya-vanny-dn-15-34155003.html" title="Термостат Grohe Grohtherm 1000 для ванны DN 15 34155003" class="recently-watched__text">
+											Термостат Grohe Grohtherm 1000 для ванны DN 15 34155003
+											<span class="recently-watched__price">18 250
+												<i class="recently-watched__rub">руб.</i>
+											</span>
+										</a>
+										<div class="recently-watched__close js-viewed_remove"></div>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- END WORKAREA -->
+			</div>
+			<!-- /.content -->
+		</div>
+		<!-- /.middle -->
+
+	</div>
+	<!-- /.wrapper -->
+
+	<div class="footer" id="js-footer">
+		<div class="container">
+			<div class="footer__inner">
+
+				<div class="footer__col">
+
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Сантехника Grohe</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/smesiteli/" title="Смесители">Смесители</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/dushi/" title="Души">Души</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/termostaty/" title="Термостаты">Термостаты</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/sistemy-installyatsii/" title="Системы инсталляции">Системы инсталляции</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a class="menu-footer__link" href="/catalog/category/aksessuary/" title="Аксессуары">Аксессуары</a>
+							</li>
+						</ul>
+					</nav>
+
+				</div>
+
+				<!-- end menu-content -->
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<nav class="menu-footer">
+						<ul class="menu-footer__list">
+							<li class="menu-footer__title js-menu-footer__title">Информация</li>
+
+							<li class="menu-footer__item">
+								<a href="/delivery-and-payment/" title="Доставка и оплата" class="menu-footer__link">Доставка и оплата</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/glossary/" title="Глоссарий" class="menu-footer__link">Глоссарий</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/services/" title="Сервис" class="menu-footer__link">Сервис</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/guarantee/" title="Сервисные центры Grohe" class="menu-footer__link">Сервисные центры Grohe</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/news/" title="Статьи" class="menu-footer__link">Статьи</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/video/" title="Видео" class="menu-footer__link">Видео</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/kachestvo/" title="Возврат и обмен" class="menu-footer__link">Возврат и обмен
+								</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/help/" title="Помощь" class="menu-footer__link">Помощь</a>
+							</li>
+
+							<li class="menu-footer__item">
+								<a href="/contacts/" title="Контакты" class="menu-footer__link">Контакты</a>
+							</li>
+
+						</ul>
+					</nav>
+				</div>
+				<!-- /.footer__col -->
+				<div class="footer__col">
+					<div class="footer__text footer__text_first">Интернет-магазин Grohe</div>
+					<a href="tel:74956461460" class="footer__tel">+7 495 646-14-60</a>
+					<a href="tel:" class="footer__tel"></a>
+
+					<a href="" class="footer__call-phone-button js-viewForm" data-action="callback">
+						<span>Заказать звонок
+						</span>
+					</a>
+
+					<a href="mailto:shop@gr-russia.ru" class="footer__email">
+						<i>Email:</i>shop@gr-russia.ru</a>
+
+					<div class="footer__text footer__text_two">Режим работы</div>
+					<div class="footer__text footer__text_three">Пн-Пт: 08:00—22:00
+						<br>Сб-Вс: 09:00—22:00</div>
+				</div>
+				<!-- /.footer__col -->
+			</div>
+
+			<div class="footer__row">
+				<div class="footer__copyright">
+					© 2004 – 2019 Магазин GROHE.
+					<br>«NTK LTD TM all rights reserved»
+					<div itemscope itemtype="https://schema.org/LocalBusiness" itemref="microdata-shop-reviews">
+						<div class="hide">
+							<a href="https://grohe.l-rus.ru" itemprop="url">
+								<span itemprop="name">Специализированный магазин Grohe</span>
+							</a>
+							<img itemprop="logo" src="https://grohe.l-rus.ru/mockup/templates/main/build/images/Grohe.png" alt="Grohe" />
+							<img itemprop="image" src="https://grohe.l-rus.ru/mockup/templates/main/build/images/Grohe.png" alt="Grohe" />
+							<meta itemprop="legalName" content="ООО «НТК Трейд»" />
+							<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+								<meta itemprop="streetAddress" content="проспект Маршала Жукова, дом 59" />
+								<meta itemprop="postalCode" content="123103" />
+								<meta itemprop="addressLocality" content="Москва" />
+							</div>
+							<meta itemprop="PriceRange" content="1000-134400RUB" />
+							<meta itemprop="openingHours" content="Mo-Fr 08:00-22:00" />
+							<meta itemprop="openingHours" content="Sa-Su 09:00-22:00" />
+							<meta itemprop="telephone" content="74956461460" />
+							<meta itemprop="telephone" content="" />
+						</div>
+					</div>
+
+				</div>
+				<a class="privacy-policy" title="Политика конфиденциальности" href="/personal-data/">Политика конфиденциальности
+				</a>
+				<div class="footer__telephones">
+					<div class="l-abuse">
+						<a href="" class="footer__button abuse__button js-viewForm" data-action="guideback">Пожаловаться руководству
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- /.footer__row -->
+		</div>
+
+		<!-- /.footer__inner -->
+
+	</div>
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+	<script src="js/frontend-works.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/script.min.js"></script>
+
+
+	<script src="https://yastatic.net/browser-updater/v1/script.js" charset="utf-8"></script>
+	<script>
+		var yaBrowserUpdater = new ya.browserUpdater.init({
+			"lang": "ru",
+			"browsers": {
+				"yabrowser": "15.12",
+				"chrome": "54",
+				"ie": "11",
+				"opera": "41",
+				"safari": "8",
+				"fx": "49",
+				"iron": "35",
+				"flock": "Infinity",
+				"palemoon": "25",
+				"camino": "Infinity",
+				"maxthon": "4.5",
+				"seamonkey": "2.3"
+			},
+			"theme": "yellow"
+		});
+	</script>
+
+</body>
+
+</html>
