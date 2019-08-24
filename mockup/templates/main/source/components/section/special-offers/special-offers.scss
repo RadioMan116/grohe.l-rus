@@ -355,6 +355,20 @@
 		}
 	}
 
+	&.sphere {
+		margin: 0;
+		padding: 32px 0 48px;
+
+		.special-offers__slide {
+			min-height: unset;
+		}
+
+		.special-offers__text {
+			text-align: center;
+			padding-bottom: 2px;
+		}
+	}
+
 	@media screen and (max-width: 767px) {
 		margin: 87px 0 64px;
 
