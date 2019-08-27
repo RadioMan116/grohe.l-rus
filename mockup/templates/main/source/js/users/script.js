@@ -2159,6 +2159,31 @@ $(window).on('load', function () {
 
 			console.log($(this))
 		})
+		$(".catalog .instructions").each(function (indx, element) {
+
+
+			var mySwiper22 = new Swiper('.instructions__items.swiper-container', {
+				// navigation: {
+				// 	nextEl: ".practical-features__next",
+				// 	prevEl: ".practical-features__prev"
+				// },
+				slidesPerView: 2,
+				// slidesPerGroup: 1,
+				spaceBetween: 12,
+				pagination: {
+					el: ".swiper-pagination-instructions",
+					clickable: true
+				},
+				breakpoints: {
+					550: {
+						slidesPerView: 1
+					},
+				}
+			});
+
+
+			console.log($(this))
+		})
 	}
 
 	if ($(".filter-new").length) {
@@ -2326,4 +2351,20 @@ $(window).on('load', function () {
 		// 	});
 		// }, 300);
 	}
+	(function () {
+		let insCategory = document.querySelectorAll('.instructions-category');
+
+		insCategory.forEach(function (element) {
+
+			let item = element.querySelectorAll(".special-offers__text");
+
+			item.forEach(function (el, i) {
+				// console.log(el)
+				// console.log(i)
+
+				// console.log(el.outerHeight(true))
+			})
+		})
+	})()
+
 });

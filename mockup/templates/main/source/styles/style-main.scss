@@ -78,6 +78,10 @@ h1.title {
 	width: 75%;
 	margin-bottom: 20px;
 	margin-top: 10px;
+
+	.seo-text & {
+		width: 100%;
+	}
 }
 
 .container .col-md-9 {
@@ -184,6 +188,7 @@ body.fancybox-active {
 .reverse {
 	flex-direction: row-reverse;
 }
+
 
 
 
