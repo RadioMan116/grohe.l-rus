@@ -218,6 +218,21 @@
 				&:nth-child(3n-1) {
 					margin: 10px 0;
 				}
+
+				.catalog__prop {
+					// margin-bottom: 18px;
+					flex-grow: 0;
+				}
+
+				.price__dashed {
+					// height: 45px !important;
+					margin-top: 15px !important;
+					align-items: center !important;
+				}
+
+				.price__absolute {
+					line-height: 1.5;
+				}
 			}
 
 			.container {
