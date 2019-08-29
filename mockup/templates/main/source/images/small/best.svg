@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
-    <title>best</title>
-    <desc>Created with Sketch.</desc>
-    <g id="best" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect id="Rectangle" fill="#394791" x="0" y="0" width="24" height="24" rx="2"></rect>
-        <polygon id="Star" fill="#FFFFFF" points="12 16.6240319 7.05572809 19.2169043 7.99383224 13.7133806 4 9.81234022 9.52405216 9.00384795 12 4 14.4759478 9.00384795 20 9.81234022 16.0061678 13.7133806 16.9442719 19.2169043"></polygon>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><g fill="none" fill-rule="evenodd"><rect width="24" height="24" fill="#394791" rx="2"/><path fill="#FFF" d="M12.001 4L9.622 8.714l-5.352.761 3.874 3.694-.91 5.195L12 15.912l4.768 2.452-.91-5.195 3.873-3.694-5.352-.76L12.001 4zM6.506 5.787l1.408 1.782.982-.775-1.408-1.782-.982.775zm8.632 1.012l.99.765 1.378-1.783-.991-.764L15.138 6.8zM4 13.93l.434 1.173 2.248-.831-.434-1.173-2.248.83zm13.332.39l2.248.799.42-1.178-2.248-.8-.42 1.178zM11.376 20h1.251v-2.407h-1.251V20z"/></g></svg>
