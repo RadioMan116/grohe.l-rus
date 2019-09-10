@@ -362,14 +362,14 @@
 	}
 
 	&__favorite {
-		background: url("../images/fav inactive.svg") no-repeat;
+		background: url("../images/fav_inactive.svg") no-repeat;
 		background-position: top center;
 		background-size: contain;
 		margin-left: 22px;
 		margin-right: auto;
 
 		&.active {
-			background: url("../images/fav active.svg") no-repeat;
+			background: url("../images/fav_active.svg") no-repeat;
 			background-position: top center;
 			background-size: contain;
 		}
