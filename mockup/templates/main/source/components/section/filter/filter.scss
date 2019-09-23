@@ -1298,6 +1298,7 @@
 	@media screen and (max-width: 767px) {
 		display: flex;
 		flex-direction: column;
+		margin-bottom: 20px;
 
 		&.active {
 			.bx-filter-section.container-fluid {
