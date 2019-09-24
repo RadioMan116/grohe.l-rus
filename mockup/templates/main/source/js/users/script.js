@@ -2188,7 +2188,19 @@ $(window).on('load', function () {
 
 
 			console.log($(this))
-		})
+		});
+		(function () {
+			let mainArticles = document.querySelector('.articles');
+			mainArticles.querySelector('.container').classList.add('swiper-container');
+			mainArticles.querySelector('.articles__items').classList.add('swiper-wrapper');
+			let articlesItem = mainArticles.querySelectorAll('.articles__item');
+
+			articlesItem.forEach(function (el , index) {
+				console.log(el + 'индекс' + index);
+				console.log(el);
+			})
+			console.log(mainArticles)
+		})();
 	}
 
 	if ($(".filter-new").length) {
@@ -2384,7 +2396,7 @@ $(window).on('load', function () {
 			button.innerHTML = openText
 			button.onclick = function () {
 				this.parentElement.classList.toggle('active');
-				button.innerHTML == 'Читать подробнее' ? button.innerHTML = closeText : button.innerHTML =  openText;
+				button.innerHTML == 'Читать подробнее' ? button.innerHTML = closeText : button.innerHTML = openText;
 			};
 		})();
 	}

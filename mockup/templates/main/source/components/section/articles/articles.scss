@@ -131,9 +131,9 @@
 		}
 
 		&__item {
-			width: 231px;
+			width: 240px;
 			flex-grow: 1;
-			margin-right: 15px;
+			margin-right: 0px;
 			margin-bottom: 14px !important;
 			// flex-grow: 1;
 			flex-direction: column;
@@ -142,6 +142,9 @@
 			// &:last-child {
 			// 	display: none;
 			// }
+			&:nth-child(odd){
+				margin-right: 15px;
+			}
 
 		}
 
@@ -186,5 +189,14 @@
 				// align-self: center;
 			}
 		}
+	}
+
+	@media screen and (max-width: 525px) {
+
+		&__item {
+			width: 100%;
+			margin-right: 0px !important;
+		}
+
 	}
 }
