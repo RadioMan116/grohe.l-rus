@@ -224,7 +224,17 @@ body.fancybox-active {
 	.fixed {
 		width: 100%;
 	}
+
 	.reverse {
 		flex-direction: column-reverse;
 	}
+}
+
+@media screen and (max-width: 480px) {
+
+	h1.title {
+		margin-bottom: 13px;
+		margin-top: 8px;
+	}
+
 }
