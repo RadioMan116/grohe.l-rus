@@ -142,7 +142,7 @@
 			// &:last-child {
 			// 	display: none;
 			// }
-			&:nth-child(odd){
+			&:nth-child(odd) {
 				margin-right: 15px;
 			}
 
@@ -193,10 +193,23 @@
 
 	@media screen and (max-width: 525px) {
 
-		&__item {
+		.articles__items &__item {
 			width: 100%;
-			margin-right: 0px !important;
+			margin-right: 0px ;
 		}
 
+	}
+
+
+}
+@media screen and (max-width: 480px) {
+
+	.new-items.special-offers+.articles,.articles .swiper-container	{
+		.articles__items {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+
+		}
 	}
 }
