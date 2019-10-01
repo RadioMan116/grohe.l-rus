@@ -2,6 +2,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	padding-top: 5px;
+	margin-bottom: 24px;
 
 	// .collections__link
 
@@ -35,9 +36,9 @@
 
 	}
 
-	&+.all-video__bottom {
-		display: none;
-	}
+	// &+.all-video__bottom {
+	// 	display: none;
+	// }
 
 	@media screen and (max-width:767px) {
 		padding-bottom: 18px;
@@ -50,16 +51,16 @@
 				margin: unset;
 			}
 
-			&:nth-child(n+13) {
-				display: none;
-			}
+			// &:nth-child(n+13) {
+			// 	display: none;
+			// }
 
 			margin: 0 4px 8px !important;
 
 		}
 
-		&+.all-video__bottom {
-			display: flex;
-		}
+		// &+.all-video__bottom {
+		// 	display: flex;
+		// }
 	}
 }

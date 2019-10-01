@@ -467,7 +467,7 @@
 	}
 
 	.description {
-		padding: 45px 0 20px;
+		padding: 0px 0 20px;
 		margin-bottom: 2rem;
 		display: flex;
 		flex-wrap: wrap;
@@ -1276,6 +1276,9 @@
 			&:nth-child(3n-1) {
 				margin: unset;
 			}
+		}
+		+.catalog__description.description{
+			margin-top: 24px;
 		}
 	}
 
