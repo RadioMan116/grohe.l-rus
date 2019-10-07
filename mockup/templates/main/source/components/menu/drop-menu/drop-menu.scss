@@ -1,17 +1,20 @@
 .header__dropdown-menu {
 	display: flex;
-	margin-left: 5%;
-	margin-top: auto;
-	margin-bottom: auto;
+	margin-left: 31px;
+	// margin-top: auto;
+	// margin-bottom: auto;
+	height: 100%;
 	flex-grow: 1;
 	padding-left: 17px;
+	padding-top: 16px;
 
 	.container {
 		display: flex;
 	}
 
 	.dropdown-menu {
-		position: relative;
+		position: static;
+		display: flex;
 
 		&__list {
 			margin: 0;
@@ -21,17 +24,17 @@
 			flex-direction: column;
 
 			background-color: #ffffff;
-			margin-top: 7px;
+			// margin-top: 7px;
 
 			max-height: calc(100vh - 95px);
 		}
 
 		&:nth-child(2) {
-			margin-left: 7px;
+			margin-left: 18px;
 		}
 
 		&:nth-child(3) {
-			margin-left: 8px;
+			margin-left: 16px;
 		}
 
 		&__title {
@@ -46,7 +49,7 @@
 			box-shadow: 0 2px 21px 0 transparent;
 			letter-spacing: -0.1px;
 			cursor: pointer;
-			background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 97%/14px no-repeat;
+			background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 97% 12px/14px no-repeat;
 			white-space: nowrap;
 
 			&.last {
@@ -68,7 +71,7 @@
 				box-shadow: 0 -10px 21px 0 rgba(0, 0, 0, 0.1);
 				background-color: #ffffff;
 				color: #394791;
-				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 97%/14px no-repeat;
+				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 97% 12px/14px no-repeat;
 			}
 
 			&.last {
@@ -98,6 +101,48 @@
 
 		&.active {
 
+			&:nth-child(3) {
+				.dropdown-menu__parent {
+					left: -53px;
+					width: 88vw;
+				}
+
+				.dropdown-menu__link {
+					padding: 2px 23px 7px;
+				}
+
+				.sub-menu__list {
+					padding-left: 25px;
+
+				}
+
+				.sub-menu__link {
+					word-spacing: 2px;
+				}
+
+				.dropdown-menu__list {
+					flex-direction: column;
+					flex-wrap: wrap;
+					align-content: end;
+				}
+
+				.dropdown-menu__item {
+					&:nth-child(1) {
+						width: 206px;
+					}
+
+					&:nth-child(2),
+					&:nth-child(3) {
+						max-width: 160px;
+					}
+
+					&:nth-child(3) {
+						.sub-menu__link {
+							white-space: normal;
+						}
+					}
+				}
+			}
 
 			.dropdown-menu__list {
 				display: flex;
@@ -110,6 +155,8 @@
 			.dropdown-menu__item {
 				display: flex;
 				flex-direction: column;
+				margin-bottom: 31px;
+				max-width: 207px;
 			}
 
 			.dropdown-menu__link {
@@ -121,7 +168,7 @@
 				z-index: 999;
 				position: relative;
 				color: #394791;
-				background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 97%/14px no-repeat;
+				background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 97% 12px/14px no-repeat;
 			}
 
 			.dropdown-menu__parent {
@@ -129,8 +176,9 @@
 				overflow: hidden;
 				box-shadow: 0 18px 41px 0 rgba(0, 0, 0, 0.1);
 				z-index: 99999;
-				top: 31px;
-				width: 100%;
+				top: 100%;
+				width: auto;
+				max-height: calc(75vh);
 			}
 
 		}
@@ -150,7 +198,7 @@
 
 	.sub-menu__item {
 		display: flex;
-		padding-right: 16px;
+		// padding-right: 16px;
 	}
 
 	.sub-menu__link,

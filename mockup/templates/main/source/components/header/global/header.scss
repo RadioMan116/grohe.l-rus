@@ -33,7 +33,7 @@
 			justify-content: center;
 			align-items: center;
 			background: #ffffff;
-			height: 39px;
+			height: 37px;
 			z-index: 9;
 		}
 
@@ -73,17 +73,18 @@
 	}
 
 	&__telephones {
-		height: 28px;
+		// height: 28px;
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		margin-left: auto;
-		flex-grow: 1;
-		margin-left: 14px;
+		// flex-grow: 1;
+		margin-left: auto;
+		padding-top: 3px;
 
 		.telephones {
 			display: flex;
 			flex-direction: column;
-			margin-left: auto;
+			margin-left: 44px;
 		}
 	}
 
