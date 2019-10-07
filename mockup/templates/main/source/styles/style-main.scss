@@ -189,7 +189,9 @@ body.fancybox-active {
 	flex-direction: row-reverse;
 }
 
-
+.hide {
+    display: none !important;
+}
 
 
 @media screen and (max-width: 767px) {

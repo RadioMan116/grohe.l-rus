@@ -621,7 +621,7 @@
 			&_header {
 				border-bottom: 1px solid #eeeeee;
 				border-top: 1px solid #eeeeee;
-
+				align-items: center;
 			}
 
 			&:nth-child(3) {
@@ -707,12 +707,23 @@
 			background: url("../images/star.svg") no-repeat;
 			background-position: center;
 			background-size: 16px 16px;
+			flex-shrink: 0;
 		}
 
 		&__none {
 			background: url("../images/rectangle-2.svg") no-repeat;
 			background-position: center;
 			background-size: 21px 20px;
+		}
+
+		.ratings__number {
+			color: #333333;
+			font-family: Arial;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 18px;
+			margin-left: 7px;
+			margin-bottom: 0;
 		}
 	}
 
@@ -1099,6 +1110,7 @@
 				font-weight: 700;
 				line-height: 18px;
 				margin-left: 7px;
+				margin-bottom: 0;
 			}
 		}
 
