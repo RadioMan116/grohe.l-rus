@@ -18,7 +18,9 @@ img {
 }
 
 .fixed {
-	overflow: hidden;
+	// overflow: hidden;
+	// position: fixed;
+	// height: 100vh;
 	// width:calc(100% - 17px);
 }
 
@@ -190,7 +192,7 @@ body.fancybox-active {
 }
 
 .hide {
-    display: none !important;
+	display: none !important;
 }
 
 
