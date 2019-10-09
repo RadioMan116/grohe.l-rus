@@ -431,6 +431,10 @@
 				background: url("https://icongr.am/entypo/chevron-down.svg?color=666666") 100% 50%/16px no-repeat;
 				color: #333333;
 				cursor: pointer;
+				a{
+					color: inherit;
+					text-decoration: none;
+				}
 			}
 
 			&__item {
