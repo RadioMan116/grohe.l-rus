@@ -27,7 +27,7 @@
 			// max-height: calc(100vh - 95px);
 			// max-height: 740px;
 
-			height: 850px;
+
 		}
 
 		&:nth-child(2) {
@@ -118,7 +118,7 @@
 		&.active {
 			.dropdown-menu__parent {
 				display: flex;
-				max-height: calc(100vh - 150px);
+
 			}
 
 			&:nth-child(3) {
@@ -128,7 +128,12 @@
 					max-width: calc(100% + 104px);
 					background-color: #fff;
 					padding-right: 0;
+					max-height: calc(100vh - 150px);
 					overflow-y: auto;
+
+					.dropdown-menu__list {
+						height: 850px;
+					}
 
 					@media (max-width: 1280px) {
 						left: calc(587.5px - 50vw);

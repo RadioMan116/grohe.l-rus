@@ -118,13 +118,15 @@ h1.title {
 	align-items: center !important;
 	justify-content: center !important;
 	transition: all 0.3s ease-in-out;
+	max-height: 100%;
 
 	img {
 		position: unset !important;
-		width: fit-content !important;
-		height: auto !important;
+		width: auto !important;
+		height: -webkit-fill-available !important;
 		max-width: 100%;
 		cursor: pointer !important;
+		max-height: 100% !important;
 	}
 
 
