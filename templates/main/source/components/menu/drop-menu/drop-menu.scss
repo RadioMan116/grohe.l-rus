@@ -20,16 +20,14 @@
 			margin: 0;
 			padding: 12px 0 0 0;
 			list-style-type: none;
-
 			flex-direction: column;
-
 			background-color: #ffffff;
 			// margin-top: 7px;
 
 			// max-height: calc(100vh - 95px);
 			// max-height: 740px;
-			max-height: calc(100vh - 150px);
-			height: auto;
+
+			height: 900px;
 		}
 
 		&:nth-child(2) {
@@ -120,6 +118,7 @@
 		&.active {
 			.dropdown-menu__parent {
 				display: flex;
+				max-height: calc(100vh - 150px);
 			}
 
 			&:nth-child(3) {
@@ -129,6 +128,7 @@
 					max-width: calc(100% + 104px);
 					background-color: #fff;
 					padding-right: 0;
+					overflow-y: auto;
 
 					@media (max-width: 1280px) {
 						left: calc(587.5px - 50vw);
