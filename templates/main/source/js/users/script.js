@@ -2104,10 +2104,10 @@ $(window).on('load', function () {
 			}
 		});
 		var galleryThumbs = new Swiper('.js-gallery-thumbs', {
-			spaceBetween: 12,
-			slidesPerView: 4,
+			spaceBetween: 17,
+			slidesPerView: 5,
 			freeMode: true,
-			direction: "vertical",
+			// direction: "vertical",
 			watchSlidesVisibility: true,
 			watchSlidesProgress: true,
 			touchRatio: 0.2,
