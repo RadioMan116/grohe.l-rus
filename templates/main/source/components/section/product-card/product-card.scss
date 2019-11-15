@@ -64,6 +64,7 @@
 				display: flex;
 				align-items: baseline;
 				justify-content: center;
+				min-height: 400px;
 
 				&:before {
 					content: 'Увеличить';
@@ -182,8 +183,9 @@
 			width: 100%;
 			height: 84px;
 			flex-shrink: 0;
-			margin: auto 0 0;
+			margin: 62px 0 20px -41px;
 			padding: 0px 40px 4px !important;
+			width: 510px;
 
 
 
@@ -796,7 +798,7 @@
 	&__description {
 		display: flex;
 		width: 100%;
-		height: 141px;
+		height: 96px;
 		text-overflow: ellipsis;
 		overflow: hidden;
 		padding-bottom: 30px;
@@ -2312,7 +2314,7 @@
 		position: relative;
 		flex-grow: unset;
 		padding-left: 100px;
-		margin-bottom: 5px;
+		margin-bottom: 12px;
 
 
 		h6 {
@@ -2333,9 +2335,10 @@
 		}
 
 		.link-pop-glossary {
-			margin-right: 16px;
+			margin-left: 14px;
 			position: relative;
 			cursor: pointer;
+			margin-right: 2px;
 
 			&:last-child {
 				margin-right: 0;

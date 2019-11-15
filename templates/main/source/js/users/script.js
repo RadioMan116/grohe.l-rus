@@ -2104,7 +2104,7 @@ $(window).on('load', function () {
 			}
 		});
 		var galleryThumbs = new Swiper('.js-gallery-thumbs', {
-			spaceBetween: 17,
+			spaceBetween: 9,
 			slidesPerView: 5,
 			freeMode: true,
 			// direction: "vertical",
