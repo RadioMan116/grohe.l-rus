@@ -3669,6 +3669,7 @@
 		background-color: #ffffff;
 		padding: 17px 24px;
 		width: 100%;
+		margin-bottom: 50px;
 
 		// .newsletter__pic
 
@@ -3742,6 +3743,9 @@
 				input[type="submit"] {
 					margin-left: auto;
 					margin-right: 16px;
+				}
+				.abuse-popup__item{
+					margin-bottom: 0;
 				}
 			}
 
