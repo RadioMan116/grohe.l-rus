@@ -1150,28 +1150,7 @@ $(document).ready(function () {
 			// 	el: ".swiper-scrollbar"
 			// }
 		});
-		var mySwiper15 = new Swiper(".js-sidebar-articles", {
-			// navigation: {
-			// 	nextEl: ".practical-features__next",
-			// 	prevEl: ".practical-features__prev"
-			// },
-			pagination: {
-				el: ".articles__pagination",
-				clickable: true
-			},
-			breakpoints: {
-				600: {
-					slidesPerView: 1,
-					slidesPerGroup: 1,
-					spaceBetween: 12,
-				},
-				767: {
-					slidesPerView: 2,
-					slidesPerGroup: 1,
-					spaceBetween: 12,
-				},
-			}
-		});
+
 
 
 		var mySwiper23 = new Swiper(".catalog .articles.swiper-container", {
@@ -1243,6 +1222,32 @@ $(document).ready(function () {
 
 
 	}
+	var mySwiper15 = new Swiper(".js-sidebar-articles", {
+		slidesPerView: 1,
+		slidesPerGroup: 1,
+		spaceBetween: 12,
+		navigation: {
+			nextEl: ".articles__next",
+			prevEl: ".articles__prev"
+		},
+		pagination: {
+			el: ".articles__pagination",
+			clickable: true
+		},
+		breakpoints: {
+			600: {
+				slidesPerView: 1,
+				slidesPerGroup: 1,
+				spaceBetween: 12,
+			},
+			767: {
+				slidesPerView: 2,
+				slidesPerGroup: 1,
+				spaceBetween: 12,
+			},
+		}
+	});
+
 	$(".js-comparison__select").click(function () {
 		if ($(this).hasClass("active") == true) {
 			$(".comparison__select ").removeClass("active");
