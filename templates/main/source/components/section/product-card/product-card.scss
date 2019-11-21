@@ -849,7 +849,7 @@
 
 			&:before {
 				content: '';
-				background: url('/images/sale.svg') no-repeat center;
+				background: url('../images/sale.svg') no-repeat center;
 				width: 29px;
 				height: 29px;
 				flex-shrink: 0;
@@ -2022,6 +2022,10 @@
 					display: flex;
 					align-items: center;
 					flex-basis: 33%;
+
+					a {
+						margin-left: 6px;
+					}
 				}
 
 				&-glossary {
@@ -3514,6 +3518,7 @@
 				color: #394791;
 				padding-bottom: 1px;
 				border-bottom: 1px dashed #394791;
+				text-decoration: none !important;
 			}
 		}
 	}
@@ -4454,6 +4459,7 @@
 						margin-top: 6px;
 						width: 100%;
 						max-width: 100%;
+
 					}
 
 					&.active {
@@ -4502,6 +4508,7 @@
 
 				.characteristic__property {
 					position: relative;
+
 				}
 
 				.characteristic-glossary {
