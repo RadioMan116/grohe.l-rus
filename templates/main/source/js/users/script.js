@@ -2074,6 +2074,7 @@ $(document).ready(function () {
 		});
 		$('[data-fancybox="gallery"]').fancybox();
 
+
 		$("[data-scroll]").click(function () {
 			event.preventDefault();
 			var id = $(this).attr('href'),
