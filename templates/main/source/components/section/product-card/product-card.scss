@@ -627,6 +627,7 @@
 		// margin-left: 26px;
 		margin-left: 0;
 		margin-right: auto;
+		white-space: nowrap;
 	}
 
 	&__price {
@@ -808,7 +809,7 @@
 			}
 
 			&:nth-child(1) {
-				margin-right: 24px;
+				margin-right: 20px;
 			}
 
 			&:nth-child(2) {
@@ -2438,7 +2439,7 @@
 			line-height: 24px;
 			white-space: nowrap;
 			margin-left: 0;
-			margin-right: 25px;
+			margin-right: 10px;
 		}
 
 		&_top {
@@ -2494,6 +2495,7 @@
 
 			p {
 				margin: 0;
+				white-space: nowrap;
 			}
 
 			&.compare {
