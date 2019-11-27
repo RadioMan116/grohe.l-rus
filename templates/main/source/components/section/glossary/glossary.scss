@@ -75,10 +75,12 @@
 		}
 	}
 
-	&__img {
+	&__img,
+	picture {
 		width: 150px;
 		height: 150px;
 		margin-right: 2rem;
+		flex-shrink: 0;
 	}
 
 	&__li {
@@ -141,7 +143,7 @@
 	}
 
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		&__img {
 			width: 120px;
 			height: 120px;
@@ -156,8 +158,8 @@
 		}
 	}
 
-	@media screen and (max-width: 480px) {
-		&__img {
+	@media screen and (max-width: 767px) {
+		&__img,picture {
 			width: 75px;
 			height: 75px;
 			margin-bottom: 1rem;
