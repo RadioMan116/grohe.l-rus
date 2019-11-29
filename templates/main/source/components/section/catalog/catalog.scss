@@ -1277,7 +1277,8 @@
 				margin: unset;
 			}
 		}
-		+.catalog__description.description{
+
+		+.catalog__description.description {
 			margin-top: 24px;
 		}
 	}
@@ -1448,6 +1449,193 @@
 			display: none;
 		}
 	}
+
+	.upsale-catalog {
+		position: relative;
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+		padding-top: 5px;
+
+		// .upsale-catalog__title
+
+		&__title {
+			color: #212121;
+			font-family: "Roboto Condensed";
+			font-size: 26px;
+			font-weight: 400;
+			margin-bottom: 18px;
+		}
+
+		// .upsale-catalog__subtitle
+
+		&__subtitle {}
+
+		// .upsale-catalog__items
+
+		&__items {
+
+		}
+
+		// .upsale-catalog__item
+
+		&__item {
+			border: 1px solid #eeeeee;
+			background-color: #ffffff;
+			display: flex;
+			padding: 13px 19px;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		// .upsale-catalog__pic
+
+		&__pic {}
+
+		// .upsale-catalog__parent
+
+		&__parent {}
+
+		// .upsale-catalog__img
+
+		&__img {
+			max-height: 100px;
+		}
+
+		// .upsale-catalog__aside
+
+		&__aside {}
+
+		// .upsale-catalog__text
+
+		&__text {
+			// margin-bottom: 10px;
+			max-width: 152px;
+		}
+
+		// .upsale-catalog__description
+
+		&__description {
+			color: #2e2e2e;
+			font-family: "Roboto Condensed";
+			font-size: 13px;
+			font-weight: 400;
+			line-height: 22px;
+		}
+
+		// .upsale-catalog__info
+
+		&__info {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		// .upsale-catalog__sale
+
+		&__sale {
+			color: #2e2e2e;
+			font-family: "Roboto Condensed";
+			font-size: 20px;
+			font-weight: 700;
+			line-height: 24px;
+
+			i {
+				font-size: 14px;
+				font-style: normal;
+			}
+		}
+
+		// .upsale-catalog__link
+
+		&__link {
+			padding: 0;
+			color: transparent;
+			background-image: url("../images/shopping-cart.svg");
+			background-size: 18px;
+			background-position: 50%;
+			width: 44px;
+			height: 36px;
+			font-family: Roboto Condensed;
+			font-size: 14px;
+			background-color: #394791;
+			background-repeat: no-repeat;
+			box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
+			text-decoration: none;
+			font-weight: 400;
+			text-transform: uppercase;
+			margin: 0;
+			border-radius: 2px;
+			line-height: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: none;
+			cursor: pointer;
+			text-align: center;
+			// .upsale-catalog__link_two
+
+			&_two {}
+		}
+
+		// .upsale-catalog__prev
+
+		&__prev {}
+
+		// .upsale-catalog__next
+
+		&__next {}
+
+
+
+		.swiper-upsale-catalog {}
+
+		.js-catalog-upsale {}
+
+		.swiper-wrapper {}
+
+		.swiper-slide {}
+
+		.swiper-pagination-upsale-catalog {
+			top: 9px;
+			right: 124px;
+			display: flex;
+			justify-content: flex-end;
+			width: auto;
+			position: absolute;
+			left: unset;
+			bottom: unset;
+		}
+
+		.swiper-button-prev {
+			background: url("../images/special-offers_prev.png") 0/34px no-repeat;
+			position: absolute;
+			top: 22px;
+			right: 48px;
+			left: unset;
+			width: 34px;
+			height: 34px;
+
+			&:hover {
+				background: url("../images/swiper-button-color-prev.png") 0/34px no-repeat;
+			}
+		}
+
+		.swiper-button-next {
+			background: url("../images/special-offers_next.png") 0/34px no-repeat;
+			top: 22px;
+			right: 3px;
+			width: 34px;
+			height: 34px;
+
+			&:hover {
+				background: url("../images/swiper-button-color-next.png") 0/34px no-repeat;
+			}
+		}
+	}
+
+
 
 
 	@media screen and (max-width: 767px) {
@@ -2087,13 +2275,16 @@
 			}
 		}
 
-		.upsale {
+		.upsale,
+		.upsale-catalog {
 			order: -3;
 			padding: 15px 24px 56px;
 			margin-bottom: 24px;
 
 			.upsale__next,
-			.upsale__prev {
+			.upsale__prev,
+			.upsale-catalog__next,
+			.upsale-catalog__prev {
 				display: none !important;
 			}
 
@@ -2101,16 +2292,24 @@
 				margin-bottom: 14px;
 			}
 
-			.upsale__item {
+			.upsale__item,.upsale-catalog__item {
 				padding-top: 19px;
 				padding-bottom: 10px;
 			}
 
-			.swiper-pagination-upsale {
+			.swiper-pagination-upsale,.swiper-pagination-upsale-catalog {
 				transform: translateX(-50%);
 				bottom: 19px;
 				left: 50%;
 				width: auto;
+			}
+		}
+
+		.upsale-catalog {
+			order: unset;
+
+			.swiper-pagination-upsale-catalog {
+				top: unset;
 			}
 		}
 

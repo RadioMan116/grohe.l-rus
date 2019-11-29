@@ -324,6 +324,44 @@ $(document).ready(function () {
 		// 	el: ".swiper-scrollbar"
 		// }
 	});
+	var mySwiper455 = new Swiper(".catalog .js-upsale-catalog", {
+		// Optional parameters
+		// slidesPerGroup: 1,
+		slidesPerView: 3,
+		spaceBetween: 24,
+		allowTouchMove: false,
+		// direction: "horizontal",
+		// loop: true,
+		// If we need pagination
+		navigation: {
+			nextEl: ".upsale-catalog__next",
+			prevEl: ".upsale-catalog__prev"
+		},
+		pagination: {
+			el: ".swiper-pagination-upsale-catalog",
+			clickable: true
+		},
+		breakpoints: {
+			// when window width is <= 320px
+			767: {
+				allowTouchMove: true,
+				slidesPerView: 1,
+				// slidesPerColumn: 2,
+			}
+		}
+		// Navigation arrows
+		// navigation: {
+		// 	nextEl: ".main_next",
+		// 	prevEl: ".main_prev"
+		// },
+
+		// And if we need scrollbar
+		// scrollbar: {
+		// 	el: ".swiper-scrollbar"
+		// }
+	});
+
+
 	var mySwiper71 = new Swiper(".product-card__collection .swiper-container", {
 		// Optional parameters
 		// slidesPerGroup: 1,
@@ -1105,7 +1143,36 @@ $(document).ready(function () {
 		if ($('h1.title:contains("Корзина")')) {
 			$('h1.title:contains("Корзина")').css("width", "100%")
 		};
+		var mySwiper23 = new Swiper(".sidebar .articles.swiper-container", {
+			navigation: {
+				nextEl: ".articles__next",
+				prevEl: ".articles__prev"
+			},
+			pagination: {
+				el: ".articles__pagination",
+				clickable: true
+			},
+			breakpoints: {
+				480: {
+					slidesPerView: 1,
+					slidesPerGroup: 1,
+					spaceBetween: 12,
 
+				},
+				600: {
+					slidesPerView: 2,
+					slidesPerGroup: 1,
+					spaceBetween: 12,
+
+				},
+
+				767: {
+					slidesPerView: 3,
+					slidesPerGroup: 1,
+					spaceBetween: 16
+				},
+			}
+		});
 	}
 	if (windowWidth2 <= 767) {
 		$('.logo').appendTo('.header__block_top .container');
@@ -1153,36 +1220,6 @@ $(document).ready(function () {
 
 
 
-		var mySwiper23 = new Swiper(".catalog .articles.swiper-container", {
-			// navigation: {
-			// 	nextEl: ".practical-features__next",
-			// 	prevEl: ".practical-features__prev"
-			// },
-			pagination: {
-				el: ".articles__pagination",
-				clickable: true
-			},
-			breakpoints: {
-				480: {
-					slidesPerView: 1,
-					slidesPerGroup: 1,
-					spaceBetween: 12,
-
-				},
-				600: {
-					slidesPerView: 2,
-					slidesPerGroup: 1,
-					spaceBetween: 12,
-
-				},
-
-				767: {
-					slidesPerView: 3,
-					slidesPerGroup: 1,
-					spaceBetween: 16
-				},
-			}
-		});
 		if ($(".favorite__items").length) {
 			console.log('юк');
 
