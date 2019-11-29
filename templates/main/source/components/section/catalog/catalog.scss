@@ -2134,13 +2134,16 @@
 
 			a[data-type="iframe"] {
 
+
+
+			}
+			picture{
+
 				&:after {
 					content: '';
 
 					height: 280px;
 				}
-
-
 			}
 		}
 
@@ -2310,6 +2313,10 @@
 
 			.swiper-pagination-upsale-catalog {
 				top: unset;
+				justify-content: center;
+			}
+			.upsale-catalog__item{
+				justify-content: space-around;
 			}
 		}
 

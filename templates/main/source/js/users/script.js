@@ -343,9 +343,14 @@ $(document).ready(function () {
 		},
 		breakpoints: {
 			// when window width is <= 320px
-			767: {
+			650: {
 				allowTouchMove: true,
 				slidesPerView: 1,
+				// slidesPerColumn: 2,
+			},
+			767: {
+				allowTouchMove: true,
+				slidesPerView: 2,
 				// slidesPerColumn: 2,
 			}
 		}
