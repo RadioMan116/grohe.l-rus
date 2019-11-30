@@ -489,6 +489,7 @@
 						width: 100%;
 						overflow-y: scroll;
 						height: 100%;
+						height: auto;
 					}
 
 					.collection__banner {
@@ -501,6 +502,7 @@
 						width: 100%;
 						padding: 0;
 						flex-wrap: nowrap;
+						height: auto !important;
 					}
 
 					.dropdown-menu__item {
@@ -528,7 +530,10 @@
 							.sub-menu__list {
 								display: flex;
 							}
+
+
 						}
+
 					}
 
 					.dropdown-menu__subtitle {
