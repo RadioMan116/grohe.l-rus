@@ -125,7 +125,6 @@
 
 	@media (max-width: 767px) {
 		display: none;
-		width: 100%;
 
 		nav {
 			display: flex;
@@ -172,14 +171,22 @@
 			display: flex;
 			margin-top: 0;
 			align-items: baseline;
-			padding-bottom: 90px;
 			order: 3;
+			flex-wrap: wrap;
+			height: unset;
+			max-height: 125px;
+			padding-top: 1rem;
+			padding-bottom: 0;
+			&:nth-of-type(4){
+				display: none;
+			}
 		}
 
 		&.active {
-			transform: scale(1);
-			z-index: 10;
-			background-color: #262626;
+			display: flex;
+			// transform: scale(1);
+			// z-index: 10;
+			// background-color: #262626;
 		}
 
 		&__list {
@@ -193,12 +200,16 @@
 		&__item {
 			width: 50%;
 			margin-top: 17px;
-			cursor: pointer;
+			cursor:pointer;
 		}
 
 		.header__block_bottom & {
 			display: flex;
 			flex-direction: column;
+			width: 100%;
+		}
+		&+.menu{
+			display: none;
 		}
 
 		.dropdown-menu__back {
@@ -206,35 +217,27 @@
 			line-height: 3.75 !important;
 		}
 
-		.header__telephones {
-			flex-wrap: wrap;
-			height: unset;
-			max-height: 190px;
-			padding-top: 1rem;
-			padding-bottom: 0;
-
-		}
-
 		.header__phone {
 			margin-bottom: 2px;
 			color: #333333;
 			font-family: "Roboto Condensed";
-			font-size: 16px;
-			font-weight: 400;
+			font-size: 18px;
+			font-weight: 800;
 			line-height: 26px;
 		}
 
 		.time-work {
 			color: #666;
-			font-family: Arial;
+			font-family: Arial,sans-serif;
 			font-size: 13px;
 			line-height: 22px;
 			text-align: left;
 			display: block;
+			margin-left: 16px;
 
 			i {
 				color: #666;
-				font-family: Arial;
+				font-family: Arial,sans-serif;
 				font-size: 13px;
 				line-height: 22px;
 				text-align: left;
@@ -258,6 +261,9 @@
 			text-align: center;
 			border-radius: 4px;
 			margin-top: 23px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 		}
 	}
 
@@ -273,43 +279,6 @@
 // }
 
 @media screen and (max-width: 480px) {
-	.menu {
-		width: 100%;
-		height: 100%;
-		transition: transform 0.3s;
-		z-index: 10;
-
-		&.active {
-			height: 100vh !important;
-			overflow-y: scroll !important;
-		}
-	}
-
-	// .header__dropdown-menu {
-	//   position: absolute;
-	// }
-
-	.header .header__icons,
-	.hamburger,
-	.logo {
-		// position: absolute;
-		// top: 18px;
-	}
-
-	.logo {
-		left: 30px;
-	}
-
-	.header .header__icons {
-		right: 16px;
-	}
-
-	.header__telephones {
-		position: unset;
-
-		padding-bottom: 50px;
-	}
-
 
 
 

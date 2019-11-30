@@ -2350,6 +2350,11 @@ $(window).on('load', function () {
 
 			console.log($(this))
 		});
+		(function () {
+			var firstDropdownMenu = document.querySelector('nav.dropdown-menu');
+
+			firstDropdownMenu.classList.add("active");
+		})();
 	}
 
 	if ($(".filter-new").length) {
