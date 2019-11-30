@@ -285,6 +285,7 @@
 		&:hover {
 			&:before {
 				background: url("../images/musica-searcher-1.svg") no-repeat;
+				background-size: 17px !important;
 			}
 
 		}
@@ -367,6 +368,7 @@
 
 			&:before {
 				background: url("../images/shopping-cart__color.svg") no-repeat;
+				background-size: 22px !important;
 			}
 		}
 	}
@@ -452,6 +454,8 @@
 
 				.header__icons {
 					display: flex;
+					flex-grow: 1;
+					max-width: 225px;
 				}
 
 				.menu__list {
@@ -464,6 +468,7 @@
 				flex-basis: unset;
 				margin-left: auto;
 				justify-content: space-around;
+				align-self: unset;
 			}
 
 			&__favorite,
@@ -474,6 +479,37 @@
 				display: flex;
 				justify-content: flex-end;
 				align-items: center;
+
+			}
+
+			&__basket {
+				&:before {
+					background-size: 19px !important;
+
+
+				}
+
+				&:hover {
+
+					&:before {
+						background-size: 21px !important;
+					}
+				}
+			}
+
+			&__compare,
+			&__favorite {
+				&:before {
+					background-size: 21px !important;
+
+				}
+
+				&:hover {
+
+					// &:before {
+					// 	background-size: 22px !important;
+					// }
+				}
 			}
 
 
@@ -482,6 +518,18 @@
 				display: flex;
 				justify-content: flex-end;
 				align-items: center;
+				&:before {
+					background-size: 22px !important;
+
+
+				}
+
+				&:hover {
+
+					&:before {
+						background-size: 19px !important;
+					}
+				}
 			}
 
 			&__favorite {
@@ -541,9 +589,10 @@
 				font-weight: normal;
 				font-style: normal;
 				font-stretch: normal;
-				line-height: normal;
+				line-height: 1;
 				letter-spacing: normal;
 				color: #666666;
+				padding-top: 4px;
 			}
 
 			&__form {
@@ -614,7 +663,7 @@
 
 		.hamburger {
 			display: block;
-			margin-right: 21px;
+			margin-right: 0px;
 			// margin-top: 4px;
 
 			&__img {
