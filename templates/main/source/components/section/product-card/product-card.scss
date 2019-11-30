@@ -5468,7 +5468,7 @@
 			.product-card__type-payment {
 				flex-wrap: wrap;
 				margin-bottom: 0px;
-				justify-content: center;
+				justify-content: flex-end;
 
 				.type-payment__item {
 					width: 134px;
@@ -5478,7 +5478,7 @@
 					font-size: 12px;
 					line-height: 14px;
 					margin-right: 0;
-					flex-basis: 213px;
+					flex-basis: 45%;
 					max-width: 50%;
 
 					&:nth-child(odd) {
@@ -5508,9 +5508,10 @@
 
 			.product-card__announcing {
 				margin-bottom: 5px;
+				justify-content: flex-end;
 
 				.announcing__item {
-					flex-basis: 213px;
+					flex-basis: 45%;
 					max-width: 50%;
 
 					&:nth-child(odd) {
