@@ -155,9 +155,15 @@ $(document).ready(function () {
 			clickable: true
 		},
 		breakpoints: {
-			600: {
+			479: {
 
 				slidesPerView: 1,
+				// slidesPerGroup: 1,
+
+			},
+			600: {
+
+				slidesPerView: 1.3,
 				// slidesPerGroup: 1,
 
 			},
@@ -576,7 +582,7 @@ $(document).ready(function () {
 			},
 			breakpoints: {
 				480: {
-					slidesPerView: 1,
+					slidesPerView: 1.3,
 					slidesPerGroup: 1,
 					spaceBetween: 16,
 
@@ -685,9 +691,15 @@ $(document).ready(function () {
 				600: {
 					allowTouchMove: true,
 					slidesPerGroup: 1,
-					slidesPerView: 1,
+					slidesPerView: 1.3,
 					spaceBetween: 10
-				}
+				},
+				// 480: {
+				// 	allowTouchMove: true,
+				// 	slidesPerGroup: 1,
+				// 	slidesPerView: 1,
+				// 	spaceBetween: 10
+				// }
 			}
 		});
 	}
