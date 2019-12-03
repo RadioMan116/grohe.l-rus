@@ -2173,10 +2173,10 @@ $(document).ready(function () {
 		}
 	});
 	$(function () {
-		$('[data-fancybox="gallery"]').fancybox({
 
-		});
-		$('[data-fancybox="gallery"]').fancybox();
+		$('[data-fancybox]').fancybox({
+			animationEffect: 'fade'
+		}).attr('data-fancybox', 'group1');
 
 
 		$("[data-scroll]").click(function () {
