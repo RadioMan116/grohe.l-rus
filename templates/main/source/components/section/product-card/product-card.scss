@@ -536,7 +536,7 @@
 			}
 
 			img {
-				width: auto;
+				width: auto !important;
 				height: auto !important;
 				height: -moz-available !important;
 				/* WebKit-based browsers will ignore this. */
