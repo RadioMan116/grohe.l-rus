@@ -410,9 +410,15 @@
 			// max-height: 52px;
 			margin-top: -5px;
 			margin-bottom: 24px;
-			&#bx_651765591_6888{
+
+			&#bx_651765591_6888 {
 				display: none;
 			}
+
+		}
+
+		picture img {
+			max-height: 100% !important;
 		}
 
 		h3 {
