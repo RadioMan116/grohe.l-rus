@@ -410,6 +410,9 @@
 			// max-height: 52px;
 			margin-top: -5px;
 			margin-bottom: 24px;
+			&[alt="Доставка техники со специальным лейблом осуществляется бесплатно"]{
+				display: none;
+			}
 		}
 
 		h3 {

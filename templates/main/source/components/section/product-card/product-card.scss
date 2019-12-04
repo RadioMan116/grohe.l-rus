@@ -536,13 +536,14 @@
 			}
 
 			img {
-				width: auto !important;
-				height: auto !important;
-				height: -moz-available !important;
-				/* WebKit-based browsers will ignore this. */
-				height: -webkit-fill-available !important;
-				/* Mozilla-based browsers will ignore this. */
-				height: fill-available !important;
+				// width: auto !important;
+				// height: auto !important;
+				// // height: -moz-available !important;
+				// // /* WebKit-based browsers will ignore this. */
+				// // height: -webkit-fill-available !important;
+				// // /* Mozilla-based browsers will ignore this. */
+				// height: fill-available !important;
+				max-height: -webkit-fill-available!important;
 			}
 
 			.iframe {
