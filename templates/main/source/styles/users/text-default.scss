@@ -10,6 +10,9 @@
 		max-width: 100%;
 		margin-bottom: 28px;
 	}
+	picture img {
+		max-height: 100% !important;
+	}
 
 	h2 {
 		color: #333333;
@@ -417,9 +420,7 @@
 
 		}
 
-		picture img {
-			max-height: 100% !important;
-		}
+
 
 		h3 {
 			font-size: 18px;
