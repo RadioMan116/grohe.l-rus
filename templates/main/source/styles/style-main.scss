@@ -219,7 +219,7 @@ picture {
 		// max-height: -webkit-fill-available!important;
 	}
 }
-.seo-text div[id]{
+article.about-brand+article.seo-text+article.seo-text div[id]{
 	display: block;
 	width: 100%;
 }
