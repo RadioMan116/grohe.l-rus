@@ -906,7 +906,12 @@
 	.add-comment__item {
 		margin-top: 10px;
 	}
-	+article.seo-text{
+
+	+article.seo-text {
 		width: 100%;
+
+		div[id] {
+			display: block;
+		}
 	}
 }
