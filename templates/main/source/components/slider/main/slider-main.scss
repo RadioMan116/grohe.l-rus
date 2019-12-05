@@ -159,6 +159,7 @@
 	&__tablet {
 		display: flex;
 		align-items: flex-start;
+		width: 100%;
 	}
 
 	&__el {
@@ -166,6 +167,8 @@
 		display: flex;
 		background-color: #ffffff;
 		height: 230px;
+		width: calc(25% - 22px);
+
 
 		.gallery__parent {
 			display: flex;

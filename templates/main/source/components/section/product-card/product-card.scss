@@ -5607,8 +5607,11 @@
 				display: none;
 			}
 
-			[role="button"] {
-				display: none;
+			.product-card__collection {
+
+				[role="button"] {
+					display: none;
+				}
 			}
 
 			.collection__link {
