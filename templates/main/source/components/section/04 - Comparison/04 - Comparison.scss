@@ -965,12 +965,16 @@
 		&__pic {
 			width: 80px;
 			margin-right: 20px;
+			flex-shrink: 0;
 			img {
 				width: auto !important;
 				height: auto!important;
-				height: -moz-available!important;
-				height: -webkit-fill-available!important;
-				height: fill-available!important
+				// height: -moz-available!important;
+				// height: -webkit-fill-available!important;
+				// height: fill-available!important
+			}
+			picture{
+				height: 100%;
 			}
 		}
 
