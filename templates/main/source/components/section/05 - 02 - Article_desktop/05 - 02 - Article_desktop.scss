@@ -441,6 +441,10 @@
 
 		&__section {
 			width: 100%;
+			img,.catalog__img{
+				max-width: 100%;
+				max-height: 100%;
+			}
 		}
 
 		.catalog__item {
@@ -679,7 +683,7 @@
 		}
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767px) {
 		padding-top: 40px;
 
 		.reviews {
@@ -719,7 +723,7 @@
 		}
 	}
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 767px) {
 
 		padding-top: 34px;
 
@@ -911,7 +915,19 @@
 		width: 100%;
 
 		div[id] {
-			display: block;
+			display: flex;
+			flex-shrink: 0;
+
+			.video__image {
+				min-width: 417px;
+				@media screen and (max-width: 767px){
+					min-width: unset;
+				}
+			}
+			@media screen and (max-width: 767px){
+				display: block;
+				max-width: 100%;
+			}
 		}
 	}
 }
