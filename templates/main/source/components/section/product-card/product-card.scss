@@ -360,10 +360,10 @@
 					pointer-events: none;
 				}
 
-				img {
-					// align-self: center;
-					max-height: 100% !important;
-				}
+				// img {
+				// 	// align-self: center;
+				// 	max-height: 100% !important;
+				// }
 			}
 
 			a.iframe {
@@ -566,6 +566,7 @@
 				height: 100%;
 				display: flex;
 				justify-content: center;
+				align-items: center;
 			}
 		}
 
