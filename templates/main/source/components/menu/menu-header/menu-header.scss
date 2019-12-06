@@ -191,7 +191,7 @@
 
 		&__list {
 			flex-direction: row;
-			padding: 7px 16px 10px;
+			padding: 7px 16px 7px;
 			width: calc(100% + 32px);
 			flex-wrap: wrap;
 			background-color: #f1f1f1;
@@ -199,7 +199,7 @@
 
 		&__item {
 			width: 50%;
-			margin-top: 17px;
+			margin:8px 0;
 			cursor:pointer;
 		}
 
