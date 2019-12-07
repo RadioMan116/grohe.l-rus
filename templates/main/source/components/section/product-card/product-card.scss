@@ -3488,13 +3488,14 @@
 		font-size: 12px;
 		line-height: 18px;
 		width: 100%;
-		margin-bottom: 11px;
+		margin-bottom: 24px;
 
 		.type-payment__item {
 			margin-right: auto;
 			display: flex;
 			align-items: center;
 			white-space: nowrap;
+			position: relative;
 
 			img {
 				margin-right: 8px;
@@ -3513,6 +3514,24 @@
 					&:nth-of-type(2) {
 						display: block;
 					}
+				}
+
+				&:after {
+					content: attr(data-text);
+					position: absolute;
+					box-shadow: 0 2px 12px rgba(82, 64, 64, 0.17);
+					border-radius: 3px;
+					background-color: #ffffff;
+					width: 198px;
+					white-space: normal;
+					bottom: calc(100% + 16px);
+					left: -87px;
+					padding: 11px 11px;
+					color: #333333;
+					font-family: Arial;
+					font-size: 12px;
+					line-height: 18px;
+					z-index: 1;
 				}
 			}
 
