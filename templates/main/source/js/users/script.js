@@ -860,6 +860,23 @@ $(document).ready(function () {
 			$('body').removeClass('fixed');
 		});
 	});
+	$(".js-menu-footer__subtitle").click(function (event) {
+		if (
+			$(this)
+			.parent()
+			.hasClass("active") == false
+		) {
+			$(".dropdown-menu").removeClass("active");
+			$(this)
+				.parent()
+				.addClass("active");
+		} else {
+			$(this)
+				.parent()
+				.removeClass("active");
+		}
+
+	});
 	(function () {
 		const collections = document.querySelectorAll('.dropdown-menu__subtitle').forEach(element => element.addEventListener('click', function () {
 			this.parentNode.classList.toggle('active');
