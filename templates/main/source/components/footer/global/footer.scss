@@ -94,7 +94,8 @@
 			}
 		}
 
-		&:nth-child(3),&:nth-child(4) {
+		&:nth-child(3),
+		&:nth-child(4) {
 			width: 39%;
 			flex-basis: 310px;
 
@@ -386,7 +387,8 @@
 					width: 100%;
 					max-width: 100%;
 				}
-				&.hide{
+
+				&.hide {
 					display: flex !important;
 				}
 
@@ -399,6 +401,12 @@
 				&:nth-child(2) {
 					.menu-footer {
 						background: url("../images/sfera.svg") no-repeat 0 10px;
+
+						&__title {
+							&:first-child {
+								display: none;
+							}
+						}
 					}
 				}
 
@@ -410,6 +418,7 @@
 
 				&:nth-child(4) {
 					border: 0;
+					margin: -2px 0 -1px;
 
 					.menu-footer {
 						// background: url("../images/service.svg") no-repeat 0 10px;
@@ -448,6 +457,40 @@
 						&:before {
 							display: none;
 						}
+					}
+				}
+
+				&:last-child {
+					// flex-direction: row;
+					position: relative;
+					flex-wrap: wrap;
+					max-height: 150px;
+					padding-top: 24px;
+
+					.footer__text,
+					.footer__tel,
+					a {
+						width: 50%;
+					}
+
+					.footer__text_first {
+						margin-top: 0px;
+						width: 100%;
+						position: absolute;
+						top: 0;
+					}
+
+					.footer__email {
+						order: 3;
+					}
+
+					.footer__call-phone-button {
+						margin-bottom: 16px;
+						margin-top: 20px;
+					}
+
+					.footer__text_two {
+						margin-top: 0px;
 					}
 				}
 			}
@@ -547,6 +590,7 @@
 					.menu-footer__subtitle {
 						background: url("https://icongr.am/entypo/chevron-down.svg?color=b0b0b0") calc(100% - 14px) 50%/18px no-repeat;
 					}
+
 					.sub-menu__list {
 						display: flex;
 						padding-left: 13px;
