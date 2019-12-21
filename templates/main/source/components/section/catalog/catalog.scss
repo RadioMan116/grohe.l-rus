@@ -473,9 +473,15 @@
 			}
 		}
 
-		&__list {
-			max-width: 670px;
+
+
+		&[style^="background-image:"] {
+			.tags__list {
+				max-width: 670px;
+			}
 		}
+
+
 	}
 
 	.description {
