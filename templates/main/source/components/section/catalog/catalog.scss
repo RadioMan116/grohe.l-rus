@@ -2420,7 +2420,8 @@
 			}
 
 			.upsale-catalog__pic {
-				height: 100%;
+				// height: 100%;
+				width: calc(100% - 200px);
 
 				img {
 					max-height: 173px;
