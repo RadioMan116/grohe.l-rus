@@ -1435,7 +1435,7 @@
 							transition: 0;
 							opacity: 1;
 							height: auto;
-						padding: 7px 0 8px 46px;
+							padding: 7px 0 8px 46px;
 						}
 
 
@@ -1575,6 +1575,7 @@
 			padding: 13px 19px;
 			justify-content: space-between;
 			align-items: flex-start;
+
 		}
 
 		// .upsale-catalog__pic
@@ -1582,6 +1583,7 @@
 		&__pic {
 			padding-right: 10px;
 			padding-top: 6px;
+
 		}
 
 		// .upsale-catalog__parent
@@ -1591,11 +1593,12 @@
 		// .upsale-catalog__img
 
 		&__img {
-			max-height: 97px;
+			// max-height: 97px !important;
 		}
 
 		picture {
 			height: 97px;
+
 		}
 
 		// .upsale-catalog__aside
@@ -1604,13 +1607,14 @@
 			height: 100%;
 			display: flex;
 			flex-direction: column;
+
 		}
 
 		// .upsale-catalog__text
 
 		&__text {
 			// margin-bottom: 10px;
-			max-width: 152px;
+			width: 152px;
 			// flex-grow: 1;
 			margin-bottom: 8px;
 		}
