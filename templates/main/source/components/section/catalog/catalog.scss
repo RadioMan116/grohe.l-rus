@@ -2422,11 +2422,17 @@
 			.upsale-catalog__pic {
 				// height: 100%;
 				width: calc(100% - 200px);
+				min-height: 84px;
+				display: flex;
 
 				img {
-					max-height: 173px;
+					max-height: 173px !important;
 				}
 			}
+
+			// .upsale-catalog__parent {
+			// 	width: 100%;
+			// }
 		}
 
 		.download-catalogs {
