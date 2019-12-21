@@ -1414,7 +1414,7 @@
 				align-items: flex-start;
 				align-content: baseline;
 				position: relative;
-
+				min-height: 288px;
 				max-height: 311px;
 				background: white;
 
@@ -1432,13 +1432,10 @@
 						// .doc_loading
 
 						&_loading {
-
 							transition: 0;
-
 							opacity: 1;
 							height: auto;
-							padding: 7px 0 4px 46px;
-
+						padding: 7px 0 8px 46px;
 						}
 
 
