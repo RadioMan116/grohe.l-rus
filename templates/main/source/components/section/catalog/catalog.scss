@@ -2477,7 +2477,8 @@
 
 			.articles__item {
 				margin-bottom: 14px !important;
-flex-grow: 0;
+				flex-grow: 0;
+
 				&:last-child {
 					display: flex;
 				}
@@ -2616,6 +2617,8 @@ flex-grow: 0;
 					width: calc(100% - 114px);
 					margin-left: auto;
 					margin-top: 9px;
+					min-height: 84px;
+					margin-bottom: 14px;
 				}
 			}
 
