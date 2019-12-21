@@ -1611,7 +1611,7 @@
 		&__text {
 			// margin-bottom: 10px;
 			max-width: 152px;
-			flex-grow: 1;
+			// flex-grow: 1;
 			margin-bottom: 8px;
 		}
 
@@ -1631,6 +1631,7 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			margin-top: auto;
 		}
 
 		// .upsale-catalog__sale
