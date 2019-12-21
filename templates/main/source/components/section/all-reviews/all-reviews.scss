@@ -590,9 +590,14 @@
 	&__all {
 		color: #666666;
 		font-family: Arial;
-		font-size: 14px;
+		font-size: 16px;
+		font-weight: 400;
 		line-height: 24px;
 		margin-left: 20px;
+
+		&:hover {
+			color: #394791;
+		}
 	}
 
 	&__link {
@@ -606,6 +611,9 @@
 		text-align: left;
 		@include button ($padding: 12px 20px);
 
+		&.mobile {
+			display: none !important;
+		}
 	}
 
 	&__section {

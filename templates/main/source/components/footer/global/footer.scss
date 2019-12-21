@@ -403,8 +403,10 @@
 						background: url("../images/sfera.svg") no-repeat 0 10px;
 
 						&__title {
-							&:first-child {
-								display: none;
+							display: none;
+
+							&.js-menu-footer__title {
+								display: list-item;
 							}
 						}
 					}
@@ -427,7 +429,7 @@
 						overflow: visible;
 					}
 
-					padding-top: 0px !important;
+					// padding-top: 0px !important;
 
 					.menu-footer__list {
 						flex-direction: row;

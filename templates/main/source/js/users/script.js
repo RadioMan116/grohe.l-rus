@@ -1228,6 +1228,13 @@ $(document).ready(function () {
 				},
 			}
 		});
+		if ($(".instructions").length) {
+
+			$(function () {
+				$('.instructions__items .special-offers__text').matchHeight();
+			});
+		}
+
 	}
 	if (windowWidth2 <= 767) {
 		$('.logo').appendTo('.header__block_top .container');
@@ -2232,8 +2239,6 @@ $(document).ready(function () {
 	}
 
 	// $('.docs-frame iframe').contents().find('html').html("<h1 style='text-align: center;'>This IS an iframe</h1>");
-
-
 
 });
 $(window).on('load', function () {
