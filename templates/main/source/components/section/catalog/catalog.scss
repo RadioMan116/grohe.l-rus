@@ -2417,6 +2417,7 @@
 
 			.upsale-catalog__item {
 				justify-content: space-around;
+				align-items: flex-start;
 			}
 
 			.upsale-catalog__pic {
@@ -2426,8 +2427,19 @@
 				display: flex;
 
 				img {
-					max-height: 173px !important;
+					max-height: 143px !important;
 				}
+			}
+
+			.upsale-catalog__aside {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+
+			}
+
+			.upsale-catalog__text {
+				flex-grow: 1;
 			}
 
 			// .upsale-catalog__parent {
