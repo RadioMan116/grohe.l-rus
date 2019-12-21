@@ -2390,6 +2390,7 @@
 			.upsale-catalog__item {
 				padding-top: 19px;
 				padding-bottom: 10px;
+				padding-right: 16px;
 			}
 
 			.swiper-pagination-upsale,
@@ -2417,9 +2418,11 @@
 			.upsale-catalog__item {
 				justify-content: space-around;
 			}
-			.upsale-catalog__pic{
+
+			.upsale-catalog__pic {
 				height: 100%;
-				img{
+
+				img {
 					max-height: 173px;
 				}
 			}
@@ -2474,7 +2477,7 @@
 
 			.articles__item {
 				margin-bottom: 14px !important;
-
+flex-grow: 0;
 				&:last-child {
 					display: flex;
 				}
@@ -2484,6 +2487,11 @@
 				display: flex;
 				justify-content: center;
 				margin-bottom: 0px;
+				display: none;
+
+				@media screen and (max-width: 480px) {
+					display: flex;
+				}
 			}
 
 			&__pic {
