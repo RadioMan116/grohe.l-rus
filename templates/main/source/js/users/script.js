@@ -2377,6 +2377,23 @@ $(window).on('load', function () {
 
 			firstDropdownMenu.classList.add("active");
 		})();
+		var mySwiper444 = new Swiper(".category-container", {
+
+			allowTouchMove: true,
+			slidesPerView: 2,
+			slidesPerColumn: 1,
+			spaceBetween: 24,
+			pagination: {
+				el: ".category-pagination",
+				clickable: true
+			},
+			breakpoints: {
+				560: {
+					slidesPerView: 1,
+				}
+			},
+
+		});
 	}
 
 	if ($(".filter-new").length) {
