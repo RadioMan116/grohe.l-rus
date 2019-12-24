@@ -1350,7 +1350,7 @@ $(document).ready(function () {
 
 
 	}
-	var mySwiper15 = new Swiper(".js-sidebar-articles", {
+	var mySwiper15 = new Swiper(".articles.swiper-container", {
 		slidesPerView: 1,
 		slidesPerGroup: 1,
 		spaceBetween: 12,

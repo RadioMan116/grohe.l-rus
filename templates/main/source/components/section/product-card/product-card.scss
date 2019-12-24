@@ -2212,6 +2212,8 @@
 
 	.reviews {
 		width: calc(75% - 12px);
+		padding-top: 6px;
+		padding-bottom: 24px;
 
 		&__title {
 			margin: 0 0 20px;
