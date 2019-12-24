@@ -3635,6 +3635,10 @@
 					&:first-child {
 						margin-left: 0;
 					}
+
+					&.cur {
+						border: 1px solid #394791;
+					}
 				}
 
 				// .tags__link
@@ -3745,7 +3749,17 @@
 
 			}
 
-			.swiper-container {}
+			.swiper-container {
+				position: absolute;
+				width: 100%;
+				left: -100vw;
+
+				&.active {
+					left: unset;
+					position: relative;
+				}
+
+			}
 
 			.swiper-wrapper {}
 
@@ -3792,6 +3806,12 @@
 					background: url("../images/swiper-button-color-next.png") 0/34px no-repeat;
 				}
 			}
+				.swiper-pagination-collection,.collection__prev,.collection__next{
+					display: none;
+					&.active{
+						display: flex;
+					}
+				}
 		}
 	}
 
