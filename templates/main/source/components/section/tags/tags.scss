@@ -158,9 +158,13 @@
 .d-flex.flex-column-reverse.flex-md-row  {
 	h1.title+.tags.lazyloaded {
 		background-image: none !important;
+		align-items: baseline;
+		flex-direction: column;
 
 		.tags__list {
 			flex-direction: column;
+			align-items: baseline;
+			width: auto;
 		}
 	}
 }
