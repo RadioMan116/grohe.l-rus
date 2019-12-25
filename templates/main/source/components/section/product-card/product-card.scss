@@ -3703,6 +3703,7 @@
 				&__pic {
 					max-width: 194px;
 					align-items: center;
+					margin: 0 auto;
 				}
 
 				// .collection__buy
@@ -3787,6 +3788,8 @@
 
 
 			.cur {
+				z-index: 9;
+
 				.swiper-container {
 					// position: absolute;
 					// width: 100%;
@@ -3795,9 +3798,14 @@
 					// &.active {
 					left: 0;
 					opacity: 1;
+					z-index: 9;
 					// position: relative;
 					// }
 
+				}
+
+				.tags__link {
+					border: 1px solid #394791;
 				}
 			}
 
@@ -5700,6 +5708,10 @@
 
 				.tags__list {
 					width: auto;
+
+					li {
+						height: 310px;
+					}
 				}
 
 				.swiper-container {
