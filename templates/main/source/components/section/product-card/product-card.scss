@@ -3620,13 +3620,41 @@
 				// .tags__item
 
 				&__item {
+					max-width: 100%;
+					border: 0;
+					margin-right: 10px;
+					margin-bottom: 10px;
+					padding: 0;
+					height: 200px;
+					display: flex;
+					align-items: baseline;
+					// position: absolute;
+
+					&:hover {
+						background: 0;
+					}
+
+					&.cur {
+						// position: relative;
+					}
+				}
+
+				// .tags__link
+
+				&__link {
+					color: #394791;
+					font-family: "Roboto Condensed";
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 18px;
 					border-radius: 4px;
 					background-color: #f8f8f8;
 					border: 1px solid transparent;
-					padding: 7px 26px;
+					padding: 11px 26px;
 					margin-left: 11px;
-
-
+					// position: absolute;
+					// top: 39px;
+					// left: 0;
 
 					&:hover {
 						border: 1px solid #394791;
@@ -3641,14 +3669,8 @@
 					}
 				}
 
-				// .tags__link
-
-				&__link {
-					color: #394791;
-					font-family: "Roboto Condensed";
-					font-size: 14px;
-					font-weight: 400;
-					line-height: 18px;
+				.tags__item+.tags__item {
+					// left: ;
 				}
 
 			}
@@ -3749,16 +3771,34 @@
 
 			}
 
+
 			.swiper-container {
 				position: absolute;
 				width: 100%;
-				left: -100vw;
+				left: 0vw;
+				align-self: flex-end;
+				opacity: 0;
+				// &.active {
+				// 	left: unset;
+				// 	position: relative;
+				// }
 
-				&.active {
-					left: unset;
-					position: relative;
+			}
+
+
+			.cur {
+				.swiper-container {
+					// position: absolute;
+					// width: 100%;
+					// left: -100vw;
+
+					// &.active {
+					left: 0;
+					opacity: 1;
+					// position: relative;
+					// }
+
 				}
-
 			}
 
 			.swiper-wrapper {}
@@ -3806,12 +3846,16 @@
 					background: url("../images/swiper-button-color-next.png") 0/34px no-repeat;
 				}
 			}
-				.swiper-pagination-collection,.collection__prev,.collection__next{
-					display: none;
-					&.active{
-						display: flex;
-					}
+
+			.swiper-pagination-collection,
+			.collection__prev,
+			.collection__next {
+				display: none;
+
+				&.active {
+					display: flex;
 				}
+			}
 		}
 	}
 
@@ -5652,6 +5696,24 @@
 
 				[role="button"] {
 					display: none;
+				}
+
+				.tags__list {
+					width: auto;
+				}
+
+				.swiper-container {
+					pointer-events: none;
+				}
+
+
+				.cur {
+					z-index: 9;
+
+					.swiper-container {
+						pointer-events: all;
+
+					}
 				}
 			}
 
