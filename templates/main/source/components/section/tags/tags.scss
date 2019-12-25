@@ -152,12 +152,15 @@
 			background: white;
 		}
 	}
-	.d-flex.flex-column-reverse.flex-md-row{
-		h1.title+.tags.lazyloaded{
-			background-image: none !important;
-.tags__list{
-	flex-direction: column;
+
+
 }
+.d-flex.flex-column-reverse.flex-md-row  {
+	h1.title+.tags.lazyloaded {
+		background-image: none !important;
+
+		.tags__list {
+			flex-direction: column;
 		}
 	}
 }
