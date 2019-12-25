@@ -163,8 +163,9 @@
 
 		.tags__list {
 			flex-direction: column;
-			align-items: baseline;
+			// align-items: baseline;
 			width: auto;
+			align-content: flex-start;
 		}
 	}
 }
