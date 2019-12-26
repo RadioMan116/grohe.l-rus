@@ -1110,9 +1110,10 @@
 		margin-bottom: 18px;
 		border-bottom: 1px solid #f1f1f1;
 
-*{
-	transition: 0.3s;
-}
+		* {
+			transition: 0.3s;
+		}
+
 		ul {
 			padding: 0;
 			color: #333333;
@@ -1350,12 +1351,14 @@
 		&:hover {
 			overflow: visible;
 			z-index: 12;
-			a.description__link{
+
+			a.description__link {
 				position: relative;
 				padding: 10px 0px;
 				z-index: 2;
 			}
-			p{
+
+			p {
 				margin-bottom: 0;
 			}
 		}
@@ -3878,8 +3881,17 @@
 			.collection__next {
 				display: none;
 
-				&.active {
+
+			}
+
+				.cur{
+
+				.swiper-pagination-collection,
+				.collection__prev,
+				.collection__next {
 					display: flex;
+
+
 				}
 			}
 		}
