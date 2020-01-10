@@ -3707,6 +3707,7 @@
 					padding: 16px 18px;
 					align-items: center;
 					text-decoration: none !important;
+					// max-height: 130px;
 				}
 
 				// .collection__text
@@ -3725,6 +3726,10 @@
 					max-width: 194px;
 					align-items: center;
 					margin: 0 auto;
+					max-height: inherit;
+					picture{
+						height: 95px;
+					}
 				}
 
 				// .collection__buy
