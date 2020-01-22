@@ -933,12 +933,12 @@ $(document).ready(function () {
 		if ($(this).parent().hasClass("active") == false) {
 			$(".dropdown-menu").removeClass("active");
 			$(this).parent().addClass("active");
-			if ($(this).parent().hasClass("new-collection")){
-			overlay.classList.add('header__overlay-open');
+			if ($(this).parent().hasClass("new-collection")) {
+				overlay.classList.add('header__overlay-open');
 			}
 		} else {
 			$(this).parent().removeClass("active");
-				overlay.classList.remove('header__overlay-open');
+			overlay.classList.remove('header__overlay-open');
 		}
 
 		$('.dropdown-menu.active ul.dropdown-menu__list').on("mouseover", function (event) {

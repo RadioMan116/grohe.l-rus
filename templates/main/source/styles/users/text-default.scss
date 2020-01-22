@@ -249,6 +249,9 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
+		&[id^=bx]{
+display: block;
+		}
 	}
 
 	.table {
