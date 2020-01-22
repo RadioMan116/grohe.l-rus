@@ -914,10 +914,14 @@
 	+article.seo-text {
 		width: 100%;
 		justify-content: flex-start;
+		.container{
+		justify-content: flex-start;
+		}
 
 		div[id] {
 			display: flex;
 			flex-shrink: 0;
+			width: auto;
 
 			.video__image {
 				min-width: 417px;
