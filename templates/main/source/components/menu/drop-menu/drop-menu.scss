@@ -608,24 +608,29 @@
 				padding-bottom: 15px;
 			}
 
+			.dropdown-menu__item {
+				margin: 0 !important;
+			}
+
 			&.active {
 
 				.dropdown-menu__list,
 				.dropdown-menu__parent {
-					position: unset;
-					box-shadow: none;
+					position: unset !important;
+					box-shadow: none !important;
 					padding-top: 0;
 					margin-top: 0;
 					margin-right: 0px;
 					margin-left: 0px;
 				}
 
-				&:nth-child(3) {
+				&:nth-child(3),
+				&.new-collection {
 					>.dropdown-menu__parent {
-						width: 100%;
-						overflow-y: scroll;
-						height: 100%;
-						height: auto;
+						width: 100% !important;
+						overflow-y: scroll !important;
+						height: 100% !important;
+						height: auto !important;
 					}
 
 					.collection__banner {
@@ -633,11 +638,11 @@
 					}
 
 					.dropdown-menu__list {
-						display: flex;
-						flex-direction: column;
-						width: 100%;
-						padding: 0;
-						flex-wrap: nowrap;
+						display: flex !important;
+						flex-direction: column !important;
+						width: 100% !important;
+						padding: 0 !important;
+						flex-wrap: nowrap !important;
 						height: auto !important;
 					}
 
@@ -660,11 +665,15 @@
 
 						&.active {
 							.dropdown-menu__subtitle {
-								background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") calc(100% - 14px) 50%/18px no-repeat;
+								background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") calc(100% - 14px) 10px/18px no-repeat;
 							}
 
 							.sub-menu__list {
 								display: flex;
+
+								&:after {
+									display: none;
+								}
 							}
 
 
@@ -677,13 +686,53 @@
 						width: 100%;
 						line-height: 22px;
 						margin-bottom: 0 !important;
-						background: url("https://icongr.am/entypo/chevron-right.svg?color=b0b0b0") calc(100% - 14px) 50%/18px no-repeat;
+						background: url("https://icongr.am/entypo/chevron-right.svg?color=b0b0b0") calc(100% - 14px) 10px/18px no-repeat;
+					}
+
+					.dropdown-menu__image {
+						display: none;
+					}
+
+					.dropdown-menu__subtitle {
+						text-decoration: unset !important;
+
+						&:before {
+							display: none;
+						}
 					}
 				}
 
 				.dropdown-menu__title {
 					box-shadow: none !important;
 				}
+
+			}
+
+			&.new-collection {
+				.dropdown-menu__parent {
+					margin-left: -16px;
+				}
+
+				.sub-menu__list {
+					position: unset;
+				}
+
+				.dropdown-menu__subtitle {
+					padding: 8px 17px;
+					width: 100%;
+					line-height: 22px;
+					margin-bottom: 0 !important;
+					// background: url("https://icongr.am/entypo/chevron-right.svg?color=b0b0b0") calc(100% - 14px) 10px/18px no-repeat !important;
+
+					&.active {
+						// background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") calc(100% - 14px) 10px/18px no-repeat !important;
+					}
+					.sub-menu__list{
+						margin-bottom: 0;
+					}
+				}
+
+
 			}
 		}
 
@@ -724,6 +773,7 @@
 				left: 0;
 			}
 		}
+
 	}
 
 	.menu-480 {
