@@ -929,19 +929,16 @@ $(document).ready(function () {
 		// $("html").addClass("fixed");
 	});
 	$(".js-dropdown-menu__title").click(function (event) {
-		if (
-			$(this)
-			.parent()
-			.hasClass("active") == false
-		) {
+		let overlay = document.querySelector('.header__overlay');
+		if ($(this).parent().hasClass("active") == false) {
 			$(".dropdown-menu").removeClass("active");
-			$(this)
-				.parent()
-				.addClass("active");
+			$(this).parent().addClass("active");
+			if ($(this).parent().hasClass("new-collection")){
+			overlay.classList.add('header__overlay-open');
+			}
 		} else {
-			$(this)
-				.parent()
-				.removeClass("active");
+			$(this).parent().removeClass("active");
+				overlay.classList.remove('header__overlay-open');
 		}
 
 		$('.dropdown-menu.active ul.dropdown-menu__list').on("mouseover", function (event) {

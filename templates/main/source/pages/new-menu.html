@@ -1,0 +1,600 @@
+{% include 'head/head.html' %}
+
+<body>
+
+	<div class="wrapper" id="js-wrapper">
+
+		<header class="header">
+
+			<div class="header__blocks">
+				<div class="header__block header__block_top">
+					<div class="container">
+						<button class="hamburger" id="js-hamburger" aria-expanded="false">
+							<div class="hamburger__img"></div>
+						</button>
+
+						<div class="menu" aria-expanded="false">
+
+							<ul class="menu__list">
+
+								<li class="menu__item">
+									<a href="/delivery-and-payment/" title="Доставка и оплата"
+										class="menu__link">Доставка и оплата</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/services/" title="Подключение" class="menu__link">Подключение</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/guarantee/" title="Сервисные центры Grohe" class="menu__link">Сервисные
+										центры Grohe</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/news/" title="Новости" class="menu__link">Новости</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/catalog/type-nov/" title="Новинки" class="menu__link">Новинки</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/contacts/" title="Контакты" class="menu__link">Контакты</a>
+								</li>
+
+							</ul>
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать
+									звонок</a>
+								<div class="telephones">
+									<a href="tel:74951203610" class="header__phone">+7 495 120-36-10</a>
+									<a href="tel:78003501721" class="header__phone">+7 800 350-17-21</a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text">
+										<b>Пн-Пт:</b> с 8:00 до 22:00<br><b>Сб-Вс:</b> с 9:00 до 22:00 </div>
+									<a href="mailto:shop@gr-russia.ru"
+										class="time-work__email"><i>Email:</i>shop@gr-russia.ru</a>
+								</div>
+
+							</div>
+							<a href="" class="abuse__button js-abuse__button js-viewForm" data-action="guideback"
+								id="js-abuse-opener">Обратиться к руководству</a>
+						</div>
+						<!--end menu-->
+						<div class="header__icons">
+							<div class="header__search js-header__search"></div>
+							<a class="header__mobile-tel" href="tel:74951203610"></a>
+
+							<a href="/favorites/" title="Перейти в отложенные" class="header__favorite "><span
+									class="header__number js-GoodsInFavorites">0</span></a>
+							<a href="/compare/" title="Перейти в сравнение" class="header__compare "><span
+									class="header__number js-GoodsInCompare">0</span></a>
+							<a href="/cart/" title="Перейти в корзину" class="header__basket "><span
+									class="header__number js-GoodsInBasket">0</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="header__block header__block_bottom" id="js-header__block_bottom">
+					<div class="container">
+
+						<div class="logo">
+
+							<a href="/" title="Grohe" class="logo__link">
+								<img data-src="/images/logo-new.svg" alt="Grohe" class="logo__pic lazyloaded"
+									src="/images/logo-new.svg">
+							</a>
+						</div>
+						<div class="header__dropdown-menu" id="js-menu">
+
+							<nav class="dropdown-menu" id="js-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Сантехника Grohe</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/smesiteli/"
+												title="Смесители">Смесители</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/dushi/" title="Души">Души</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/termostaty/"
+												title="Термостаты">Термостаты</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/sistemy-installyatsii/"
+												title="Системы инсталляции">Системы инсталляции</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/aksessuary/"
+												title="Аксессуары">Аксессуары</a>
+
+										</li>
+									</ul>
+								</div>
+							</nav>
+
+							<nav class="dropdown-menu" id="js-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title">Сферы применения</span>
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/group/grohe-spa/"
+												title="Ванная Grohe SPA">Ванная Grohe SPA</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/group/vannaya-komnata/"
+												title="Ванная комната">Ванная комната</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/group/tualetnaya-komnata/"
+												title="Туалетная комната">Туалетная комната</a>
+
+										</li>
+
+										<li class="dropdown-menu__item">
+											<a class="dropdown-menu__link" href="/catalog/group/kukhnya/"
+												title="Кухня">Кухня</a>
+
+										</li>
+									</ul>
+								</div>
+							</nav>
+
+							<nav class="dropdown-menu new-collection" id="js-menu">
+								<span class="dropdown-menu__title js-dropdown-menu__title"
+									title="Коллекции">Коллекции</span>
+
+								<div class="dropdown-menu__parent">
+									<ul class="dropdown-menu__list">
+										<li class="dropdown-menu__item">
+											<div class="dropdown-menu__image">
+												<img src="images/смесители.png" alt="" class="dropdown-menu__pic">
+											</div>
+											<!-- /.dropdown-menu__image -->
+											<div class="dropdown-menu__subtitle js-dropdown-menu__subtitle">
+												В классическом стиле
+											</div>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4389"
+														target="_blank" href="/catalog/collection/atrio/">
+														Atrio </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4425"
+														target="_blank" href="/catalog/collection/avina/">
+														Avina </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4384"
+														target="_blank" href="/catalog/collection/bridgeford/">
+														Bridgeford </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4319"
+														target="_blank" href="/catalog/collection/sinfonia/">
+														Sinfonia </a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<div class="dropdown-menu__image">
+												<img src="images/смесители-copy.png" alt="" class="dropdown-menu__pic">
+											</div>
+											<!-- /.dropdown-menu__image -->
+											<div class="dropdown-menu__subtitle js-dropdown-menu__subtitle">
+												Линейки смесителей
+											</div>
+											<ul class="sub-menu__list">
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4403"
+														target="_blank" href="/catalog/collection/aria/">
+														Aria </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="18915"
+														target="_blank" href="/catalog/collection/bauclassic/">
+														BauClassic </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="19105"
+														target="_blank" href="/catalog/collection/baucosmopolitan/">
+														BauCosmopolitan </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="19507"
+														target="_blank" href="/catalog/collection/BauCurve/">
+														BauCurve </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4401"
+														target="_blank" href="/catalog/collection/bauedge/">
+														BauEdge </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="18865"
+														target="_blank" href="/catalog/collection/bauflow/">
+														BauFlow </a>
+												</li>
+												<li class="show-more">
+													<a href="">Показать еще</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<div class="dropdown-menu__image">
+												<img src="images/смесители-copy-2.png" alt=""
+													class="dropdown-menu__pic">
+											</div>
+											<!-- /.dropdown-menu__image -->
+											<div class="dropdown-menu__subtitle js-dropdown-menu__subtitle">
+												Смесители для кухни
+											</div>
+											<ul class="sub-menu__list">
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="19505"
+														target="_blank" href="/catalog/collection/Ambi/">
+														Ambi </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4406"
+														target="_blank" href="/catalog/collection/grohe-blue/">
+														Blue </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4387"
+														target="_blank" href="/catalog/collection/minta/">
+														Minta </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4419"
+														target="_blank" href="/catalog/collection/grohe-red/">
+														Red </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4386"
+														target="_blank" href="/catalog/collection/zedra-/">
+														Zedra </a>
+												</li>
+
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<div class="dropdown-menu__image">
+												<img src="images/смесители-copy-3.png" alt=""
+													class="dropdown-menu__pic">
+											</div>
+											<!-- /.dropdown-menu__image -->
+											<div class="dropdown-menu__subtitle js-dropdown-menu__subtitle">
+												Термостаты
+											</div>
+											<ul class="sub-menu__list">
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4324"
+														target="_blank"
+														href="/catalog/collection/grohtherm-1000-cosmopolitan/">
+														Grohtherm 1000 Cosmopolitan </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4429"
+														target="_blank" href="/catalog/collection/grohtherm-1000-new/">
+														Grohtherm 1000 New </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4323"
+														target="_blank" href="/catalog/collection/grohtherm-2000-new/">
+														Grohtherm 2000 New </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4322"
+														target="_blank"
+														href="/catalog/collection/grohtherm-3000-cosmopolitan/">
+														Grohtherm 3000 Cosmopolitan </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4321"
+														target="_blank" href="/catalog/collection/grohtherm-cube/">
+														Grohtherm Cube </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4320"
+														target="_blank" href="/catalog/collection/grohtherm-f/">
+														Grohtherm F </a>
+												</li>
+												<li class="show-more">
+													<a href="">Показать еще</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<div class="dropdown-menu__image">
+												<img src="images/смесители-copy-4.png" alt=""
+													class="dropdown-menu__pic">
+											</div>
+											<!-- /.dropdown-menu__image -->
+											<div class="dropdown-menu__subtitle js-dropdown-menu__subtitle">
+												Ванная Grohe SPA
+											</div>
+											<ul class="sub-menu__list">
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4296"
+														target="_blank" href="/catalog/collection/allure/">
+														Allure </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4297"
+														target="_blank" href="/catalog/collection/allure-brilliant/">
+														Allure Brilliant </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4295"
+														target="_blank" href="/catalog/collection/grandera/">
+														Grandera </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4300"
+														target="_blank" href="/catalog/collection/ondus/">
+														Ondus </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4374"
+														target="_blank" href="/catalog/collection/rainshower-f-series/">
+														Rainshower F-series </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4301"
+														target="_blank" href="/catalog/collection/veris/">
+														Veris </a>
+												</li>
+												<li class="show-more">
+													<a href="">Показать еще</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<div class="dropdown-menu__image">
+												<img src="images/смесители-copy-5.png" alt=""
+													class="dropdown-menu__pic">
+											</div>
+											<!-- /.dropdown-menu__image -->
+											<div class="dropdown-menu__subtitle js-dropdown-menu__subtitle">Души</div>
+											<ul class="sub-menu__list">
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4356"
+														target="_blank" href="/catalog/collection/euphoria/">
+														Euphoria </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4409"
+														target="_blank"
+														href="/catalog/collection/euphoria-cosmopolitan/">
+														Euphoria Cosmopolitan </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4367"
+														target="_blank" href="/catalog/collection/euphoria-cube/">
+														Euphoria Cube </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4369"
+														target="_blank" href="/catalog/collection/movario/">
+														Movario </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4353"
+														target="_blank" href="/catalog/collection/power-soul/">
+														Power &amp; Soul </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4358"
+														target="_blank"
+														href="/catalog/collection/power-soul-cosmopolitan/">
+														Power &amp; Soul Cosmopolitan </a>
+												</li>
+												<li class="show-more">
+													<a href="">Показать еще</a>
+												</li>
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<div class="dropdown-menu__image">
+												<img src="images/смесители-copy-6.png" alt=""
+													class="dropdown-menu__pic">
+											</div>
+											<!-- /.dropdown-menu__image -->
+											<div class="dropdown-menu__subtitle js-dropdown-menu__subtitle">
+												Системы инсталляции
+											</div>
+											<ul class="sub-menu__list">
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4333"
+														target="_blank" href="/catalog/collection/arena-cosmopolitan/">
+														Arena Cosmopolitan </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4331"
+														target="_blank" href="/catalog/collection/nova-cosmopolitan/">
+														Nova Cosmopolitan </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4336"
+														target="_blank" href="/catalog/collection/rapid-sl/">
+														Rapid SL </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4334"
+														target="_blank" href="/catalog/collection/skate-skate-air/">
+														Skate &amp; Skate Air </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4332"
+														target="_blank" href="/catalog/collection/skate-cosmopolitan/">
+														Skate Cosmopolitan </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="17669"
+														target="_blank" href="/catalog/collection/surf/">
+														Surf </a>
+												</li>
+
+											</ul>
+										</li>
+										<li class="dropdown-menu__item">
+											<div class="dropdown-menu__image">
+												<img src="images/смесители-copy-7.png" alt=""
+													class="dropdown-menu__pic">
+											</div>
+											<!-- /.dropdown-menu__image -->
+											<div class="dropdown-menu__subtitle js-dropdown-menu__subtitle">
+												Аксессуары
+											</div>
+											<ul class="sub-menu__list">
+
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4415"
+														target="_blank" href="/catalog/collection/ectos/">
+														Ectos </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4416"
+														target="_blank" href="/catalog/collection/eggemann/">
+														Eggemann </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4328"
+														target="_blank" href="/catalog/collection/essentials-/">
+														Essentials </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4424"
+														target="_blank" href="/catalog/collection/rotaflex/">
+														Rotaflex </a>
+												</li>
+												<li class="sub-menu__item">
+													<a class="sub-menu__link js-menu_collection-item" data-id="4413"
+														target="_blank" href="/catalog/collection/silverflex/">
+														Silverflex </a>
+												</li>
+
+											</ul>
+										</li>
+									</ul>
+								</div>
+
+							</nav>
+
+							<!-- end menu-content -->
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать
+									звонок</a>
+								<div class="telephones">
+									<a href="tel:74951203610" class="header__phone">+7 495 120-36-10</a>
+									<a href="tel:78003501721" class="header__phone">+7 800 350-17-21</a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text"><b>Пн-Пт:</b> с 8:00 до 22:00<br><b>Сб-Вс:</b> с 9:00
+										до 22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i> shop@gr-russia.ru</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="menu" aria-expanded="false">
+
+							<ul class="menu__list">
+
+								<li class="menu__item">
+									<a href="/delivery-and-payment/" title="Доставка и оплата"
+										class="menu__link">Доставка и оплата</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/services/" title="Подключение" class="menu__link">Подключение</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/guarantee/" title="Сервисные центры Grohe" class="menu__link">Сервисные
+										центры Grohe</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/news/" title="Новости" class="menu__link">Новости</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/catalog/type-nov/" title="Новинки" class="menu__link">Новинки</a>
+								</li>
+
+								<li class="menu__item">
+									<a href="/contacts/" title="Контакты" class="menu__link">Контакты</a>
+								</li>
+
+							</ul>
+
+							<div class="header__telephones">
+								<a href="" class="header__call-phone-button js-viewForm" data-action="callback">Заказать
+									звонок</a>
+								<div class="telephones">
+									<a href="tel:74951203610" class="header__phone">+7 495 120-36-10</a>
+									<a href="tel:78003501721" class="header__phone">+7 800 350-17-21</a>
+								</div>
+								<div class="time-work">
+									<div class="time-work__text">Режим работы</div>
+									<div class="time-work__text"><b>Пн-Пт:</b> с 8:00 до 22:00<br><b>Сб-Вс:</b> с 9:00
+										до 22:00</div>
+									<a href="mailto:shop@gr-russia.ru" class="time-work__email">
+										<i>Email:</i> shop@gr-russia.ru</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="search__popup">
+				<form action="/search/" class="header__form">
+					<input type="text" name="q" maxlength="50" class="header__input js-search-header__input">
+					<div class="header__button js-header__button"></div>
+				</form>
+			</div>
+			<div class="header__overlay"></div>
+
+		</header>
+
+	</div>
+	<!-- /.wrapper -->
+
+	{% include 'connect/script.html' %}
+	{% include 'connect/stylesheet.html' %}
+
+</body>
+
+</html>
