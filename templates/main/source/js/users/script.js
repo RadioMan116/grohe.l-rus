@@ -1413,6 +1413,8 @@ $(document).ready(function () {
 			$('.breadcrumbs').prependTo($('.col-md-9'));
 		}
 		if ($(".filter-new").length) {
+			let closeFilter = document.querySelector(".filter-new");
+			closeFilter.classList.add('active');
 			$('.filter-new').append('<div class="filter-new__button js-filter-new__button"><span>закрыть фильтр</span></div>');
 			$('.js-filter-new__button').click(function () {
 				// $(this).parent().toggleClass('active')
