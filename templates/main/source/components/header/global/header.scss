@@ -325,7 +325,8 @@
 
 		margin-right: 25px;
 
-		&:hover {
+		&:hover,
+		&.active {
 
 			&:before {
 				background: url("../images/header-fav-active.svg") no-repeat;
@@ -344,7 +345,8 @@
 
 		margin-right: 25px;
 
-		&:hover {
+		&:hover,
+		&.active {
 
 			&:before {
 				background: url("../images/header-compare-active.svg") no-repeat;
@@ -364,7 +366,8 @@
 		margin-right: 13px;
 
 		&-open,
-		&:hover {
+		&:hover,
+		&.active {
 
 			&:before {
 				background: url("../images/shopping-cart__color.svg") no-repeat;
@@ -468,41 +471,55 @@
 				flex: unset;
 				flex-basis: unset;
 				margin-left: auto;
-				justify-content: space-around;
+				justify-content: flex-end;
 				align-self: unset;
+				margin-right: -2px;
 			}
 
 			&__favorite,
 			&__compare,
 			&__basket {
-				min-width: 24px;
-				height: 100%;
+				min-width: 20px;
+				width: 20px;
+				height: 20px;
 				display: flex;
 				justify-content: flex-end;
 				align-items: center;
-
+				position: relative;
 			}
 
 			&__basket {
 				&:before {
-					background-size: 19px !important;
-
-
+					background-size: 17px !important;
+					margin-right: 0;
 				}
 
 				&:hover {
 
 					&:before {
-						background-size: 21px !important;
+						background-size: 19px !important;
 					}
 				}
 			}
 
-			&__compare,
 			&__favorite {
 				&:before {
-					background-size: 21px !important;
+					background-size: 17px !important;
+					margin-right: 0;
+				}
 
+				&:hover {
+
+					// &:before {
+					// 	background-size: 22px !important;
+					// }
+				}
+			}
+
+			&__compare {
+				&:before {
+					background-size: 18px !important;
+					margin-right: 0;
 				}
 
 				&:hover {
@@ -515,20 +532,20 @@
 
 
 			&__search {
-				margin-right: 2px;
+				margin-right: 12px;
 				display: flex;
 				justify-content: flex-end;
 				align-items: center;
+
 				&:before {
-					background-size: 22px !important;
-
-
+					background-size: 20px !important;
+					margin-right: 0;
 				}
 
 				&:hover {
 
 					&:before {
-						background-size: 19px !important;
+						// background-size: 19px !important;
 					}
 				}
 			}
@@ -537,7 +554,7 @@
 				// width: 26px;
 				margin-right: 1px;
 				position: relative;
-				margin-right: 6px;
+				margin-right: 12px;
 
 
 
@@ -563,7 +580,7 @@
 			&__compare {
 				width: auto;
 				max-width: 40px;
-				margin-right: 4px;
+				margin-right: 11px;
 			}
 
 			&__mobile-tel {
@@ -572,9 +589,9 @@
 				display: flex;
 				background: url('../images/Fill_1.svg') no-repeat;
 				background-position: center center;
-				margin-right: 5px;
+				margin-right: 9px;
 				order: -1;
-				background-size: contain !important;
+				background-size: 14px !important;
 				align-items: center;
 			}
 
@@ -585,15 +602,32 @@
 
 			}
 
+			// &__number {
+			// 	font-size: 13px;
+			// 	font-weight: normal;
+			// 	font-style: normal;
+			// 	font-stretch: normal;
+			// 	line-height: 1;
+			// 	letter-spacing: normal;
+			// 	color: #666666;
+			// 	padding-top: 4px;
+			// }
 			&__number {
-				font-size: 13px;
-				font-weight: normal;
-				font-style: normal;
-				font-stretch: normal;
-				line-height: 1;
-				letter-spacing: normal;
+				position: absolute;
+				/* Style for "Oval" */
+				width: 11px;
+				height: 11px;
+				border: 1px solid #ffffff;
+				background-color: #d8d8d8;
 				color: #666666;
-				padding-top: 4px;
+				font-family: Arial;
+				font-size: 8px;
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				top: -2px;
+				right: -3px;
 			}
 
 			&__form {
