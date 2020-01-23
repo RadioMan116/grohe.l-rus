@@ -387,6 +387,13 @@
 			display: none;
 		}
 
+		.sub-menu__link {
+			z-index: 9;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+
 		.dropdown-menu__parent {
 			flex-direction: row;
 			left: -53px;
@@ -727,7 +734,8 @@
 					&.active {
 						// background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") calc(100% - 14px) 10px/18px no-repeat !important;
 					}
-					.sub-menu__list{
+
+					.sub-menu__list {
 						margin-bottom: 0;
 					}
 				}
