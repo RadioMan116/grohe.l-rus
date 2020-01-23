@@ -486,6 +486,9 @@
 				justify-content: flex-end;
 				align-items: center;
 				position: relative;
+				&.active .header__number {
+					 color: #666666 !important;
+				}
 			}
 
 			&__basket {
@@ -615,8 +618,8 @@
 			&__number {
 				position: absolute;
 				/* Style for "Oval" */
-				width: 11px;
-				height: 11px;
+				width: 13px;
+				height: 13px;
 				border: 1px solid #ffffff;
 				background-color: #d8d8d8;
 				color: #666666;
@@ -629,6 +632,7 @@
 				top: -2px;
 				right: -3px;
 			}
+
 
 			&__form {
 				width: 95%;
