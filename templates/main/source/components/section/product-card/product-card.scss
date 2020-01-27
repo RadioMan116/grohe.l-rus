@@ -5627,11 +5627,13 @@
 
 			.product-card__icons {
 				margin-right: 18px;
+				flex-grow: 1;
 			}
 
 			.product-card__buy {
 				// padding: 9px 24px;
 					width: 136px;
+					flex-grow: 1;
 			}
 
 			.product-card__type-payment {

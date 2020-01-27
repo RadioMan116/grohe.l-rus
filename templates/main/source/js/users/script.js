@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
 
+
 	function hamburger(element, menu) {
 		var button = document.getElementById(element),
 			menu = document.getElementById(menu);
@@ -382,7 +383,6 @@ $(document).ready(function () {
 		// 	el: ".swiper-scrollbar"
 		// }
 	});
-
 
 	// var mySwiper71 = new Swiper(".product-card__collection .swiper-container", {
 	// 	// Optional parameters
@@ -1439,7 +1439,11 @@ $(document).ready(function () {
 			$('.col-md-3').addClass('order');
 		}
 		$('.js-city-change').appendTo('#js-header__block_bottom .menu');
-
+		(function () {
+			var firstDropdownMenu = document.querySelector('nav.dropdown-menu');
+			console.log(firstDropdownMenu)
+			firstDropdownMenu.classList.add("active");
+		})();
 
 	}
 	var mySwiper15 = new Swiper(".articles.swiper-container", {
@@ -2464,11 +2468,7 @@ $(window).on('load', function () {
 
 			console.log($(this))
 		});
-		(function () {
-			var firstDropdownMenu = document.querySelector('nav.dropdown-menu');
-			console.log(firstDropdownMenu)
-			firstDropdownMenu.classList.add("active");
-		})();
+
 		var mySwiper444 = new Swiper(".category-container", {
 
 			allowTouchMove: true,
@@ -2487,7 +2487,6 @@ $(window).on('load', function () {
 
 		});
 	}
-
 	if ($(".filter-new").length) {
 		$('.filter-new .bx-filter-parameters-box-container').each(function () {
 			if ($(this).find('.checkbox').length >= 4) {
@@ -2640,7 +2639,6 @@ $(window).on('load', function () {
 
 
 	}
-
 	if ($('a[data-fancybox="gallery"] img').length) {
 		// $('a[data-fancybox="gallery"] img').eq(0).each(function () {
 		// 	var img = new Image($(this));
@@ -2668,7 +2666,6 @@ $(window).on('load', function () {
 		// 	});
 		// }, 300);
 	}
-
 	(function () {
 		let insCategory = document.querySelectorAll('.instructions-category');
 
@@ -2684,7 +2681,6 @@ $(window).on('load', function () {
 			})
 		})
 	})()
-
 	if (windowWidth2 <= 480) {
 
 		// Раскрывашка каталог
