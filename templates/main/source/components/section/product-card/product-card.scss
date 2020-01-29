@@ -4586,6 +4586,10 @@
 					flex-direction: column;
 					justify-content: center;
 					margin: 0 auto;
+					padding-top: 0;
+					.video__name{
+						font-size: 16px;
+					}
 				}
 			}
 
@@ -5591,16 +5595,20 @@
 			.labels {
 				position: unset;
 				justify-content: center;
+				flex-wrap: wrap;
 
 				img {
 					max-height: 41px;
+					margin: 2px 0;
 				}
 
 				&__sale {
-					padding: 9px 6px 9px 6px;
+					padding: 9px 3px 9px 3px;
 					width: 152px;
 					height: 40px;
 					margin-right: 6px;
+					flex-wrap: nowrap;
+					flex-shrink: 0;
 				}
 			}
 
