@@ -479,7 +479,14 @@
 
 				&:hover {
 					color: $base;
+
 					// box-shadow: 0px 2px 21px rgba(0, 0, 0, 0.09);
+					.dropdown-menu__reference {
+						position: relative;
+						display: flex;
+						z-index: 4;
+						text-decoration: none;
+					}
 
 					&:before {
 						border-bottom: 1px dashed $base;
