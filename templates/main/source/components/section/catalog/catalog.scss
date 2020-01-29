@@ -1211,15 +1211,17 @@
 		// .all-video__item
 
 		&__item {
-			width: calc((100%/3) - 19px);
+			width: calc((100%/3) - 8px);
 
 			height: auto;
 
 			// &:last-of-type {
 			// 	margin: 0 0 39px;
 			// }
+			&:nth-child(3n-1) {
+				margin: 0 12px 39px;
+			}
 
-			margin: 0 12px 0 0 !important;
 
 			// margin-right: 28px;
 		}
@@ -2210,9 +2212,12 @@
 			// .all-video__item
 
 			&__item {
-				margin-bottom: 0;
+				margin: 0;
 				height: auto;
 				flex-basis: unset;
+				&:nth-child(3n-1){
+					margin: 0;
+				}
 
 				img {
 					height: auto;

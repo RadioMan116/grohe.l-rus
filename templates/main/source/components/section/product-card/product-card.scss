@@ -10,7 +10,7 @@
 	}
 
 	a {
-		color: #394791;
+		color: $base;
 	}
 }
 
@@ -38,7 +38,7 @@
 		}
 
 		&__reset {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -96,7 +96,7 @@
 			flex-grow: 1;
 
 			&:hover {
-				color: #394791;
+				color: $base;
 			}
 		}
 
@@ -372,9 +372,10 @@
 				align-items: center;
 				position: relative;
 				text-decoration: none !important;
-				width: 100%;
+				width: auto;
 				height: auto;
 				margin: 0 auto;
+				padding-top: 50px;
 
 				&:before {
 					display: none;
@@ -425,6 +426,32 @@
 						right: 19px;
 						top: 14px;
 					}
+				}
+				.video__name{
+					color: inherit;
+					text-decoration: none;
+					-moz-transition: color .1s cubic-bezier(0.0, 0.0, 0.2, 1);
+					-webkit-transition: color .1s cubic-bezier(0.0, 0.0, 0.2, 1);
+					transition: color .1s cubic-bezier(0.0, 0.0, 0.2, 1);
+					outline: 0;
+					text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+					font-family: "YouTube Noto",
+					Roboto,
+					Arial,
+					Helvetica,
+					sans-serif;
+					color:#ffffff;
+					text-align: left;
+					direction: ltr;
+					font-size: 11px;
+					line-height: 1.3;
+					-webkit-font-smoothing: antialiased;
+					-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+					font-size: 18px;
+					position: absolute;
+					left: 12px;
+					bottom:  12px;
+					justify-content: flex-start;
 				}
 			}
 
@@ -539,7 +566,7 @@
 			height: auto;
 
 			&-thumb-active {
-				border: 2px solid #394791;
+				border: 2px solid $base;
 			}
 
 			iframe {
@@ -805,7 +832,7 @@
 	}
 
 	&__icons {
-		color: #394791;
+		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
@@ -814,7 +841,7 @@
 		text-transform: uppercase;
 		padding: 8px 13px;
 		border-radius: 2px;
-		border: 1px solid #394791;
+		border: 1px solid $base;
 		margin-right: 8px;
 		text-decoration: none !important;
 		width: 136px;
@@ -881,9 +908,9 @@
 		}
 
 		.announcing__link {
-			color: #394791;
+			color: $base;
 			padding-bottom: 1px;
-			border-bottom: 1px dashed #394791;
+			border-bottom: 1px dashed $base;
 			text-decoration: none !important;
 		}
 
@@ -966,7 +993,7 @@
 			flex-grow: 1;
 
 			a {
-				color: #394791;
+				color: $base;
 				font-family: Arial;
 				font-size: 14px;
 				line-height: 20px;
@@ -1037,7 +1064,7 @@
 			background: #000 !important;
 
 			&-active {
-				background: #394791 !important;
+				background: $base !important;
 				box-sizing: border-box;
 			}
 		}
@@ -1080,7 +1107,7 @@
 		// position: absolute;
 		// top: -80px;
 		.catalog-back {
-			color: #394791;
+			color: $base;
 			font-family: Arial;
 			font-size: 14px;
 			display: flex;
@@ -1096,7 +1123,7 @@
 		}
 
 		.catalog-question {
-			color: #394791;
+			color: $base;
 			font-family: Arial;
 			font-size: 18px;
 			display: flex;
@@ -1227,7 +1254,7 @@
 
 				&-open {
 					background: url("https://icongr.am/entypo/chevron-up.svg?color=d6d6d6") #f8f8f8 2% 15px/18px no-repeat;
-					color: #394791;
+					color: $base;
 					height: auto;
 					box-shadow: 0 2px 25px rgba(0, 0, 0, 0.14);
 					background-color: #ffffff;
@@ -1276,7 +1303,7 @@
 			// 		line-height: 24px;
 
 			// 		&-open {
-			// 			color: #394791;
+			// 			color: $base;
 			// 		}
 			// 	}
 
@@ -1300,7 +1327,7 @@
 
 
 					&-open {
-						color: #394791;
+						color: $base;
 						height: unset;
 					}
 
@@ -1334,7 +1361,7 @@
 		}
 
 		a.description__link {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -1441,7 +1468,7 @@
 				}
 
 				span {
-					color: #394791;
+					color: $base;
 					font-family: "Roboto Condensed";
 					font-size: 14px;
 					font-weight: 400;
@@ -1607,7 +1634,7 @@
 				height: 36px;
 				font-family: Roboto Condensed;
 				font-size: 14px;
-				background-color: #394791;
+				background-color: $base;
 				background-repeat: no-repeat;
 				box-shadow: 0 0 0 0 rgba(0, 0, 0, .16);
 				text-decoration: none;
@@ -1761,7 +1788,7 @@
 		// 	}
 
 		// 	&__text {
-		// 		color: #394791;
+		// 		color: $base;
 		// 		font-family: "Roboto Condensed";
 		// 		font-size: 14px;
 		// 		font-weight: 400;
@@ -1936,7 +1963,7 @@
 
 
 			a {
-				color: #394791;
+				color: $base;
 			}
 		}
 
@@ -1977,7 +2004,7 @@
 			.characteristic {
 				&__title {
 					width: 100%;
-					color: #394791;
+					color: $base;
 					font-family: "Roboto Condensed";
 					font-size: 18px;
 					font-weight: 400;
@@ -2175,7 +2202,7 @@
 					}
 
 					.characteristic-glossary__link {
-						color: #394791;
+						color: $base;
 						font-family: "Roboto Condensed";
 						font-size: 14px;
 						font-weight: 400;
@@ -2304,10 +2331,10 @@
 			margin-left: auto;
 			padding: 10px 12px;
 			border-radius: 2px;
-			border: 1px solid #394791;
+			border: 1px solid $base;
 			font-size: 14px;
 			line-height: normal;
-			color: #394791;
+			color: $base;
 			text-transform: uppercase;
 			text-decoration: none !important;
 		}
@@ -2448,7 +2475,7 @@
 
 			font-family: Roboto Condensed;
 			font-size: 14px;
-			background-color: #394791;
+			background-color: $base;
 			background-repeat: no-repeat;
 			box-shadow: 0 0 0 0 rgba(0, 0, 0, .16);
 			text-decoration: none;
@@ -2506,7 +2533,7 @@
 		}
 
 		.reviews__all {
-			color: #394791;
+			color: $base;
 			font-family: Arial;
 			font-size: 14px;
 			line-height: 24px;
@@ -2640,7 +2667,7 @@
 
 				&:hover {
 
-					color: #394791;
+					color: $base;
 
 				}
 			}
@@ -2673,7 +2700,7 @@
 			justify-content: center;
 			width: 50%;
 			background-color: #f8f8f8;
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 18px;
 			font-weight: 400;
@@ -2698,7 +2725,7 @@
 			font-weight: 700;
 
 			a {
-				color: #394791;
+				color: $base;
 				font-family: Arial;
 				font-size: 14px;
 				line-height: 24px;
@@ -2835,7 +2862,7 @@
 		}
 
 		.popup-prop__link {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -2996,7 +3023,7 @@
 			}
 
 			.popup-prop__link {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
@@ -3036,7 +3063,7 @@
 		// .practical-features__title
 
 		&__title {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 26px;
 			font-weight: 400;
@@ -3097,7 +3124,7 @@
 		// .practical-features__link
 
 		&__link {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -3214,8 +3241,8 @@
 			margin-left: auto;
 			padding: 5px 12px;
 			border-radius: 2px;
-			border: 1px solid #394791;
-			color: #394791;
+			border: 1px solid $base;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -3241,7 +3268,7 @@
 		}
 
 		&__tabs {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -3259,7 +3286,7 @@
 			cursor: pointer;
 
 			&.active {
-				background-color: #394791;
+				background-color: $base;
 				color: #ffffff;
 				border: 0;
 			}
@@ -3303,7 +3330,7 @@
 
 				&:first-child {
 					.diagram__pic {
-						border: 2px solid #394791;
+						border: 2px solid $base;
 					}
 
 					.diagram__name {
@@ -3338,7 +3365,7 @@
 					}
 
 					.diagram__pic {
-						border: 2px solid #394791;
+						border: 2px solid $base;
 					}
 
 					.diagram__item {
@@ -3447,7 +3474,7 @@
 		&__name {
 			width: 100%;
 			padding: 0 12px;
-			color: #394791;
+			color: $base;
 			font-family: Arial;
 			font-size: 14px;
 			line-height: 1;
@@ -3462,7 +3489,7 @@
 		.schedule {
 			margin-top: auto;
 			width: 100%;
-			background-image: linear-gradient(to top, #9da7db 0%, #394791 100%);
+			background-image: linear-gradient(to top, #9da7db 0%, $base 100%);
 			// min-height: 20px;
 		}
 
@@ -3510,9 +3537,9 @@
 		align-items: baseline;
 
 		a {
-			color: #394791;
+			color: $base;
 			padding-bottom: 1px;
-			border-bottom: 1px dashed #394791;
+			border-bottom: 1px dashed $base;
 			text-decoration: none !important;
 		}
 	}
@@ -3610,9 +3637,9 @@
 			// .delivery__link
 
 			&__link {
-				color: #394791;
+				color: $base;
 				padding-bottom: 1px;
-				border-bottom: 1px dashed #394791;
+				border-bottom: 1px dashed $base;
 				text-decoration: none !important;
 			}
 		}
@@ -3679,7 +3706,7 @@
 				// .tags__link
 
 				&__link {
-					color: #394791;
+					color: $base;
 					font-family: "Roboto Condensed";
 					font-size: 14px;
 					font-weight: 400;
@@ -3694,7 +3721,7 @@
 					// left: 0;
 
 					&:hover {
-						border: 1px solid #394791;
+						border: 1px solid $base;
 					}
 
 					&:first-child {
@@ -3702,7 +3729,7 @@
 					}
 
 					&.cur {
-						border: 1px solid #394791;
+						border: 1px solid $base;
 					}
 				}
 
@@ -3766,7 +3793,7 @@
 
 					font-family: Roboto Condensed;
 					font-size: 14px;
-					background-color: #394791;
+					background-color: $base;
 					background-repeat: no-repeat;
 					box-shadow: 0 0 0 0 rgba(0, 0, 0, .16);
 					text-decoration: none;
@@ -3848,7 +3875,7 @@
 				}
 
 				.tags__link {
-					border: 1px solid #394791;
+					border: 1px solid $base;
 				}
 			}
 
@@ -4221,7 +4248,7 @@
 
 				&.mobile {
 					margin-right: 0;
-					color: #394791;
+					color: $base;
 					padding-bottom: 1px;
 					display: flex;
 					text-decoration: none !important;
@@ -4234,7 +4261,7 @@
 
 					p {
 						margin-bottom: 0;
-						border-bottom: 1px dashed #394791;
+						border-bottom: 1px dashed $base;
 						margin-right: 10px;
 					}
 
@@ -4301,7 +4328,7 @@
 				justify-content: flex-start;
 
 				a {
-					color: #394791;
+					color: $base;
 					font-family: Arial;
 					font-size: 14px;
 					line-height: 20px;
@@ -4403,7 +4430,7 @@
 			}
 
 			.catalog-question {
-				color: #394791;
+				color: $base;
 				font-family: Arial;
 				font-size: 17px;
 
@@ -4596,8 +4623,8 @@
 		}
 
 		.swiper-pagination-bullet-active {
-			color: #394791 !important;
-			background-color: #394791 !important;
+			color: $base !important;
+			background-color: $base !important;
 		}
 
 		&__description.closed {
@@ -4738,7 +4765,7 @@
 					&.active {
 						box-shadow: 0 2px 21px 0 rgba(0, 0, 0, 0.1);
 						background-color: #ffffff;
-						color: #394791 !important;
+						color: $base !important;
 						background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 94%/14px no-repeat !important;
 						margin: 0 0 10px 0;
 					}
@@ -5242,7 +5269,7 @@
 			}
 
 			.practical-features__title {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 22px;
 				font-weight: 400;
@@ -5399,7 +5426,7 @@
 
 			.diagram__name {
 				text-align: center;
-				color: #394791;
+				color: $base;
 				font-family: Arial;
 				font-size: 14px;
 				line-height: 20px;
