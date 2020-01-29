@@ -424,7 +424,9 @@
 			}
 		}
 
-		.dropdown-menu__reference {}
+		.dropdown-menu__reference {
+			color: inherit;
+		}
 
 		.dropdown-menu__image {
 			img {
