@@ -965,8 +965,19 @@
 
 			@media screen and (max-width: 767px) {
 				display: block;
-				max-width: 100%;
+				max-width: calc(100% + 32px);
+				width: calc(100% + 32px);
+				padding-top: 60%;
+				margin: 0 -16px;
+
+				a[data-fancybox="group1"] {
+					padding: 0;
+				}
 			}
+		}
+
+		@media screen and (max-width: 767px) {
+			margin-bottom: 14px;
 		}
 	}
 }
