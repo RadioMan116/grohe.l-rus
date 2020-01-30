@@ -1300,7 +1300,7 @@
 		font-weight: 700;
 		border-width: unset;
 		border: 0;
-		margin-left: 17px;
+		margin-left: 21px;
 
 		align-items: center;
 		min-height: 39px;
@@ -1354,6 +1354,10 @@
 		#modef_num {
 			margin-left: 4px;
 		}
+			@media screen and (max-width: 767px) {
+					margin-left: 12px;
+			}
+
 	}
 
 	@media screen and (max-width: 767px) {
