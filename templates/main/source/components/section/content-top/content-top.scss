@@ -227,11 +227,15 @@
 		p {
 			&:not(:first-of-type) {
 				display: none;
+				+.content-top__switch {
+					display: block;
+				}
 			}
+
 		}
 
 		.page__title.content-top__title_bottom {
-			display: block;
+			display: none;
 
 			&.active {
 				p {
@@ -258,6 +262,7 @@
 
 		&__title_top {
 			margin-bottom: 15px;
+
 		}
 
 		&__switch {
