@@ -2343,6 +2343,7 @@
 			line-height: 24px;
 			text-transform: uppercase;
 			@include button($padding: 10px 19px);
+
 			&.mobile {
 				display: none;
 			}
@@ -2358,6 +2359,9 @@
 			color: $base;
 			text-transform: uppercase;
 			text-decoration: none !important;
+			&.mobile {
+				display: none;
+			}
 		}
 
 		.reviews-list__field {
