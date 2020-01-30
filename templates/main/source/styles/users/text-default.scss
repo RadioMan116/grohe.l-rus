@@ -602,7 +602,7 @@
 			}
 		}
 
-		+nav.seo-text.text-default {
+		&.text-default+article.seo-text {
 
 			div {
 				// display: flex;
