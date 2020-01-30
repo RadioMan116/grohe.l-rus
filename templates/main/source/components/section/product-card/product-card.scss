@@ -4192,7 +4192,7 @@
 			display: flex;
 
 			.price__absolute {
-				left: unset;
+				left: 5px;
 				bottom: 0;
 			}
 
@@ -5650,7 +5650,7 @@
 				font-size: 24px;
 				font-weight: 400;
 				line-height: 23px;
-				justify-content: flex-start;
+				justify-content: center;
 
 				b {
 					font-size: inherit;
