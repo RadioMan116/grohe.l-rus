@@ -492,7 +492,7 @@
 
 		&:first-child {
 			width: 100%;
-			max-width: 40%;
+			max-width: 43%;
 			min-width: unset;
 			position: absolute;
 			left: 0px;
@@ -524,9 +524,9 @@
 			.added-cart__title,
 			.added-cart__key,
 			.added-cart__price {
-				padding-left: 45%;
+				padding-left: 48%;
 				margin-bottom: 12px;
-				font-size: 12px;
+				font-size: 13px;
 			}
 
 			.added-cart__key {
@@ -538,7 +538,7 @@
 				text-align: left;
 				color: #333333;
 				font-family: "Roboto Condensed";
-				// font-size: 32px;
+				font-size: 24px;
 				font-weight: 400;
 				line-height: 24px;
 				text-transform: uppercase;
@@ -546,6 +546,7 @@
 
 				b {
 					font-size: inherit;
+					margin-left: 0;
 				}
 			}
 
