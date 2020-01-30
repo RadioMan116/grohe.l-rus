@@ -2215,7 +2215,8 @@
 				margin: 0;
 				height: auto;
 				flex-basis: unset;
-				&:nth-child(3n-1){
+
+				&:nth-child(3n-1) {
 					margin: 0;
 				}
 
@@ -2322,6 +2323,7 @@
 
 			.description__text {
 				margin-top: 12px;
+				align-items: center;
 
 				&+.description__text {
 					margin-top: 22px;
