@@ -224,6 +224,9 @@
 		background: #394791 !important;
 		min-height: unset;
 
+.content-top__switch{
+	display: none;
+}
 		p {
 			&:not(:first-of-type) {
 				display: none;
@@ -235,7 +238,7 @@
 		}
 
 		.page__title.content-top__title_bottom {
-			display: none;
+			display: block;
 
 			&.active {
 				p {
