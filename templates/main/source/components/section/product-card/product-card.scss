@@ -2359,6 +2359,7 @@
 			color: $base;
 			text-transform: uppercase;
 			text-decoration: none !important;
+
 			&.mobile {
 				display: none;
 			}
@@ -5352,6 +5353,39 @@
 
 			.practical-features__text {
 				margin-bottom: 18px;
+			}
+
+			+article.seo-text {
+				display: flex;
+				flex-shrink: 0;
+				width: auto;
+				width: 100%;
+				max-width: 100%;
+				padding-top:60% ;
+				position: relative;
+
+				a[data-fancybox="group1"] {
+					max-width: 100%;
+					width: 100%;
+					position: absolute;
+					top: 0;
+					left: 0;
+					max-height: 100%;
+					display: flex;
+
+					picture {
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						img {
+							height: 100%;
+							width: 100%;
+							flex-grow: 0;
+							object-fit: cover;
+						}
+					}
+				}
 			}
 		}
 
