@@ -4288,6 +4288,11 @@
 						height: auto;
 					}
 				}
+				&:first-child{
+					width: 100%;
+					flex-basis: 100%;
+					max-width: 100%;
+				}
 			}
 
 			.mobile {
@@ -5244,8 +5249,6 @@
 			}
 		}
 
-
-
 		.description {
 			width: 100%;
 			padding: 0 12px;
@@ -5716,6 +5719,20 @@
 					&:nth-child(odd) {
 						padding-right: 18px;
 					}
+						&:hover {
+							img {}
+
+							&:nth-of-type(odd) {
+								&:after {
+
+
+									left: 0px !important;
+
+								}
+							}
+
+
+						}
 
 					// &:last-child,
 					// &:nth-last-child(2) {
