@@ -5361,7 +5361,7 @@
 				width: auto;
 				width: 100%;
 				max-width: 100%;
-				padding-top:60% ;
+				padding-top: 60%;
 				position: relative;
 
 				a[data-fancybox="group1"] {
@@ -5846,9 +5846,10 @@
 				}
 
 				th {
-					width: 125px;
+					width: 200px;
+					max-width: 200px;
 					margin-right: 12px;
-
+					height: 200px;
 				}
 
 				td {
