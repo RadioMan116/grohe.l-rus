@@ -4927,7 +4927,7 @@
 				&__field {
 					// flex-wrap: wrap;
 					padding: 0 0 12px !important;
-flex-direction: column;
+					flex-direction: column;
 
 					&:nth-child(2) {
 						margin-top: 30px;
@@ -5787,14 +5787,18 @@ flex-direction: column;
 			}
 
 			.product-card__rel {
+				tr{
+					justify-content:space-between ;
+				}
 				th {
 					width: 125px;
-					margin-right: 8px;
+					margin-right: 12px;
+
 				}
 
 				td {
 					padding: 9px 0 0 4px;
-					flex-grow: 0;
+					flex-grow: 1;
 				}
 
 				.rel__pagination {
@@ -5819,8 +5823,18 @@ flex-direction: column;
 
 			.product-card__description {
 				margin-bottom: 7px;
-				height: 135px;
+				height: 150px;
 				border-bottom: 1px solid white;
+
+				&:hover {
+					overflow: hidden;
+
+				}
+
+				a {
+					z-index: 9;
+					position: absolute;
+				}
 			}
 
 			.tags__list {

@@ -157,13 +157,14 @@ $(document).ready(function () {
 		},
 		breakpoints: {
 			479: {
+				allowTouchMove: true,
 
 				slidesPerView: 1,
 				// slidesPerGroup: 1,
 
 			},
 			600: {
-
+allowTouchMove: true,
 				slidesPerView: 1.3,
 				// slidesPerGroup: 1,
 
