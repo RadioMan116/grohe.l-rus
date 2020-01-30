@@ -112,7 +112,7 @@
 		}
 
 		.new-items__caption {
-			margin-bottom: 33px;
+			margin-bottom: 40px;
 			width: 100%;
 		}
 
@@ -141,17 +141,29 @@
 			bottom: 0;
 			position: relative;
 			margin-top: 24px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+
+			.swiper-pagination-bullet {
+				margin: 0 auto;
+			}
 		}
 
 		.container {
+			// position: relative;
 
 			.new-items_prev,
 			.new-items_next {
-				top: 47px;
+				top: 75px;
+				display: block;
 			}
 
 			.new-items_next {
-				right: 0px;
+				right: 16px;
+			}
+			.new-items_prev {
+				left: 16px;
 			}
 		}
 
