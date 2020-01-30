@@ -2325,10 +2325,10 @@
 				margin-top: 12px;
 				align-items: center;
 
-				p {
-					&:nth-of-type(n+2) {
+				img+p~* {
+
 						display: none;
-					}
+
 				}
 
 				&+.description__text {
@@ -2378,10 +2378,10 @@
 
 			&.active {
 				.description__text {
-					p {
-						&:nth-of-type(n+2) {
+						img+p~* {
+
 							display: block;
-						}
+
 					}
 				}
 			}
