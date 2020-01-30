@@ -2325,6 +2325,12 @@
 				margin-top: 12px;
 				align-items: center;
 
+				p {
+					&:nth-of-type(n+2) {
+						display: none;
+					}
+				}
+
 				&+.description__text {
 					margin-top: 22px;
 				}
@@ -2354,6 +2360,30 @@
 				letter-spacing: normal;
 				text-align: left;
 				padding-right: 1rem;
+			}
+
+			.catalog__description-switch {
+				color: $base;
+				font-family: Roboto Condensed;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 24px;
+				text-transform: uppercase;
+				border-bottom: 1px dashed $base;
+				width: -webkit-max-content;
+				width: -moz-max-content;
+				width: max-content;
+			}
+
+
+			&.active {
+				.description__text {
+					p {
+						&:nth-of-type(n+2) {
+							display: block;
+						}
+					}
+				}
 			}
 		}
 
@@ -2566,6 +2596,7 @@
 		.sidebar {
 			.documentation {
 				display: none;
+
 				&__link {
 					margin-top: 26px;
 				}
@@ -2573,6 +2604,7 @@
 
 			.work-link {
 				display: none;
+
 				.work-link__item {
 					padding: 8px 3px 12px 0 !important;
 				}

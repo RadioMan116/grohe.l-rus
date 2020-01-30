@@ -2687,6 +2687,7 @@ $(window).on('load', function () {
 
 		(function () {
 			let moreText = document.querySelector('.content-top .content-top__title_bottom');
+			let catalogText = document.querySelector('.catalog__description.description');
 			if (moreText) {
 				console.log('есть');
 				let button = document.createElement('div');
@@ -2700,6 +2701,20 @@ $(window).on('load', function () {
 					button.innerHTML == 'Читать подробнее' ? button.innerHTML = closeText : button.innerHTML = openText;
 				};
 			}
+			if (catalogText) {
+
+				let button = document.createElement('div');
+				let openText = 'Читать подробнее',
+					closeText = 'Свернуть';
+				catalogText.append(button);
+				button.classList.add('js-switch', 'catalog__description-switch');
+				button.innerHTML = openText
+				button.onclick = function () {
+					this.parentElement.classList.toggle('active');
+					button.innerHTML == 'Читать подробнее' ? button.innerHTML = closeText : button.innerHTML = openText;
+				};
+			}
+
 
 		})();
 
