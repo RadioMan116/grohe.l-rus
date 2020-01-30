@@ -1104,11 +1104,14 @@
 			margin-bottom: 13px;
 			justify-content: unset;
 			margin-left: 0 !important;
+			align-items: center;
 
-			.ratings__star {
-				width: 19px;
-				height: 17px;
-				background-size: contain;
+			.ratings {
+				&__star {
+					width: 26px;
+					height: 26px;
+					background-size: contain;
+				}
 			}
 
 			.ratings__number {
@@ -1190,6 +1193,7 @@
 			// margin: 0 -16px;
 			padding: 0 16px !important;
 			background-color: #ffffff;
+			margin-bottom: 0;
 		}
 
 		.reviews-main__item {

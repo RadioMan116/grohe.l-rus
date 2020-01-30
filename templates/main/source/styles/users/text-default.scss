@@ -589,6 +589,38 @@
 		p img+br {
 			display: none;
 		}
+
+		div {
+			// display: flex;
+			// flex-wrap: wrap;
+			// justify-content: center;
+
+			&[id^=bx] {
+				// display: block;
+				// width: 100%;
+
+			}
+		}
+
+		+nav.seo-text.text-default {
+			margin-bottom: 0;
+			div {
+				// display: flex;
+				// flex-wrap: wrap;
+				// justify-content: center;
+
+				&[id^=bx] {
+					// display: block;
+					// width: 100%;
+
+					a[data-fancybox="group1"] {
+						.video__image {
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
 	}
 
 	@media screen and (max-width: 480px) {
