@@ -112,12 +112,15 @@
 		}
 
 		.new-items__caption {
-			margin-bottom: 40px;
+			margin-bottom: 18px;
 			width: 100%;
+			display: flex;
+			flex-direction: column;
 		}
 
 		.new-items__title {
 			margin-top: 27px;
+			margin-bottom: 14px !important;
 		}
 
 		.special-offers__text {
@@ -155,20 +158,22 @@
 
 			.new-items_prev,
 			.new-items_next {
-				top: 75px;
+				top: 43px;
 				display: block;
+				border: 1px solid $base;
+				border-radius: 3px;
 			}
 
 			.new-items_next {
-				right: 16px;
+				right: 0px;
 			}
 			.new-items_prev {
-				left: 16px;
+			right: 50px;
 			}
 		}
 
 		.new-items__how {
-			margin-left: auto;
+			margin-left: 0;
 			color: #2e2e2e;
 			font-family: Arial;
 			font-size: 14px;
