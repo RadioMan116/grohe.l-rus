@@ -2141,7 +2141,13 @@
 					flex-basis: 33%;
 
 					a {
-						margin-left: 6px;
+						margin-left: 0px;
+						font-size: 14px;
+						font-weight: normal;
+						font-style: normal;
+						font-stretch: normal;
+						line-height: 17px;
+						letter-spacing: normal;
 					}
 				}
 
@@ -5846,7 +5852,7 @@
 				}
 
 				th {
-					width: 150px ;
+					width: 150px;
 					max-width: 200px;
 					margin-right: 12px;
 					height: 150px;
