@@ -868,7 +868,7 @@
 
 	.fixed-header {
 		position: fixed;
-		height: 150px;
+		height: 130px;
 		z-index: 9999999;
 		top: -999px;
 		flex-wrap: nowrap;
@@ -950,6 +950,7 @@
 					width: calc(100% - 100px);
 					display: flex;
 					align-items: center;
+					margin-bottom: 0;
 				}
 
 				&__price,
@@ -960,14 +961,15 @@
 				}
 
 				&__rub {}
-				&__buy{
+
+				&__buy {
 
 					padding: 0;
 					color: transparent;
 					background-image: url(/mockup/templates/main/build/css/../images/shopping-cart.svg);
 					background-size: auto;
 					background-position: 50%;
-					width: 40px;
+					width: 34px;
 					height: 34px;
 					border-radius: 3px;
 					font-family: Roboto Condensed;
@@ -987,6 +989,7 @@
 					border: none;
 					cursor: pointer;
 					text-align: center;
+
 					&:before {
 						content: "";
 						background-image: url(../images/shopping-cart.svg);
@@ -1068,6 +1071,17 @@
 			.swiper-slide {
 				flex: 1 0 auto !important;
 				padding-left: 5px;
+				flex-wrap: nowrap;
+				flex-direction: column;
+
+				.special-offers__sale {
+					width: 100%;
+					flex-direction: row;
+
+				}
+				.catalog__presence{
+					display: none;
+				}
 			}
 
 			.swiper-wrapper {
@@ -1113,7 +1127,10 @@
 				font-family: Arial;
 				font-size: 14px;
 				line-height: 20px;
+				width: 100%;
+				margin-bottom: 10px;
 			}
+
 		}
 
 		.swiper-container-comparison .comparison__diagram,
