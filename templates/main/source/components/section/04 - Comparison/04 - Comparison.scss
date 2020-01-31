@@ -990,6 +990,7 @@
 	}
 
 	@media screen and (max-width: 767px) {
+		background: white;
 
 		.fixed-header {
 			max-width: 100%;
@@ -1119,7 +1120,7 @@
 						font-family: Arial;
 						font-size: 14px;
 						font-weight: 700;
-						line-height: 20px;
+						line-height: 18px;
 
 
 						&:after {
@@ -1567,6 +1568,7 @@
 				background: url(../images/papka.png) 3px/16px no-repeat;
 			}
 		}
+
 	}
 
 	@media screen and (max-width: 320px) {
