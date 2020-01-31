@@ -574,6 +574,7 @@
 			.col-md-3 &+.sidebar {
 				display: none;
 			}
+
 		}
 
 
@@ -1473,3 +1474,8 @@
 		}
 	}
 }
+	@media screen and (max-width: 767px){
+			.col-md-3 .js-favorite_filter+.sidebar {
+				display: none;
+			}
+	}
