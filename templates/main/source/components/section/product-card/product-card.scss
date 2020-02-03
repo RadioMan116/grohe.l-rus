@@ -4185,12 +4185,12 @@
 			}
 		}
 
-		.product-card__title {
+		&__title {
 			color: #333333;
 			font-family: "Roboto Condensed";
-			font-size: 28px;
+			font-size: 21px;
 			font-weight: 400;
-			line-height: 36px;
+			line-height: 1.2;
 			text-transform: uppercase;
 			margin-bottom: 24px !important;
 			margin-top: 18px;
@@ -5825,8 +5825,7 @@
 			}
 
 			.product-card__delivery {
-				background: none;
-				padding: 9px 0;
+				padding: 9px 0 9px 52px;
 
 				.delivery__info {
 					font-size: 12px;
@@ -6118,6 +6117,7 @@
 				justify-content: center;
 			}
 		}
+
 
 	}
 }
