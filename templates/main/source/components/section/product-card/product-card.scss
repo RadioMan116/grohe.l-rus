@@ -4468,6 +4468,7 @@
 
 			.link-pop-glossary {
 				margin-bottom: 10px;
+
 			}
 
 			.catalog-question {
@@ -5718,6 +5719,10 @@
 				.link-pop-glossary {
 					margin-left: 0px;
 					margin-right: 16px;
+					position: static;
+					.popup-prop{
+						left: 0 !important;
+					}
 				}
 			}
 
