@@ -2650,7 +2650,7 @@ $(window).on('load', function () {
 
 		})();
 	}
-(function () {
+	(function () {
 		let collection = document.querySelector('.product-card__collection');
 		if (collection) {
 			let tabs = collection.querySelectorAll(".tags__list li");
