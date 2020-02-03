@@ -1445,7 +1445,17 @@ $(document).ready(function () {
 			console.log(firstDropdownMenu)
 			firstDropdownMenu.classList.add("active");
 		})();
+		(function () {
+			let propImg = document.querySelectorAll('.catalog__items .link-pop-glossary');
 
+			propImg.forEach((el, i) => {
+				let info = el.querySelector('img').getAttribute("title");
+				var newP = document.createElement("p");
+				newP.innerHTML = info;
+				let parent = el.parentNode;
+				el.appendChild(newP);
+			})
+		})();
 	}
 	var mySwiper15 = new Swiper(".articles.swiper-container", {
 		slidesPerView: 1,

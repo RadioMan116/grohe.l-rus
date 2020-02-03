@@ -2327,7 +2327,7 @@
 
 				img+p~* {
 
-						display: none;
+					display: none;
 
 				}
 
@@ -2378,9 +2378,9 @@
 
 			&.active {
 				.description__text {
-						img+p~* {
+					img+p~* {
 
-							display: block;
+						display: block;
 
 					}
 				}
@@ -2611,8 +2611,6 @@
 			}
 		}
 
-
-
 		&.sphere {
 
 
@@ -2739,6 +2737,51 @@
 			}
 		}
 
+		.catalog__prop {
+
+
+			.link-pop-glossary {
+				position: relative;
+
+				p {
+					display: none;
+					width: auto;
+					-webkit-box-shadow: 0 2px 12px rgba(82, 64, 64, .17);
+					box-shadow: 0 2px 12px rgba(82, 64, 64, .17);
+					border-radius: 3px;
+					background-color: #fff;
+					padding: 10px;
+					z-index: 100;
+					bottom: 100%;
+					height: auto;
+					opacity: 1;
+					max-height: unset;
+					max-width: unset;
+					position: absolute;
+					white-space: nowrap;
+					left: 0;
+					margin-bottom: 6px;
+
+				}
+
+				&:nth-child(5),
+				&:nth-child(6) {
+
+					p {
+						left: unset;
+						right: 0;
+					}
+				}
+
+				&:hover {
+
+					p {
+						display: block;
+					}
+				}
+
+			}
+		}
 	}
 
 	@media screen and (max-width: 768px) {
