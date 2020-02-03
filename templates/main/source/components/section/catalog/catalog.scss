@@ -362,20 +362,21 @@
 	}
 
 	&__favorite {
-		background: url("../images/fav_inactive.svg") no-repeat;
+		// background: url("../images/fav_inactive.svg") no-repeat;
+			background: url("../images/Favorite-yandex.svg") no-repeat;
 		background-position: top center;
 		background-size: contain;
 		margin-left: 22px;
 		margin-right: auto;
 
 		&.active {
-			background: url("../images/fav_active.svg") no-repeat;
+			background: url("../images/Favorite-yandex-active.svg") no-repeat;
 			background-position: top center;
 			background-size: contain;
 		}
 
-		width: 18px;
-		height: 18px;
+		width: 20px;
+		height: 20px;
 	}
 
 	.stock {
