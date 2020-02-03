@@ -391,7 +391,16 @@
 			z-index: 9;
 
 			&:hover {
-				text-decoration: underline;
+				text-decoration: none;
+				&:after{
+					 content: '';
+					 width: calc(100% - 12px);
+					 height: 1px;
+					 position: absolute;
+					 bottom: 0;
+					 right:  0;
+					 border-bottom: 1px dashed;
+				}
 			}
 		}
 

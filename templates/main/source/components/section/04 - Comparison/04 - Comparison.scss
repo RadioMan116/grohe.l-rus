@@ -868,7 +868,7 @@
 
 	.fixed-header {
 		position: fixed;
-		height: 130px;
+		height: 145px;
 		z-index: 9999999;
 		top: -999px;
 		flex-wrap: nowrap;
@@ -921,10 +921,11 @@
 
 		.swiper-slide {
 			flex: 0 0 auto;
-			padding: 0 0 0 28px;
+			padding:8px 8px 12px;
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
+			border: 1px solid #f1f1f1;
 
 			// &:nth-child(1) {
 
@@ -1022,8 +1023,11 @@
 			left: 100px;
 			width: fit-content;
 			height: fit-content;
-			top: 43%;
+			top: 47%;
 			z-index: 9999;
+			.swiper-pagination-bullet-active{
+				background: $base;
+			}
 		}
 
 		&__pic {
