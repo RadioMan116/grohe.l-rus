@@ -117,22 +117,26 @@
 			margin: 0 !important;
 		}
 
-		.glossary__img {
+		.glossary__img,
+		picture {
 			// max-height: 0;
 			max-width: 0;
 			transform: scale(0);
 		}
+
 
 		&.active {
 			height: unset;
 			overflow: visible;
 			transition: all 0.4s;
 
-			.glossary__img {
+			.glossary__img,
+			picture {
 				max-width: 100%;
 				transform: scale(1);
 				// max-height: 100%;
 			}
+
 		}
 	}
 
