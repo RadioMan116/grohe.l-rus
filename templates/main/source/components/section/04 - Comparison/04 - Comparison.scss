@@ -921,7 +921,7 @@
 
 		.swiper-slide {
 			flex: 0 0 auto;
-			padding:8px 8px 12px;
+			padding: 8px 8px 12px;
 			display: flex;
 			flex-direction: column;
 			flex-wrap: wrap;
@@ -1025,7 +1025,8 @@
 			height: fit-content;
 			top: 47%;
 			z-index: 9999;
-			.swiper-pagination-bullet-active{
+
+			.swiper-pagination-bullet-active {
 				background: $base;
 			}
 		}
@@ -1083,16 +1084,17 @@
 					flex-direction: row;
 
 				}
-				.catalog__presence{
+
+				.catalog__presence {
 					display: none;
 				}
 			}
 
 			.swiper-wrapper {
-			    height: 100%;
-			    margin-top: 20px;
-			    padding-bottom: 15px;
-			    width: 100%;
+				height: 100%;
+				margin-top: 20px;
+				padding-bottom: 15px;
+				width: 100%;
 			}
 
 			&__pic {
