@@ -926,6 +926,7 @@
 			flex-direction: column;
 			flex-wrap: wrap;
 			border: 1px solid #f1f1f1;
+			padding-left: 100px;
 
 			// &:nth-child(1) {
 
@@ -948,7 +949,7 @@
 			// }
 			.special-offers {
 				&__sale {
-					width: calc(100% - 100px);
+					width: calc(100%);
 					display: flex;
 					align-items: center;
 					margin-bottom: 0;
@@ -1032,10 +1033,15 @@
 		}
 
 		&__pic {
-			width: 80px;
-			margin-right: 20px;
-			flex-shrink: 0;
-			height: 100%;
+		    width: 86px;
+		    margin-right: 0;
+		    // -ms-flex-negative: 0;
+		    flex-shrink: 0;
+		    height: 100%;
+		    position: absolute;
+		    left: 4px;
+		    top: 0;
+		    padding: 11px 4px;
 
 			img {
 				width: auto !important;
@@ -1056,7 +1062,7 @@
 			font-family: Arial;
 			font-size: 12px;
 			line-height: 20px;
-			width: calc(100% - 100px);
+			width: calc(100%);
 			flex-grow: 1;
 		}
 	}
