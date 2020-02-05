@@ -1233,6 +1233,7 @@ $(document).ready(function () {
 
 			$(function () {
 				$('.instructions__items .special-offers__text').matchHeight();
+				$('.catalog__items .catalog__specification').matchHeight();
 				$('.js-ecom_product-list[data-list="Catalog Result"] .special-offers__text.catalog__text').matchHeight();
 			});
 		}
@@ -1281,7 +1282,6 @@ $(document).ready(function () {
 			// 	el: ".swiper-scrollbar"
 			// }
 		});
-
 		var mySwiper23 = new Swiper(".catalog .articles.swiper-container", {
 			navigation: {
 				nextEl: ".articles__next",
