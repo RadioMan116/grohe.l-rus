@@ -174,7 +174,8 @@
 	@media screen and (max-width: 767px) {
 		flex-direction: column;
 
-		.site-map__items {
+		.site-map__items,
+		.site-map__col {
 			width: 100%;
 		}
 	}
