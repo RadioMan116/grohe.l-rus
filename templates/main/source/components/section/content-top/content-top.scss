@@ -39,9 +39,8 @@
 			font-family: "Roboto Condensed";
 			font-size: 16px;
 			font-weight: 400;
-			p~p{
-				display: none;
-			}
+
+
 		}
 
 	}
@@ -89,6 +88,9 @@
 			font-family: Arial;
 			font-size: 13px;
 			line-height: 22px;
+			p~p {
+				display: none;
+			}
 		}
 	}
 
@@ -228,12 +230,14 @@
 		background: #394791 !important;
 		min-height: unset;
 
-.content-top__switch{
-	display: none;
-}
+		.content-top__switch {
+			display: none;
+		}
+
 		p {
 			&:not(:first-of-type) {
 				display: none;
+
 				+.content-top__switch {
 					display: block;
 				}
