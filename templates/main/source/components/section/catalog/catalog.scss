@@ -368,7 +368,7 @@
 
 	&__favorite {
 		// background: url("../images/fav_inactive.svg") no-repeat;
-			background: url("../images/Favorite-yandex.svg") no-repeat;
+		background: url("../images/Favorite-yandex.svg") no-repeat;
 		background-position: top center;
 		background-size: contain;
 		margin-left: 22px;
@@ -512,6 +512,7 @@
 			font-family: Arial;
 			font-size: 14px;
 			line-height: 22px;
+			display: block;
 		}
 	}
 

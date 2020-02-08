@@ -694,7 +694,7 @@
 		// margin-right: 2rem;
 		// margin-left: 26px;
 		margin-left: 0;
-		margin-right: auto;
+		margin-right: 16px;
 		white-space: nowrap;
 	}
 
@@ -2579,7 +2579,7 @@
 
 		&_top {
 			align-items: center;
-			justify-content: space-between;
+			// justify-content: space-between;
 			margin-bottom: 18px;
 		}
 
@@ -2604,7 +2604,7 @@
 		font-family: Arial;
 		font-size: 9px;
 		line-height: 18px;
-		margin-left: auto;
+		margin-left: 14px;
 		position: relative;
 
 		.item {
