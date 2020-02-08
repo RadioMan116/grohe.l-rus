@@ -111,7 +111,7 @@
 		font-stretch: condensed;
 		line-height: 1.71;
 		letter-spacing: normal;
-		color: #394791;
+		color: $base;
 		border-radius: 3px;
 		background-color: #ffffff;
 		border: solid 1px #394791;
@@ -657,8 +657,8 @@
 				}
 
 				.header__call-phone-button {
-					color: #394791;
-					color: #394791;
+					color: $base;
+					color: $base;
 					font-family: Arial;
 					font-size: 10px;
 					line-height: 22px;

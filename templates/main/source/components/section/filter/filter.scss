@@ -122,7 +122,7 @@
 		}
 
 		.close__filter {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 16px;
 			font-weight: 400;
@@ -250,7 +250,7 @@
 			background-position: 0 0;
 			height: 4px;
 			border-radius: 2px;
-			background-color: #394791;
+			background-color: $base;
 		}
 
 		.ui-slider-handle {
@@ -344,7 +344,7 @@
 		}
 
 		.more-text {
-			color: #394791;
+			color: $base;
 			font-family: Arial;
 			font-size: 13px;
 			line-height: 18px;
@@ -379,7 +379,7 @@
 			line-height: normal;
 			letter-spacing: normal;
 			text-align: center;
-			color: #394791;
+			color: $base;
 
 			padding: 14px 0;
 			width: 100%;
@@ -396,7 +396,7 @@
 			margin-right: 20px;
 		}
 
-		color: #394791;
+		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
@@ -460,7 +460,7 @@
 			background: none;
 			width: auto;
 			height: auto;
-			color: #394791;
+			color: $base;
 			font-family: Arial;
 			font-size: 13px;
 			line-height: 18px;
@@ -558,7 +558,7 @@
 				position: absolute;
 				right: 20px;
 				bottom: -100%;
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
@@ -699,7 +699,7 @@
 
 
 			span {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
@@ -961,7 +961,7 @@
 			padding-left: 28px;
 
 			&[name="del_filter"] {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
@@ -1000,7 +1000,7 @@
 		}
 
 		.more-text {
-			color: #394791;
+			color: $base;
 			font-family: Arial;
 			font-size: 13px;
 			line-height: 18px;
@@ -1280,7 +1280,7 @@
 		}
 
 		.filter-glossary__link {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -1405,7 +1405,7 @@
 
 
 			span {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;

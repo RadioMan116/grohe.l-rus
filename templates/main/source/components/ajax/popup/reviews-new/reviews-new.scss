@@ -7,7 +7,7 @@
 
 	&__title {
 		color: #2e2e2e;
-		
+
 		font-size: 24px;
 		font-weight: 500;
 		line-height: 24px;
@@ -17,7 +17,7 @@
 
 	&__name {
 		color: #2e2e2e;
-		
+
 		font-size: 14px;
 		font-weight: 500;
 		line-height: 24px;
@@ -60,7 +60,7 @@
 		box-sizing: border-box;
 		background-color: white;
 		color: #666666;
-		
+
 		font-size: 12px;
 		line-height: 18px;
 		border: 1px solid #cbcbcb;
@@ -127,7 +127,7 @@
 		box-sizing: border-box;
 		border: 1px solid #cbcbcb;
 		color: #666666;
-		
+
 		font-size: 12px;
 		line-height: 18px;
 
@@ -157,20 +157,20 @@
 		}
 
 		span {
-			
+
 			font-size: 12px;
 			line-height: 18px;
 			color: #666666;
 
 			a {
-				color: #394791;
+				color: $base;
 			}
 		}
 	}
 
 	&__submit {
 		text-decoration: none;
-		background-color: #394791;
+		background-color: $base;
 		border-radius: 3px;
 		color: #fff;
 		border: none;

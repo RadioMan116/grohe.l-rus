@@ -125,7 +125,7 @@
 		&:hover {
 			.catalog__sort {
 
-				background-color: #394791;
+				background-color: $base;
 
 				span {
 					color: #ffffff;
@@ -155,7 +155,7 @@
 
 		&.active {
 			.catalog__sort {
-				background-color: #394791;
+				background-color: $base;
 
 				span {
 					color: #ffffff;
@@ -185,7 +185,7 @@
 	&__sort {
 		padding: 4px 28px 4px 8px;
 		font-weight: normal;
-		color: #394791;
+		color: $base;
 		border-radius: 2px;
 		background-color: #f1f1f1;
 		text-transform: capitalize;
@@ -337,7 +337,7 @@
 	}
 
 	&__oneclick {
-		color: #394791;
+		color: $base;
 		font-family: Arial;
 		font-size: 12px;
 		border-bottom: 1px dashed #394791;
@@ -426,7 +426,7 @@
 			text-align: center;
 
 			span {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-weight: 700;
 				text-transform: uppercase;
@@ -435,7 +435,7 @@
 		}
 
 		&__link {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 18px;
 			font-weight: 400;
@@ -472,7 +472,7 @@
 			flex-wrap: wrap;
 
 			a {
-				color: #394791;
+				color: $base;
 				font-family: Arial;
 				font-size: 12px;
 				margin-right: 26px;
@@ -551,7 +551,7 @@
 
 
 	.load-more {
-		color: #394791;
+		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 14px;
 		font-weight: 400;
@@ -643,7 +643,7 @@
 
 					&:hover {
 
-						color: #394791;
+						color: $base;
 
 					}
 				}
@@ -674,7 +674,7 @@
 			font-family: "Roboto Condensed";
 			font-size: 36px;
 			font-weight: 400;
-			color: #394791;
+			color: $base;
 			margin-bottom: 38px;
 		}
 
@@ -722,7 +722,7 @@
 		}
 
 		.reviews__all {
-			color: #394791;
+			color: $base;
 			font-family: Arial;
 			font-size: 14px;
 			line-height: 24px;
@@ -794,7 +794,7 @@
 
 
 		&__link {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -815,7 +815,7 @@
 			line-height: 24px;
 			text-transform: uppercase;
 			border-radius: 3px;
-			background-color: #394791;
+			background-color: $base;
 			border: 1px solid #394791;
 			padding: 4px 15px;
 			margin-right: 16px;
@@ -892,7 +892,7 @@
 
 			&:hover {
 				.popular-sections__subtitle {
-					color: #394791;
+					color: $base;
 				}
 			}
 		}
@@ -1060,7 +1060,7 @@
 
 
 		&__link {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -1079,7 +1079,7 @@
 		// .advantages__title
 
 		&__title {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 26px;
 			font-weight: 400;
@@ -1236,7 +1236,7 @@
 		// .all-video__link
 
 		&__more {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -1373,7 +1373,7 @@
 		&__link {
 			border-radius: 3px;
 			border: 1px solid #394791;
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -1400,7 +1400,7 @@
 		// .instructions__all
 
 		&__all {
-			color: #394791;
+			color: $base;
 			font-family: "Roboto Condensed";
 			font-size: 14px;
 			font-weight: 400;
@@ -1520,7 +1520,7 @@
 				overflow: hidden;
 
 				span {
-					color: #394791;
+					color: $base;
 					font-family: "Roboto Condensed";
 					font-size: 14px;
 					font-weight: 400;
@@ -1674,7 +1674,7 @@
 			height: 36px;
 			font-family: Roboto Condensed;
 			font-size: 14px;
-			background-color: #394791;
+			background-color: $base;
 			background-repeat: no-repeat;
 			box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.16);
 			text-decoration: none;
@@ -1795,7 +1795,7 @@
 			margin-bottom: 16px;
 
 			.product-day__title {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 24px;
 				font-weight: 400;
@@ -1948,7 +1948,7 @@
 					width: 112px;
 					height: 34px;
 					border-radius: 3px;
-					background-color: #394791;
+					background-color: $base;
 					color: #ffffff;
 					background-image: none;
 					display: flex;
@@ -2082,7 +2082,7 @@
 			}
 
 			.reviews__link {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 14px;
 				font-weight: 400;
@@ -2155,7 +2155,7 @@
 			padding-bottom: 32px;
 
 			.advantages__title {
-				color: #394791;
+				color: $base;
 				font-family: "Roboto Condensed";
 				font-size: 24px;
 				font-weight: 400;

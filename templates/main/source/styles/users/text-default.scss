@@ -47,7 +47,7 @@
 		font-stretch: normal;
 		line-height: 32px;
 		letter-spacing: normal;
-		color: #394791;
+		color: $base;
 		margin-bottom: 40px;
 	}
 
@@ -76,7 +76,7 @@
 		margin-bottom: 23px;
 
 		a {
-			color: #394791;
+			color: $base;
 
 			&[href^="tel:"] {
 				font-size: 14px;
@@ -331,7 +331,7 @@
 		padding: 16px;
 
 		a {
-			color: #394791;
+			color: $base;
 			font-family: Arial;
 			font-size: 12px;
 			margin-right: 26px;
@@ -653,7 +653,7 @@
 				font-size: 24px;
 				line-height: 32px;
 				padding: 24px 16px 32px;
-				background-color: #394791;
+				background-color: $base;
 
 			}
 

@@ -19,7 +19,7 @@
 	// .site-map__title
 
 	&__title {
-		color: #394791;
+		color: $base;
 		font-family: "Roboto Condensed";
 		font-size: 18px;
 		font-weight: 400;
@@ -92,7 +92,7 @@
 			}
 
 			&:after {
-				background-color: #394791;
+				background-color: $base;
 			}
 
 		}

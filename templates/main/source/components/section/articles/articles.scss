@@ -36,7 +36,7 @@
 		line-height: normal;
 		letter-spacing: normal;
 		text-align: left;
-		color: #394791;
+		color: $base;
 		text-transform: uppercase;
 		text-decoration: none !important;
 	}
@@ -94,7 +94,7 @@
 		color: #333333;
 
 		&:hover {
-			color: #394791;
+			color: $base;
 		}
 
 	}
