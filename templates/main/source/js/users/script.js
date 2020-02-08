@@ -1251,7 +1251,16 @@ $(document).ready(function () {
 				$('.js-ecom_product-list[data-list="Catalog Result"] .special-offers__text.catalog__text').matchHeight();
 			});
 		}
+		(function () {
+			let bgAttr = document.querySelectorAll('.dropdown-menu__item');
+			if (bgAttr) {
+				bgAttr.forEach(element => {
+					let url = element.getAttribute('data-bg');
+					element.style.background = `url('${url}')`;
+				});
+			}
 
+		})();
 	}
 	if (windowWidth2 <= 767) {
 		$('.logo').appendTo('.header__block_top .container');
