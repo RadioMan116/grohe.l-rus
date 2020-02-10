@@ -483,11 +483,10 @@
 
 		&[style^="background-image:"] {
 			.tags__list {
-				max-width: 670px;
+				// max-width: 670px;
+				max-width:calc(100% - 188px)
 			}
 		}
-
-
 	}
 
 	.description {
