@@ -2795,7 +2795,8 @@
 			&[style^="background-image:"] {
 				.tags__list {
 					// max-width: 670px;
-					max-width: unset !important;
+					max-width: 1176px !important;
+					overflow: unset;
 				}
 			}
 		}
