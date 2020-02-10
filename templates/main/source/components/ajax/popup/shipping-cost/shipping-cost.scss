@@ -1,0 +1,114 @@
+.popup_container.shipping-cost__popup {
+	display: flex;
+	flex-direction: column;
+
+	.title-strike {
+		 color: #2e2e2e;
+		 font-family: "Roboto Condensed";
+		 font-size: 28px;
+		 font-weight: 400;
+		 line-height: 2;
+		 margin-bottom: 14px;
+
+	}
+
+	.shipping-cost__inner {
+		.shipping-cost__form {
+			.shipping-cost__item {
+				display: flex;
+				flex-direction: column;
+
+				&:first-of-type {
+					margin-bottom: 14px;
+				}
+			}
+
+			.shipping-cost__price {
+				color: #333333;
+				font-family: "Roboto Condensed";
+				font-size: 18px;
+				font-weight: 400;
+				line-height: 22px;
+				margin-bottom: 14px;
+
+				b {
+					color: #333333;
+					font-family: "Roboto Condensed";
+					font-size: 30px;
+					font-weight: 400;
+					line-height: 36px;
+					margin-left: 8px;
+
+					+b {}
+				}
+			}
+
+			.shipping-cost__button {
+				display: flex;
+
+				a {
+					padding: 5px 16px;
+					font-size: 12px;
+					font-weight: 500;
+					font-style: normal;
+					font-stretch: normal;
+					line-height: 2;
+					letter-spacing: normal;
+					text-align: left;
+					text-transform: uppercase
+				}
+
+				#shipping-cost__back.shipping-cost__back {
+					color: #394791;
+					border-radius: 2px;
+					border: 1px solid #394791;
+					text-decoration: none !important;
+					margin-right: 16px;
+
+					&:hover {}
+
+					&:active {}
+
+					&:focus {}
+				}
+
+				.shipping-cost__order {
+					border-radius: 2px;
+					background-color: #394791;
+					color: #fff;
+
+					text-decoration: none !important;
+
+					&:hover {}
+
+					&:active {}
+
+					&:focus {}
+				}
+
+				br {}
+			}
+
+			label {
+				color: #333333;
+				font-family: Arial;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 1.8;
+
+				.sof-req {}
+			}
+
+			.shipping-cost__input {
+				border: solid 1px #cbcbcb;
+				background: #ffffff;
+				padding: 7px 16px;
+				color: #333333;
+				font-family: Arial;
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 1.8;
+			}
+		}
+	}
+}

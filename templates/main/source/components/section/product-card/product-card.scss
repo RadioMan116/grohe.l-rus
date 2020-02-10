@@ -2250,7 +2250,7 @@
 			color: #666666;
 			display: flex;
 			border-bottom: 1px solid #eeeeee;
-			    margin-bottom: 24px;
+			margin-bottom: 24px;
 
 		}
 
@@ -4165,6 +4165,67 @@
 	}
 
 
+	.delivery-information {
+		display: flex;
+		width: 100%;
+		position: relative;
+		margin-bottom: 24px;
+
+		&__pic {
+			picture {
+				height: 112px;
+				flex-shrink: 0;
+
+				source {}
+
+			}
+		}
+
+		&__text {
+			position: absolute;
+			top: 0;
+			left: 160px;
+			right: 0;
+			bottom: 0;
+			background: #f1f1f1;
+			padding: 16px;
+			display: flex;
+			flex-direction: column;
+
+
+			.delivery-information__info {
+				color: #333333;
+				font-family: "Roboto Condensed";
+				font-size: 14px;
+				font-weight: 400;
+				line-height: 18px;
+				margin-bottom: 2px;
+
+				&:first-of-type {
+					margin-bottom: auto;
+				}
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+
+				.delivery-information__link {
+					color: #394791;
+					padding-bottom: 1px;
+					border-bottom: 1px dashed #394791;
+					text-decoration: none !important;
+
+					&:hover {}
+
+					&:active {}
+
+					&:focus {}
+				}
+			}
+		}
+	}
+
+
 	@media screen and (max-width: 767px) {
 		.breadcrumbs {
 			line-height: 20px;
@@ -5709,12 +5770,16 @@
 				}
 
 				&__sale {
-					padding: 9px 3px 9px 3px;
-					width: 152px;
+					padding: 9px 7px 9px 3px;
+					width: auto;
 					height: 40px;
 					margin-right: 6px;
 					flex-wrap: nowrap;
 					flex-shrink: 0;
+				}
+
+				~.labels {
+					display: none;
 				}
 			}
 
@@ -6126,6 +6191,67 @@
 			}
 		}
 
+		.delivery-information {
+			display: flex;
+			width: 100%;
+			flex-direction: column;
+			position: relative;
+			margin-bottom: 24px;
+
+			&__pic {
+				picture {
+					height: auto;
+					flex-shrink: 0;
+
+					source {}
+				}
+			}
+
+			&__text {
+				position: static;
+				// top: 0;
+				// left: 160px;
+				// right: 0;
+				// bottom: 0;
+				background: #f1f1f1;
+				padding: 16px;
+				display: flex;
+				flex-direction: column;
+				margin-top: -50px;
+
+
+				.delivery-information__info {
+					color: #333333;
+					font-family: "Roboto Condensed";
+					font-size: 14px;
+					font-weight: 400;
+					line-height: 18px;
+					margin-bottom: 2px;
+
+
+					&:first-of-type {
+						margin-bottom: auto;
+					}
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+
+					.delivery-information__link {
+						color: #394791;
+						padding-bottom: 1px;
+						border-bottom: 1px dashed #394791;
+						text-decoration: none !important;
+
+						&:hover {}
+
+						&:active {}
+
+						&:focus {}
+					}
+				}
+			}
+		}
 
 	}
 }
