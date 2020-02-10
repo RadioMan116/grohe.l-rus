@@ -139,7 +139,7 @@
 
 		.article-back {
 			color: $base;
-			font-family: Arial;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 		}
 	}
@@ -185,6 +185,10 @@
 
 			.special-offers {
 				margin-top: 0;
+
+				&__title {
+					margin-top: 46px;
+				}
 			}
 
 			.swiper-container-two {
@@ -193,7 +197,7 @@
 				flex-direction: column;
 
 				.swiper-wrapper {
-					// padding-top: 44px;
+					padding-top: 24px;
 					height: unset !important;
 					max-height: 700px !important;
 					align-items: stretch;
@@ -210,13 +214,20 @@
 				top: 68px;
 			}
 
+			// .special-offers__text {
+			// 	flex-grow: 999;
+			// }
+
+
 			.catalog__item {
+				// height: fit-content;
 				height: auto;
 				max-width: unset;
+				margin: 0;
 
 
 				&:nth-child(3n-1) {
-					margin: 10px 0;
+					margin: 0;
 				}
 
 				.catalog__prop {
@@ -391,8 +402,6 @@
 		}
 	}
 
-
-
 	.swiper-slide {
 		padding: 20px;
 		transition: 0.4s;
@@ -412,21 +421,24 @@
 		.catalog__specification {
 			height: unset;
 		}
+
+
 	}
 
-	.swiper-scrollbar {
-		display: flex;
-		width: 100%;
-		height: 10px;
-		border-radius: 8.5px;
-		margin-top: 41px;
+	.special-offers {
 
-		&-drag {
-			background-color: $base;
+		.swiper-scrollbar {
+			display: flex;
+			width: 100%;
+			// height: 10px;
+			border-radius: 8.5px;
+			// margin-top: 41px;
+
+			&-drag {
+				background-color: $base;
+			}
 		}
 	}
-
-
 
 	@media screen and (max-width: 767px) {
 
@@ -437,6 +449,7 @@
 			font-size: 24px;
 			font-weight: 400;
 			margin-bottom: 22px;
+			margin-top: 0 !important;
 		}
 
 		&__section {
@@ -481,6 +494,10 @@
 			.container {
 				margin: 0;
 				padding-bottom: 11px !important;
+			}
+
+			.swiper-wrapper {
+				padding-top: 0 !important;
 			}
 		}
 
@@ -679,13 +696,7 @@
 
 	}
 
-	+.seo-text {
-		.video__name {
-			color: #394791 !important;
-		}
-	}
-
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 768px) {
 		padding-top: 40px;
 
 		.reviews {
@@ -725,7 +736,7 @@
 		}
 	}
 
-	@media screen and (max-width: 767px) {
+	@media screen and (max-width: 480px) {
 
 		padding-top: 34px;
 

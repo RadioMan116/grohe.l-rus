@@ -1,6 +1,6 @@
 .new-items {
 	background-color: #f8f8f8;
-	margin: 0 auto !important;
+	margin: 0 auto;
 	padding-top: 52px;
 
 	&__caption {
@@ -51,11 +51,12 @@
 		font-size: 18px;
 		font-weight: 400;
 		line-height: 26px;
+		padding-top: 24px;
 
 	}
 
 	.special-offers__sale {
-		padding-top: 11px;
+		padding-top: 14px;
 	}
 
 
@@ -87,7 +88,7 @@
 	&__link {
 		padding: 7px;
 		border-radius: 3px;
-		border: solid 1px #394791;
+		border: solid 1px $base;
 		font-size: 14px;
 		font-weight: 500;
 		font-style: normal;
@@ -96,7 +97,7 @@
 		letter-spacing: normal;
 		text-align: left;
 		color: $base;
-		margin: 3rem auto;
+		margin: 41px auto;
 		text-transform: uppercase;
 		text-decoration: none !important;
 	}
@@ -112,24 +113,26 @@
 		}
 
 		.new-items__caption {
-			margin-bottom: 18px;
+			margin-bottom: 15px;
 			width: 100%;
 			display: flex;
-			flex-direction: column;
+			flex-wrap: wrap;
 		}
 
 		.new-items__title {
 			margin-top: 27px;
-			margin-bottom: 14px !important;
+			margin-right: 20px;
+			margin-bottom: 10px !important;
 		}
 
 		.special-offers__text {
-			padding-top: 14px !important;
-			padding-bottom: 3px !important;
+			padding-top: 16px !important;
+			padding-bottom: 13px !important;
 		}
 
 		.special-offers__sale {
 			align-items: flex-end !important;
+			padding-top: 0;
 		}
 
 		.special-offers__slide {
@@ -144,40 +147,31 @@
 			bottom: 0;
 			position: relative;
 			margin-top: 24px;
-			width: 100%;
-			display: flex;
-			justify-content: space-between;
+		}
 
-			.swiper-pagination-bullet {
-				margin: 0 auto;
-			}
+		.swiper-pagination-bullet {
+			margin-left: 8px;
 		}
 
 		.container {
-			// position: relative;
 
 			.new-items_prev,
 			.new-items_next {
-				top: 43px;
-				display: block;
-				border: 1px solid $base;
-				border-radius: 3px;
+				top: 47px;
 			}
 
 			.new-items_next {
 				right: 0px;
 			}
-			.new-items_prev {
-			right: 50px;
-			}
 		}
 
 		.new-items__how {
-			margin-left: 0;
+
 			color: #2e2e2e;
-			font-family: Arial;
+			font-family: Arial, sans-serif;
 			font-size: 14px;
 			margin-right: -3px;
+			margin-top: 27px;
 		}
 
 
