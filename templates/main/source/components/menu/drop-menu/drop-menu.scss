@@ -337,11 +337,11 @@
 
 					// background-position: 21px 0px !important;
 					&:nth-child(1) {
-						background-position:25px 14px !important;
+						background-position: 25px 14px !important;
 					}
 
 					&:nth-child(2) {
-						background-position:16px 18px !important;
+						background-position: 16px 18px !important;
 					}
 
 					&:nth-child(3) {
@@ -349,11 +349,11 @@
 					}
 
 					&:nth-child(4) {
-						background-position:28px 15px !important;
+						background-position: 28px 15px !important;
 					}
 
 					&:nth-child(5) {
-						background-position:23px 14px !important;
+						background-position: 23px 14px !important;
 					}
 
 					&:nth-child(6) {
@@ -361,7 +361,7 @@
 					}
 
 					&:nth-child(7) {
-						background-position:19px 14px !important;
+						background-position: 19px 14px !important;
 					}
 				}
 
@@ -935,6 +935,20 @@
 
 		&:nth-child(3) {
 			order: 3;
+		}
+	}
+
+
+	.new-collection {
+		.dropdown-menu__item {
+			.dropdown-menu__reference {
+				pointer-events: none;
+			}
+			&.active {
+				.dropdown-menu__reference {
+					pointer-events: unset;
+				}
+			}
 		}
 	}
 
