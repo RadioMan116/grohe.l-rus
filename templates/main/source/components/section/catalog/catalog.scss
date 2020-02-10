@@ -2788,6 +2788,17 @@
 
 			}
 		}
+		.tags {
+
+
+
+			&[style^="background-image:"] {
+				.tags__list {
+					// max-width: 670px;
+					max-width: unset !important;
+				}
+			}
+		}
 	}
 
 	@media screen and (max-width: 768px) {
