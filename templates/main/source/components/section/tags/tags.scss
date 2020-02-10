@@ -133,7 +133,7 @@
 		&__list {
 			max-width: 1176px;
 			overflow-x: scroll;
-			width: 1176px;
+			width: max-content;
 		}
 
 		&__title {
@@ -155,7 +155,8 @@
 
 
 }
-.d-flex.flex-column-reverse.flex-md-row  {
+
+.d-flex.flex-column-reverse.flex-md-row {
 	h1.title+.tags.lazyloaded {
 		background-image: none !important;
 		align-items: baseline;
