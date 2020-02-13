@@ -352,7 +352,7 @@
 	}
 
 	&__simile {
-		background: url("../images/compare.svg") no-repeat;
+		background: url("../images/compare-ya.svg") no-repeat;
 		background-position: top center;
 		width: 15px;
 		height: 18px;
@@ -360,9 +360,9 @@
 		overflow: hidden;
 
 		&.active {
-			background: url("../images/compare-color.svg") no-repeat;
+			background: url("../images/compare-ya-active.svg") no-repeat;
 			background-position: top center;
-			background-size: contain;
+			// background-size: contain;
 		}
 	}
 
@@ -478,10 +478,11 @@
 				margin-right: 26px;
 			}
 		}
-			.tags__list {
-				// max-width: 670px;
-				max-width: calc(100% - 188px)
-			}
+
+		.tags__list {
+			// max-width: 670px;
+			max-width: calc(100% - 188px)
+		}
 
 	}
 
@@ -560,6 +561,10 @@
 		text-align: center;
 		text-decoration: none !important;
 		padding: 5px 46px;
+
+		&:hover {
+			border: 1px solid $base;
+		}
 	}
 
 	.product-day {
@@ -2790,12 +2795,12 @@
 
 
 
-				.tags__list {
-					// max-width: 670px;
-					max-width: 1176px !important;
-					overflow: unset;
-					width: max-content;
-				}
+			.tags__list {
+				// max-width: 670px;
+				max-width: 1176px !important;
+				overflow: unset;
+				width: max-content;
+			}
 
 		}
 	}

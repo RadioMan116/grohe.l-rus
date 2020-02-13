@@ -247,6 +247,10 @@
 		width: fit-content;
 		margin-bottom: 11px;
 		text-decoration: none !important;
+
+		&:hover {
+			border: 1px solid $base;
+		}
 	}
 
 	&__bottom {
