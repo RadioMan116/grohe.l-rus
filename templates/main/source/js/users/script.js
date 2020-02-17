@@ -28,47 +28,7 @@ $(document).ready(function () {
 	var windowWidth2 = $(window).width();
 
 
-	// }
-	// if ($(".catalog .js-swiper-four").length) {
-	// 	var mySwiper20 = new Swiper(".catalog .js-swiper-four", {
-	// 		slidesPerView: 3,
-	// 		spaceBetween: 9,
-	// 		touchRatio: 1,
-	// 		allowTouchMove: false,
-	// 		navigation: {
-	// 			nextEl: ".catalog .special-offers.similar-models .swiper-button-next",
-	// 			prevEl: ".catalog .special-offers.similar-models .swiper-button-prev"
-	// 		},
-	// 		pagination: {
-	// 			el: ".catalog .special-offers.similar-models .swiper-pagination_2",
-	// 			clickable: true
-	// 		},
-	// 		breakpoints: {
-	// 			// when window width is <= 320px
-	// 			767: {
-	// 				allowTouchMove: true,
-	// 				slidesPerGroup: 1,
-	// 				spaceBetween: 22,
-	// 				slidesPerView: 2
-	// 			},
 
-	// 			600: {
-	// 				allowTouchMove: true,
-	// 				slidesPerGroup: 1,
-	// 				slidesPerView: 1,
-	// 				spaceBetween: 10
-	// 			}
-	// 		}
-
-	// 	});
-	// 	if ($(".js-swiper-four .swiper-slide").length >= 3) {
-	// 		$('.swiper-button-prev').show();
-	// 		$('.swiper-button-next').show();
-	// 	} else {
-	// 		$('.swiper-button-prev').hide();
-	// 		$('.swiper-button-next').hide();
-	// 	}
-	// }
 
 
 
@@ -1946,131 +1906,130 @@ $(document).ready(function () {
 			var $this = $(this);
 			$this.find('[class ^=swiper-pagination]').addClass("instance-pagination-" + index);
 		});
-		if(catalog){
-	mainCollection.forEach(function (element, index) {
-		let $this = $(this);
-		element.querySelector('.swiper-container').classList.add("instance-" + index);
-		element.querySelector('.swiper-button-next').classList.add("instance-next-" + index);
-		element.querySelector('.swiper-button-prev').classList.add("instance-prev-" + index);
+		if (catalog) {
+			mainCollection.forEach(function (element, index) {
+				let $this = $(this);
+				element.querySelector('.swiper-container').classList.add("instance-" + index);
+				element.querySelector('.swiper-button-next').classList.add("instance-next-" + index);
+				element.querySelector('.swiper-button-prev').classList.add("instance-prev-" + index);
 
-		var mySwiper33 = new Swiper(".instance-" + index, {
-			slidesPerView: 3,
-			spaceBetween: 25,
-			slidesPerGroup: 4,
-			allowTouchMove: false,
+				var mySwiper33 = new Swiper(".instance-" + index, {
+					slidesPerView: 3,
+					spaceBetween: 25,
+					slidesPerGroup: 4,
+					allowTouchMove: false,
 
-			// loop: true,
-			// loopFillGroupWithBlank: true,
-			pagination: {
-				el: ".instance-pagination-" + index,
-				clickable: true
-			},
-			scrollbar: {
-				el: ".swiper-scrollbar",
-				hide: false,
-				draggable: true
-			},
-			navigation: {
-				nextEl: ".instance-next-" + index,
-				prevEl: ".instance-prev-" + index
-			},
-			breakpoints: {
-				// when window width is <= 320px
-				767: {
-					allowTouchMove: true,
-					slidesPerGroup: 1,
-					spaceBetween: 22,
-					slidesPerView: 2
-				},
-				600: {
-					allowTouchMove: true,
-					slidesPerGroup: 1,
-					slidesPerView: 1,
-					spaceBetween: 10
-				}
-
-
-			}
-		});
-
-
-		if (windowWidth2 > 767) {
-			if (element.querySelectorAll('.swiper-slide').length > 4) {
-				element.querySelector('.swiper-button-next').style.display = 'block';
-				element.querySelector('.swiper-button-prev').style.display = 'block';
-				element.querySelector(".instance-pagination-" + index).style.display = 'flex';
-
-			} else {
-				element.querySelector('.swiper-button-next').style.display = 'none';
-				element.querySelector('.swiper-button-prev').style.display = 'none';
-				element.querySelector(".instance-pagination-" + index).style.display = 'none';
-			}
-		}
-
-	})
-		}
-		else{
-		mainCollection.forEach(function (element, index) {
-			let $this = $(this);
-			element.querySelector('.swiper-container').classList.add("instance-" + index);
-			element.querySelector('.swiper-button-next').classList.add("instance-next-" + index);
-			element.querySelector('.swiper-button-prev').classList.add("instance-prev-" + index);
-
-			var mySwiper33 = new Swiper(".instance-" + index, {
-				slidesPerView: 4,
-				spaceBetween: 25,
-				slidesPerGroup: 4,
-				allowTouchMove: false,
-
-				// loop: true,
-				// loopFillGroupWithBlank: true,
-				pagination: {
-					el: ".instance-pagination-" + index,
-					clickable: true
-				},
-				scrollbar: {
-					el: ".swiper-scrollbar",
-					hide: false,
-					draggable: true
-				},
-				navigation: {
-					nextEl: ".instance-next-" + index,
-					prevEl: ".instance-prev-" + index
-				},
-				breakpoints: {
-					// when window width is <= 320px
-					767: {
-						allowTouchMove: true,
-						slidesPerGroup: 1,
-						spaceBetween: 22,
-						slidesPerView: 2
+					// loop: true,
+					// loopFillGroupWithBlank: true,
+					pagination: {
+						el: ".instance-pagination-" + index,
+						clickable: true
 					},
-					600: {
-						allowTouchMove: true,
-						slidesPerGroup: 1,
-						slidesPerView: 1,
-						spaceBetween: 10
+					scrollbar: {
+						el: ".swiper-scrollbar",
+						hide: false,
+						draggable: true
+					},
+					navigation: {
+						nextEl: ".instance-next-" + index,
+						prevEl: ".instance-prev-" + index
+					},
+					breakpoints: {
+						// when window width is <= 320px
+						767: {
+							allowTouchMove: true,
+							slidesPerGroup: 1,
+							spaceBetween: 22,
+							slidesPerView: 2
+						},
+						600: {
+							allowTouchMove: true,
+							slidesPerGroup: 1,
+							slidesPerView: 1,
+							spaceBetween: 10
+						}
+
+
 					}
+				});
 
 
+				if (windowWidth2 > 767) {
+					if (element.querySelectorAll('.swiper-slide').length > 4) {
+						element.querySelector('.swiper-button-next').style.display = 'block';
+						element.querySelector('.swiper-button-prev').style.display = 'block';
+						element.querySelector(".instance-pagination-" + index).style.display = 'flex';
+
+					} else {
+						element.querySelector('.swiper-button-next').style.display = 'none';
+						element.querySelector('.swiper-button-prev').style.display = 'none';
+						element.querySelector(".instance-pagination-" + index).style.display = 'none';
+					}
 				}
-			});
+
+			})
+		} else {
+			mainCollection.forEach(function (element, index) {
+				let $this = $(this);
+				element.querySelector('.swiper-container').classList.add("instance-" + index);
+				element.querySelector('.swiper-button-next').classList.add("instance-next-" + index);
+				element.querySelector('.swiper-button-prev').classList.add("instance-prev-" + index);
+
+				var mySwiper33 = new Swiper(".instance-" + index, {
+					slidesPerView: 4,
+					spaceBetween: 25,
+					slidesPerGroup: 4,
+					allowTouchMove: false,
+
+					// loop: true,
+					// loopFillGroupWithBlank: true,
+					pagination: {
+						el: ".instance-pagination-" + index,
+						clickable: true
+					},
+					scrollbar: {
+						el: ".swiper-scrollbar",
+						hide: false,
+						draggable: true
+					},
+					navigation: {
+						nextEl: ".instance-next-" + index,
+						prevEl: ".instance-prev-" + index
+					},
+					breakpoints: {
+						// when window width is <= 320px
+						767: {
+							allowTouchMove: true,
+							slidesPerGroup: 1,
+							spaceBetween: 22,
+							slidesPerView: 2
+						},
+						600: {
+							allowTouchMove: true,
+							slidesPerGroup: 1,
+							slidesPerView: 1,
+							spaceBetween: 10
+						}
 
 
-			if (windowWidth2 > 767) {
-				if (element.querySelectorAll('.swiper-slide').length > 4) {
-					element.querySelector('.swiper-button-next').style.display = 'block';
-					element.querySelector('.swiper-button-prev').style.display = 'block';
-					element.querySelector(".instance-pagination-" + index).style.display = 'flex';
+					}
+				});
 
-				} else {
-					element.querySelector('.swiper-button-next').style.display = 'none';
-					element.querySelector('.swiper-button-prev').style.display = 'none';
-					element.querySelector(".instance-pagination-" + index).style.display = 'none';
+
+				if (windowWidth2 > 767) {
+					if (element.querySelectorAll('.swiper-slide').length > 4) {
+						element.querySelector('.swiper-button-next').style.display = 'block';
+						element.querySelector('.swiper-button-prev').style.display = 'block';
+						element.querySelector(".instance-pagination-" + index).style.display = 'flex';
+
+					} else {
+						element.querySelector('.swiper-button-next').style.display = 'none';
+						element.querySelector('.swiper-button-prev').style.display = 'none';
+						element.querySelector(".instance-pagination-" + index).style.display = 'none';
+					}
 				}
-			}
 
-		})
+			})
 		}
 
 
