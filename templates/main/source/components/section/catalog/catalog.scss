@@ -1390,7 +1390,7 @@
 
 		&__items {
 			overflow: visible;
-			height: 300px;
+			// height: 300px;
 		}
 
 		// .instructions__item
@@ -1430,26 +1430,30 @@
 
 				overflow: hidden;
 
-
+				a:nth-of-type(n+6) {
+					display: none;
+				}
 
 				&:hover {
 					overflow: visible;
 					height: fit-content;
 					max-height: 1000px;
 
-					.doc {
-						// .doc_loading
+					// .doc {
+					// 	// .doc_loading
 
-						&_loading {
-							transition: 0;
-							opacity: 1;
-							height: auto;
-							padding: 7px 0 8px 46px;
-						}
+					// 	&_loading {
+					// 		transition: 0s;
+					// 		opacity: 1;
+					// 		height: auto;
+					// 		// padding: 7px 0 8px 46px;
+					// 	}
 
 
+					// }
+					a:nth-of-type(n+6) {
+						display: flex;
 					}
-
 				}
 			}
 
@@ -1509,15 +1513,15 @@
 				line-height: 20px;
 				letter-spacing: normal;
 				text-align: left;
-				padding: 0;
+				// padding: 0;
 				align-items: center;
 				// text-decoration: to-upper-case;
 				text-transform: uppercase;
 				position: relative;
 				transition: opacity 1s ease-out;
-				opacity: 0;
-				height: 0;
-				overflow: hidden;
+				opacity: 1;
+				height: auto;
+				padding: 7px 0 8px 46px;
 
 				span {
 					color: $base;
@@ -1529,12 +1533,12 @@
 					text-transform: none;
 				}
 
-				&:nth-of-type(-n+5) {
+				// &:nth-of-type(-n+5) {
 
-					opacity: 1;
-					height: auto;
-					padding: 7px 0 8px 46px;
-				}
+				// opacity: 1;
+				// height: auto;
+				// padding: 7px 0 8px 46px;
+				// }
 			}
 
 
@@ -2673,7 +2677,7 @@
 			// .instructions__items
 
 			&__items {
-				height: 332px;
+				// height: 332px;
 			}
 
 			// .instructions__item
@@ -2695,7 +2699,11 @@
 
 				// .catalog__item
 
-				&__item {}
+
+				&__item {
+					margin-bottom: 0;
+					min-height: 100%;
+				}
 
 				// .catalog__pic
 
@@ -2735,6 +2743,7 @@
 			.swiper-pagination-instructions {
 				display: block;
 				margin-bottom: 14px;
+				margin-top: 14px;
 
 				.swiper-pagination-bullet {
 					&:first-child {

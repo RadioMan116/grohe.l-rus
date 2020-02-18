@@ -2632,4 +2632,11 @@ $(window).on('load', function () {
 			});
 		}
 	})();
+		(function () {
+		let height = document.querySelector('.instructions__items');
+		if (height) {
+
+			height.style.height = height.clientHeight + "px";
+		}
+	})()
 });
