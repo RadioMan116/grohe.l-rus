@@ -1391,6 +1391,7 @@
 		&__items {
 			overflow: visible;
 			// height: 300px;
+			margin-bottom: 20px;
 		}
 
 		// .instructions__item
@@ -1426,7 +1427,7 @@
 				min-height: 288px;
 				max-height: 311px;
 				background: white;
-
+				margin-bottom: 0;
 
 				overflow: hidden;
 
