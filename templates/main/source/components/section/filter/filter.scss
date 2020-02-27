@@ -1308,8 +1308,8 @@
 
 		&:before {
 			content: '';
-			width: 31px;
-			height: 31px;
+			width: 28px;
+			height: 28px;
 			// transform:;
 			border-radius: 4px;
 			background-color: $base;
@@ -1355,9 +1355,10 @@
 		#modef_num {
 			margin-left: 4px;
 		}
-			@media screen and (max-width: 767px) {
-					margin-left: 12px;
-			}
+
+		@media screen and (max-width: 767px) {
+			margin-left: 12px;
+		}
 
 	}
 
@@ -1474,8 +1475,9 @@
 		}
 	}
 }
-	@media screen and (max-width: 767px){
-			.col-md-3 .js-favorite_filter + .sidebar {
-				display: none;
-			}
+
+@media screen and (max-width: 767px) {
+	.col-md-3 .js-favorite_filter+.sidebar {
+		display: none;
 	}
+}
