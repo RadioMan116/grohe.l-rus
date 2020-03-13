@@ -5956,6 +5956,7 @@
 					height: 40px;
 					width: 40px;
 					margin-right: 12px;
+					margin-bottom: 12px;
 				}
 
 				.delivery__info {
@@ -5964,11 +5965,11 @@
 
 
 					&:last-of-type {
-						line-height: 2;
+						// line-height: 2;
 					}
 
 					&:first-of-type {
-						margin-bottom: 5px;
+						margin-bottom: 12px;
 						// padding-left: 52px;
 						// margin: auto 0;
 						width: calc(100% - 52px);
