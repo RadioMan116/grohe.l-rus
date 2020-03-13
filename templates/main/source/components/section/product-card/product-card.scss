@@ -5942,7 +5942,10 @@
 			}
 
 			.product-card__delivery {
-				padding: 9px 0 9px 52px;
+				padding: 9px 0 9px 0px;
+				background: url('../images/big/truck.svg') no-repeat 0 9px;
+				// min-height: 59px;
+				// justify-content: center;
 
 				.delivery__info {
 					font-size: 14px;
@@ -5950,6 +5953,7 @@
 
 					&:first-of-type {
 						margin-bottom: 5px;
+						height: 40px;
 					}
 				}
 			}
