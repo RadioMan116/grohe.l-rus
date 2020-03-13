@@ -5942,7 +5942,7 @@
 			}
 
 			.product-card__delivery {
-				padding: 9px 0 9px 0px;
+				padding: 0 0px;
 				// background: url('../images/big/truck.svg') no-repeat 0 9px;
 				background: none;
 				min-height: 60px;
@@ -5956,7 +5956,8 @@
 					height: 40px;
 					width: 40px;
 					margin-right: 12px;
-					margin-bottom: 12px;
+					margin-bottom: 9px;
+					margin-top: 9px;
 				}
 
 				.delivery__info {
@@ -5966,13 +5967,31 @@
 
 					&:last-of-type {
 						// line-height: 2;
+						margin-bottom: 9px;
 					}
 
 					&:first-of-type {
-						margin-bottom: 12px;
+						margin-bottom: 0px;
 						// padding-left: 52px;
 						// margin: auto 0;
 						width: calc(100% - 52px);
+
+						// a {
+						// 	margin: 0 3px;
+						// }
+
+						&:after {
+							content: '.';
+							// width: 5px;
+							// height: 10px;
+							// display: flex;
+							background: white;
+							color: white;
+							width: 5px;
+							display: inline-flex;
+							margin-left: -8px;
+							// flex-grow: 1;
+						}
 					}
 				}
 			}
