@@ -449,7 +449,7 @@
 		width: 100%;
 
 		.catalog__presence {
-			margin-top: 20px;
+			margin-top: 14px;
 		}
 
 		.special-offers__text {
@@ -467,6 +467,7 @@
 
 		.special-offers__pic {
 			height: 200px;
+			margin-bottom: 14px;
 		}
 	}
 
@@ -561,7 +562,7 @@
 					// background: rebeccapurple;
 					background-color: #f8f8f8;
 					width: 1000%;
-					height: 106%;
+					height: calc(100% + 14px);
 					z-index: -1;
 					top: -11px;
 					left: -300%;
@@ -1635,6 +1636,7 @@
 		&__main tr.thead__comparison:before {
 			// height: 239%;
 			height: calc(200% + 40px);
+			display: none;
 		}
 
 		.comparison-menu__title {
