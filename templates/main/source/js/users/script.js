@@ -1841,7 +1841,7 @@ $(document).ready(function () {
 	});
 	$(function () {
 
-		$('[data-fancybox="gallery"]').attr('data-fancybox', 'group1');
+		$('[data-fancybox="gallery"],[data-fancybox="iframe"]').attr('data-fancybox', 'group1');
 		$('[data-fancybox]').fancybox({
 			buttons: [
 				"zoom",
