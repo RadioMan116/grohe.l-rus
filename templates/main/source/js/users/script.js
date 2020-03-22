@@ -1841,9 +1841,23 @@ $(document).ready(function () {
 	});
 	$(function () {
 
+		$('[data-fancybox="gallery"]').attr('data-fancybox', 'group1');
 		$('[data-fancybox]').fancybox({
-			animationEffect: 'fade'
-		}).attr('data-fancybox', 'group1');
+			buttons: [
+				"zoom",
+				//"share",
+				"slideShow",
+				"fullScreen",
+				//"download",
+				"thumbs",
+				"close"
+			  ],
+			// animationEffect: 'fade',
+			animationEffect: "false",
+			animationDuration: 366,
+			transitionEffect: "fade",
+
+		});
 
 
 		$("[data-scroll]").click(function () {
@@ -2420,33 +2434,7 @@ $(window).on('load', function () {
 
 
 	}
-	if ($('a[data-fancybox="gallery"] img').length) {
-		// $('a[data-fancybox="gallery"] img').eq(0).each(function () {
-		// 	var img = new Image($(this));
-		// 	img.src = $(this).attr('src');
-		// 	if (img.height > 0) {
-		// 		$(this).height(img.height)
-		// 	}
-		// });
-		// setInterval(function () {
-		// 	$('a[data-fancybox="gallery"] img').each(function () {
-		// 		var img = new Image($(this));
-		// 		img.src = $(this).attr('src');
-		// 		if (img.height > 0) {
-		// 			$(this).height(img.height)
-		// 		}
-		// 	});
-		// }, 100);
-		// setInterval(function () {
-		// 	$('a[data-fancybox="gallery"] img').eq(0).each(function () {
-		// 		var img = new Image($(this));
-		// 		img.src = $(this).attr('src');
-		// 		if (img.height > 0) {
-		// 			$(this).height(img.height)
-		// 		}
-		// 	});
-		// }, 300);
-	}
+
 	(function () {
 		let insCategory = document.querySelectorAll('.instructions-category');
 

@@ -163,7 +163,8 @@
 	}
 
 	&__el {
-		margin-right: 2rem;
+		// margin-right: 2rem;
+		margin-right: auto;
 		display: flex;
 		background-color: #ffffff;
 		height: 230px;
@@ -480,7 +481,7 @@
 					overflow: hidden;
 
 					img {
-						width:calc(100% + 25px) !important;
+						width: calc(100% + 25px) !important;
 						margin-left: -10px;
 						max-width: unset;
 					}
