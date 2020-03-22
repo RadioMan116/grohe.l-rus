@@ -1841,14 +1841,14 @@ $(document).ready(function () {
 	});
 	$(function () {
 
-		$('[data-fancybox="gallery"],[data-fancybox="iframe"]').attr('data-fancybox', 'group1');
+		$('.gallery-top [data-fancybox]').attr('data-fancybox', 'group1');
 		$('[data-fancybox]').fancybox({
 			buttons: [
 				"zoom",
 				//"share",
 				"slideShow",
 				"fullScreen",
-				//"download",
+				// "download",
 				"thumbs",
 				"close"
 			  ],
