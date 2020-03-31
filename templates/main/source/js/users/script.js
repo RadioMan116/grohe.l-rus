@@ -1851,7 +1851,7 @@ $(document).ready(function () {
 				// "download",
 				"thumbs",
 				"close"
-			  ],
+			],
 			// animationEffect: 'fade',
 			animationEffect: "false",
 			animationDuration: 366,
@@ -2367,16 +2367,22 @@ $(window).on('load', function () {
 			// if (select.hasClass('active')) {
 			// 	console.log('1')
 			// }
+			$('.comparison__list').height($('.comparison__item.order').innerHeight());
+			let comparisonItem = document.querySelectorAll('.comparison__item');
+			let comparisonList = document.querySelector('.comparison__list');
+			if (comparisonItem.length < 2) {
+				comparisonList.style.background = "white";
+			}
 		}
 		if (windowWidth2 > 767) {
 			console.log($(".products-line").outerHeight(true))
 			$(".thead__comparison").css({
 				'height': ($(".products-line").outerHeight() + 'px')
 			});
-			console.log('1')
+
 
 		} else {
-			console.log('2')
+
 			$(".thead__comparison").css({
 				'margin-bottom': ($(".products-line").innerHeight() + 'px')
 			});
@@ -2620,7 +2626,7 @@ $(window).on('load', function () {
 			});
 		}
 	})();
-		(function () {
+	(function () {
 		let height = document.querySelector('.instructions__items');
 		if (height) {
 
