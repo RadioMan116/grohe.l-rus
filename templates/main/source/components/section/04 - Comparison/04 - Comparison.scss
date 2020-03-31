@@ -235,6 +235,11 @@
 			border-top: 0;
 			border-bottom: 0;
 			display: flex;
+
+			.comparison__link {
+				pointer-events: none;
+				display: block;
+			}
 		}
 
 		&:only-child {
