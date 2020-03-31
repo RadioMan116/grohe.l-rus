@@ -189,6 +189,12 @@
 
 			.comparison__item {
 				display: flex;
+				min-height: 24px;
+				flex: 1 0 100%;
+			}
+
+			.comparison__link {
+				display: block;
 			}
 		}
 
@@ -212,10 +218,10 @@
 		background: white;
 		z-index: 99;
 		display: flex;
-		flex: 1 0 100%;
+
 		margin: 0 -1px;
-		display: none;
-		min-height: 24px;
+		// display: none;
+
 
 
 		&.active {
@@ -244,10 +250,12 @@
 		font-size: 14px;
 		line-height: 25px;
 		position: relative;
+		display: none;
 		text-decoration: none !important;
 
 		&.active {
 			pointer-events: none;
+			display: block;
 		}
 	}
 
