@@ -253,7 +253,8 @@
 		display: none;
 		text-decoration: none !important;
 
-		&.active {
+		&.active,
+		&:only-child {
 			pointer-events: none;
 			display: block;
 		}
