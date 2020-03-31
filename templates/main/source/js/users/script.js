@@ -1147,6 +1147,7 @@ $(document).ready(function () {
 		$(".header__search").removeClass("header__search-open");
 		$(".header__overlay").removeClass("header__overlay-open");
 		$("html").removeClass("fixed");
+		$(".dropdown-menu").removeClass("active");
 	});
 	$(function () {
 		$.datepicker.regional['ru'] = {

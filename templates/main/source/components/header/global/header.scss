@@ -12,7 +12,7 @@
 
 	&__blocks {
 		width: 100%;
-		z-index: 999;
+		z-index: 9999;
 		box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
 	}
 
@@ -182,7 +182,7 @@
 		height: 100vh;
 		opacity: 0.6;
 		background-color: #000000;
-		z-index: 90;
+		z-index: 130;
 
 		&-open {
 			display: flex;
@@ -486,8 +486,9 @@
 				justify-content: flex-end;
 				align-items: center;
 				position: relative;
+
 				&.active .header__number {
-					 color: #666666 !important;
+					color: #666666 !important;
 				}
 			}
 
