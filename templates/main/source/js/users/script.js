@@ -2323,7 +2323,6 @@ $(window).on('load', function () {
 				// })
 			}
 		})
-
 	}
 	if ($(".filter__form.js-form").length) {
 		$('.filter__form.js-form .filter__checkbox').each(function () {

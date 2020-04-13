@@ -85,6 +85,20 @@
 				color: #999999;
 			}
 
+			&-close {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				width: 30px;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				z-index: 2;
+				// color: #999999;
+			}
+
+
 			/* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
 			&:hover+.checkbox-custom {
 				color: #ffffff;
@@ -92,7 +106,19 @@
 				/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
 			}
 
+			&:hover+.checkbox-custom+.checkbox-close {
+				color: #ffffff;
+				background: #394791 !important;
+				/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+			}
+
 			&:checked+.checkbox-custom {
+				color: #ffffff;
+				background: #d82300;
+				/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+			}
+
+			&:checked+.checkbox-custom+.checkbox-close {
 				color: #ffffff;
 				background: #d82300;
 				/* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
@@ -105,19 +131,19 @@
 			&:hover+.checkbox-custom+.checkbox-number {
 				color: transparent;
 
-				&::before {
-					content: "x";
-					/* Добавляем наш псевдоэлемент */
-					display: flex;
-					/* Делаем его блочным элементом */
-					position: absolute;
-					top: -2px;
-					right: 0px;
-					bottom: 0px;
-					left: 0px;
-					justify-content: flex-end;
-					color: white;
-				}
+				// &::before {
+				// 	content: "x";
+				// 	/* Добавляем наш псевдоэлемент */
+				// 	display: flex;
+				// 	/* Делаем его блочным элементом */
+				// 	position: absolute;
+				// 	top: -2px;
+				// 	right: 0px;
+				// 	bottom: 0px;
+				// 	left: 0px;
+				// 	justify-content: flex-end;
+				// 	color: white;
+				// }
 			}
 		}
 
@@ -283,7 +309,7 @@
 			margin-right: 12px;
 
 			&:last-child {
-				margin-bottom: 0;
+				// margin-bottom: 0;
 			}
 
 			.filter-tip {
@@ -642,7 +668,7 @@
 			}
 
 			&.filter__close {
-				height: 45px;
+				height: 55px;
 
 				.filter__checkbox {
 					display: none;
