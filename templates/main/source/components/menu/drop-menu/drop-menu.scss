@@ -606,6 +606,43 @@
 				top: 43px;
 				left: -2px;
 			}
+
+			&:nth-of-type(5),
+			&:nth-of-type(6),
+			&:nth-of-type(7),
+			&:nth-of-type(8) {
+				.dropdown-menu__subtitle {
+					position: static;
+					display: flex;
+					flex-direction: column-reverse;
+
+					&:hover:before {
+						z-index: 3;
+						width: 100%;
+						position: relative;
+						bottom: unset;
+					}
+
+					&:hover .sub-menu__list:after {
+						top: -6px;
+						height: calc(100% + 11px);
+
+					}
+				}
+
+				.sub-menu__list {
+					bottom: 6px;
+					top: 0;
+
+					&:hover:after {
+						top: -6px;
+					}
+				}
+
+				.show-more {
+					margin: 4px 2px 28px;
+				}
+			}
 		}
 
 		.show-more {
