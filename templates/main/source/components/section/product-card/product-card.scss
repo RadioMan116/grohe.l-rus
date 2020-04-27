@@ -1080,6 +1080,10 @@
 
 		.swiper-pagination-bullet {
 			margin-left: 16px;
+
+			&:nth-of-type(12)~* {
+				display: none;
+			}
 		}
 
 		.swiper-pagination-bullet {
