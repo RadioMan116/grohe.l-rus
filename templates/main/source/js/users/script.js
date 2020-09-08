@@ -2401,10 +2401,10 @@ $(window).on('load', function() {
 	function loadingAjax() {
 		$.ajax({
 			beforeSend: function() {
-				$("#loading-image").show();
+				$("body").addClass('loading-ajax');
 			},
 			success: function(msg) {
-				$("#loading-image").hide();
+				$("body").removeClass('loading-ajax')
 			}
 		});
 	};
