@@ -8,6 +8,26 @@ html {
 	&.js-height {
 		height: 100%;
 	}
+
+	&.loading-ajax {
+		&:before {
+			content: '';
+			background: url("../images/blue-loader.svg") rgba(255, 255, 255, .8) no-repeat center 30%;
+			top: 50%;
+			transform: translateX(-50%)translateY(-50%);
+			left: 50%;
+			width: 100vw;
+			height: 100vh;
+			position: fixed;
+			z-index: 9999;
+			width: 100vw;
+			height: 100vh;
+
+			@media screen and (max-width: 767px) {
+				background: url("../images/blue-loader.svg") rgba(255, 255, 255, .8) no-repeat center;
+			}
+		}
+	}
 }
 
 img {
@@ -43,7 +63,6 @@ img {
 		padding: 1rem;
 
 		&__title {
-
 			font-size: 24px;
 			font-weight: 500;
 			font-style: normal;
@@ -56,7 +75,6 @@ img {
 		}
 
 		&__text {
-
 			font-size: 14px;
 			font-weight: normal;
 			font-style: normal;
@@ -99,18 +117,15 @@ h1.title {
 
 .col-md-3 {
 	padding-left: 0;
-
 }
 
 // .fancybox-container {
 // 	transition: all 0.3s ease-in-out !important;
 // }
-
 // .fancybox-image-wrap {
 // 	top: 50% !important;
 // 	transform: translateX(-50%)translateY(-50%)scale(1) !important;
 // 	left: 50% !important;
-
 // 	max-width: 100% !important;
 // 	height: 98% !important;
 // 	display: flex !important;
@@ -118,11 +133,9 @@ h1.title {
 // 	align-items: center !important;
 // 	justify-content: center !important;
 // 	transition: all 0.3s ease-in-out;
-
 // 	@media screen and (min-width: 768px) {
 // 		width: auto !important;
 // 	}
-
 // 	img {
 // 		position: unset !important;
 // 		width: auto !important;
@@ -131,14 +144,10 @@ h1.title {
 // 		max-height: 100%;
 // 		cursor: pointer !important;
 // 	}
-
-
 // }
-
 // .fancybox-container {
 // 	transition-duration: 500ms !important;
 // }
-
 .compensate-for-scrollbar {
 	margin-right: 0px !important;
 }
@@ -220,7 +229,6 @@ picture {
 	display: block;
 
 	img {
-
 		width: auto !important;
 		height: auto !important;
 		max-width: 100%;
@@ -251,7 +259,6 @@ article.about-brand+article.seo-text+article.seo-text div[id] {
 		}
 	}
 
-
 	.col-md-3 {
 		padding-right: 0;
 		padding-left: 0;
@@ -273,10 +280,8 @@ article.about-brand+article.seo-text+article.seo-text div[id] {
 }
 
 @media screen and (max-width: 480px) {
-
 	h1.title {
 		margin-bottom: 13px;
 		margin-top: 8px;
 	}
-
 }

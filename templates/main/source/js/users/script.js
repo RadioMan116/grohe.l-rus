@@ -2397,4 +2397,16 @@ $(window).on('load', function() {
 			height.style.height = height.clientHeight + "px";
 		}
 	})()
+
+	function loadingAjax() {
+		$.ajax({
+			beforeSend: function() {
+				$("#loading-image").show();
+			},
+			success: function(msg) {
+				$("#loading-image").hide();
+			}
+		});
+	};
+	$('#load-items').click(loadingAjax);
 });
