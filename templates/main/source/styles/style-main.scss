@@ -140,7 +140,7 @@ body {
 	&.loading-ajax {
 		&:before {
 			content: '';
-			background: url("../images/blue-loader.svg") rgba(255, 255, 255, .8) no-repeat center 30%;
+			background: url("../images/blue-loader.svg") rgba(255, 255, 255, .8) no-repeat center 40%;
 			top: 50%;
 			transform: translateX(-50%)translateY(-50%);
 			left: 50%;
