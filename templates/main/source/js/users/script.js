@@ -698,7 +698,6 @@ $(document).ready(function() {
 	});
 	$(document).on("click", "a[href='#'].load-more", function(e) {
 		e.preventDefault();
-		console.log('preventClick-2')
 	});
 	$(document).on("click", ".js-city-change", function(e) {
 		$(this).toggleClass('active');
