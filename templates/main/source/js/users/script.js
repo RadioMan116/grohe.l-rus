@@ -386,36 +386,36 @@ $(document).ready(function() {
 			return true;
 		});
 	}
-	// $('.js-product-card__buy,.product-day__buy,.special-offers__buy').click(function() {
-	// 	$(document).ajaxSuccess(function() {
-	// 		console.log('1111')
-	// 		if ($(".basket__item").length > 3) {
-	// 			console.log('2222')
-	// 			$('.added-cart__items .basket__prev').show();
-	// 			$('.added-cart__items .basket__next').show();
-	// 			var mySwiper14 = new Swiper(".added-cart__items .swiper-container", {
-	// 				slidesPerView: 3,
-	// 				slidesPerGroup: 1,
-	// 				spaceBetween: 25,
-	// 				touchRatio: 1,
-	// 				navigation: {
-	// 					nextEl: ".added-cart__items .basket__next",
-	// 					prevEl: ".added-cart__items .basket__prev"
-	// 				},
-	// 				breakpoints: {
-	// 					550: {
-	// 						slidesPerView: 1,
-	// 						slidesPerGroup: 1,
-	// 						spaceBetween: 16,
-	// 					},
-	// 					767: {
-	// 						slidesPerView: 2,
-	// 					},
-	// 				}
-	// 			});
-	// 		}
-	// 	});
-	// })
+	$('.js-product-card__buy,.product-day__buy,.special-offers__buy').click(function() {
+		$(document).ajaxSuccess(function() {
+			console.log('1111')
+			if ($(".basket__item").length > 3) {
+				console.log('2222')
+				$('.added-cart__items .basket__prev').show();
+				$('.added-cart__items .basket__next').show();
+				var mySwiper14 = new Swiper(".added-cart__items .swiper-container", {
+					slidesPerView: 3,
+					slidesPerGroup: 1,
+					spaceBetween: 25,
+					touchRatio: 1,
+					navigation: {
+						nextEl: ".added-cart__items .basket__next",
+						prevEl: ".added-cart__items .basket__prev"
+					},
+					breakpoints: {
+						550: {
+							slidesPerView: 1,
+							slidesPerGroup: 1,
+							spaceBetween: 16,
+						},
+						767: {
+							slidesPerView: 2,
+						},
+					}
+				});
+			}
+		});
+	})
 	if ($(".gallery__item").length) {
 		$('.js-button__open').click(function(e) {
 			if (!$(this).hasClass('active')) {
@@ -1130,34 +1130,34 @@ $(document).ready(function() {
 		};
 		window.Ratings = Ratings;
 	})();
-	// $(".js-viewForm").click(function() {
-	// 	//upon clicking of the button do an ajax post
-	// 	$(document).ajaxSuccess(function() {
-	// 		new Ratings({
-	// 			element: document.querySelector('.js-ratings__section'), // передаем элемент
-	// 			countRate: 5, // кол-во оценок
-	// 			clickFn: function(index) {
-	// 				$(".js-review_rating").val(index);
-	// 			}
-	// 		});
-	// 		$("[title=Телефон],.js-phone_mask").attr('type', 'tel');
-	// 		$("[title=Телефон],.js-phone_mask").attr('placeholder', 'Телефон');
-	// 		$("[title=Телефон],.js-phone_mask,[title=Телефон]").prop('required', true);
-	// 		Inputmask.extendAliases({
-	// 			'customAlias': {
-	// 				mask: "+7 (999) 999-99-99",
-	// 				oncomplete: function() {
-	// 					$(this).removeClass('BadPols');
-	// 				},
-	// 				onincomplete: function() {
-	// 					$(this).addClass('BadPols');
-	// 					$(this).val('');
-	// 				},
-	// 			}
-	// 		});
-	// 		Inputmask("customAlias").mask("[type=tel]");
-	// 	});
-	// });
+	$(".js-viewForm").click(function() {
+		//upon clicking of the button do an ajax post
+		$(document).ajaxSuccess(function() {
+			new Ratings({
+				element: document.querySelector('.js-ratings__section'), // передаем элемент
+				countRate: 5, // кол-во оценок
+				clickFn: function(index) {
+					$(".js-review_rating").val(index);
+				}
+			});
+			$("[title=Телефон],.js-phone_mask").attr('type', 'tel');
+			$("[title=Телефон],.js-phone_mask").attr('placeholder', 'Телефон');
+			$("[title=Телефон],.js-phone_mask,[title=Телефон]").prop('required', true);
+			Inputmask.extendAliases({
+				'customAlias': {
+					mask: "+7 (999) 999-99-99",
+					oncomplete: function() {
+						$(this).removeClass('BadPols');
+					},
+					onincomplete: function() {
+						$(this).addClass('BadPols');
+						$(this).val('');
+					},
+				}
+			});
+			Inputmask("customAlias").mask("[type=tel]");
+		});
+	});
 	$(".js-about-store__button").click(function() {
 		if ($(this).parent().hasClass("active") == false) {
 			$(this).text('Свернуть');
@@ -1923,31 +1923,31 @@ $(document).ready(function() {
 			}
 		}
 	}
-	// $('.load-more').click(function() {
-	// 	$(document).ajaxSuccess(function() {
-	// 		if (document.querySelectorAll('.link-pop-glossary .icons-prop-item[title]').length > 0) {
-	// 			tippy('.link-pop-glossary .icons-prop-item[title]', {
-	// 				// change these to your liking
-	// 				arrow: true,
-	// 				placement: 'top', // top, right, bottom, left
-	// 				// trigger: 'click',
-	// 				// maxWidth: 300, //px or string
-	// 				interactive: true,
-	// 				// leave these as they are
-	// 				// followCursor: true,
-	// 				allowHTML: true,
-	// 				theme: 'light',
-	// 				appendTo: () => document.body,
-	// 				// ignoreAttributes: true,
-	// 				content(reference) {
-	// 					const title = reference.getAttribute('title');
-	// 					reference.removeAttribute('title');
-	// 					return title;
-	// 				},
-	// 			});
-	// 		}
-	// 	});
-	// })
+	$('.load-more').click(function() {
+		$(document).ajaxSuccess(function() {
+			if (document.querySelectorAll('.link-pop-glossary .icons-prop-item[title]').length > 0) {
+				tippy('.link-pop-glossary .icons-prop-item[title]', {
+					// change these to your liking
+					arrow: true,
+					placement: 'top', // top, right, bottom, left
+					// trigger: 'click',
+					// maxWidth: 300, //px or string
+					interactive: true,
+					// leave these as they are
+					// followCursor: true,
+					allowHTML: true,
+					theme: 'light',
+					appendTo: () => document.body,
+					// ignoreAttributes: true,
+					content(reference) {
+						const title = reference.getAttribute('title');
+						reference.removeAttribute('title');
+						return title;
+					},
+				});
+			}
+		});
+	})
 });
 $(window).on('load', function() {
 	var windowWidth2 = $(window).width();
@@ -2395,15 +2395,15 @@ $(window).on('load', function() {
 		}
 	})()
 
-	// function loadingAjax() {
-	// 	$.ajax({
-	// 		beforeSend: function() {
-	// 			$("body").addClass('loading-ajax');
-	// 		},
-	// 		success: function(msg) {
-	// 			$("body").removeClass('loading-ajax');
-	// 		}
-	// 	});
-	// };
-	// $('#load-items').click(loadingAjax);
+	function loadingAjax() {
+		$.ajax({
+			beforeSend: function() {
+				$("body").addClass('loading-ajax');
+			},
+			success: function(msg) {
+				$("body").removeClass('loading-ajax');
+			}
+		});
+	};
+	$('#load-items').click(loadingAjax);
 });
