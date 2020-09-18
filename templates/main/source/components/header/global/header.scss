@@ -17,7 +17,6 @@
 	}
 
 	&__block {
-
 		position: relative;
 		display: flex;
 		z-index: 3;
@@ -49,7 +48,6 @@
 		.hamburger {
 			display: none;
 		}
-
 	}
 
 	&__link {
@@ -142,18 +140,15 @@
 	// 	background: url("../images/search.svg") 0/18px no-repeat;
 	// 	margin-right: 35px;
 	// 	cursor: pointer;
-
 	// 	&-open {
 	// 		background: url("../images/musica-searcher-1.svg") 0/18px no-repeat;
 	// 	}
-
 	// 	// @media (max-width:850px) {
 	// 	// 	width: 16px;
 	// 	// 	height: 16px;
 	// 	// 	background-size: 16px;
 	// 	// }
 	// }
-
 	.search__popup {
 		position: absolute;
 		width: 100.5%;
@@ -240,7 +235,6 @@
 	// 	display: flex;
 	// 	margin-right: 24px;
 	// 	cursor: pointer;
-
 	// 	&:before {
 	// 		content: '';
 	// 		width: 20px;
@@ -251,17 +245,12 @@
 	// 		background-position: center center !important;
 	// 		background: url("../images/search.svg") no-repeat;
 	// 	}
-
 	// 	&-open,
 	// 	&:hover {
 	// 		&:before {
 	// 			background: url("../images/musica-searcher-1.svg") no-repeat;
 	// 		}
-
 	// 	}
-
-
-
 	// }
 	&__search {
 		width: 24px;
@@ -287,11 +276,7 @@
 				background: url("../images/musica-searcher-1.svg") no-repeat;
 				background-size: 17px !important;
 			}
-
 		}
-
-
-
 	}
 
 	&__favorite,
@@ -302,8 +287,6 @@
 		display: flex;
 		justify-content: center;
 		text-decoration: none !important;
-
-
 
 		&:before {
 			content: '';
@@ -327,7 +310,6 @@
 
 		&:hover,
 		&.active {
-
 			&:before {
 				background: url("../images/header-fav-active.svg") no-repeat;
 			}
@@ -347,7 +329,6 @@
 
 		&:hover,
 		&.active {
-
 			&:before {
 				background: url("../images/header-compare-active.svg") no-repeat;
 			}
@@ -368,7 +349,6 @@
 		&-open,
 		&:hover,
 		&.active {
-
 			&:before {
 				background: url("../images/shopping-cart__color.svg") no-repeat;
 				background-size: 22px !important;
@@ -425,11 +405,9 @@
 		z-index: 99999;
 
 		.header {
-
 			&__img {
 				display: none;
 			}
-
 
 			&__block_bottom {
 				display: none;
@@ -499,7 +477,6 @@
 				}
 
 				&:hover {
-
 					&:before {
 						background-size: 19px !important;
 					}
@@ -513,7 +490,6 @@
 				}
 
 				&:hover {
-
 					// &:before {
 					// 	background-size: 22px !important;
 					// }
@@ -527,13 +503,11 @@
 				}
 
 				&:hover {
-
 					// &:before {
 					// 	background-size: 22px !important;
 					// }
 				}
 			}
-
 
 			&__search {
 				margin-right: 12px;
@@ -547,7 +521,6 @@
 				}
 
 				&:hover {
-
 					&:before {
 						// background-size: 19px !important;
 					}
@@ -559,9 +532,6 @@
 				margin-right: 1px;
 				position: relative;
 				margin-right: 12px;
-
-
-
 				// .header__number {
 				// 	position: absolute;
 				// 	/* Style for "Oval" */
@@ -603,7 +573,6 @@
 				width: auto;
 				max-width: 40px;
 				margin-right: -0px;
-
 			}
 
 			// &__number {
@@ -630,10 +599,9 @@
 				display: flex;
 				align-items: center;
 				justify-content: center;
-				top: -2px;
-				right: -3px;
+				top: -4px;
+				right: -6px;
 			}
-
 
 			&__form {
 				width: 95%;
@@ -690,7 +658,6 @@
 						height: 0px;
 						margin-top: -5px;
 					}
-
 				}
 			}
 		}
@@ -704,13 +671,12 @@
 		.hamburger {
 			display: block;
 			margin-right: 0px;
-			// margin-top: 4px;
 
+			// margin-top: 4px;
 			&__img {
 				width: 18px;
 				height: 18px;
 				background: url('../images/rectangle-6.svg') 0/18px;
-
 			}
 		}
 
@@ -723,45 +689,33 @@
 		}
 	}
 
-
 	// @media screen and (max-width: 480px) {
-
-
 	// 	.container {
 	// 		margin-top: 0;
 	// 	}
-
 	// 	.header__button {
 	// 		right: 9%;
 	// 	}
-
 	// 	&__dropdown-menu .dropdown-menu+.dropdown-menu {
-
-
 	// 		+.dropdown-menu {
 	// 			margin-top: 0;
 	// 		}
 	// 	}
-
 	// 	.menu-480 {
 	// 		.header__block.header__block_top {
 	// 			height: 60px;
 	// 		}
-
 	// 		.menu.active .menu {
 	// 			display: none;
 	// 		}
-
 	// 		.menu {
 	// 			display: none;
 	// 		}
 	// 	}
-
 	// 	.hamburger__img {
 	// 		width: 18px;
 	// 		height: 18px;
 	// 		background: url('../images/rectangle-6.svg') 0/18px;
-
 	// 	}
 	// }
 }
