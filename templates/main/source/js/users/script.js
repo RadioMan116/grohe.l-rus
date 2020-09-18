@@ -22,7 +22,7 @@ $(document).ready(function() {
 			}
 		};
 	}
-	tippy('.link-pop-glossary .icons-prop-item', {
+	tippy('.catalog .link-pop-glossary .icons-prop-item', {
 		// change these to your liking
 		arrow: true,
 		placement: 'top', // top, right, bottom, left
@@ -40,6 +40,23 @@ $(document).ready(function() {
 			reference.removeAttribute('title');
 			return title;
 		},
+	});
+	$('.product-card .link-pop-glossary').each(function(i, el) {
+		tippy(el, {
+			arrow: true,
+			placement: 'top', // top, right, bottom, left
+			// trigger: 'click',
+			// maxWidth: 300, //px or string
+			interactive: true,
+			// leave these as they are
+			// followCursor: true,
+			allowHTML: true,
+			hideOnClick: true,
+			theme: 'light',
+			appendTo: () => document.body,
+			// ignoreAttributes: true,
+			content: el.querySelector('.popup-prop')
+		});
 	});
 	var windowWidth2 = $(window).width();
 	if ($(".articles-main__slider").length) {
@@ -1926,7 +1943,7 @@ $(document).ready(function() {
 	$('.load-more').click(function() {
 		$(document).ajaxSuccess(function() {
 			if (document.querySelectorAll('.link-pop-glossary .icons-prop-item[title]').length > 0) {
-				tippy('.link-pop-glossary .icons-prop-item[title]', {
+				tippy('.catalog .link-pop-glossary .icons-prop-item[title]', {
 					// change these to your liking
 					arrow: true,
 					placement: 'top', // top, right, bottom, left
