@@ -1159,7 +1159,7 @@ $(document).ready(function () {
 			});
 			$("[title=Телефон],.js-phone_mask").attr("type", "tel");
 			$("[title=Телефон],.js-phone_mask").attr("placeholder", "Телефон");
-			$("[title=Телефон],.js-phone_mask,[title=Телефон]").prop("required", true);
+			// $("[title=Телефон],.js-phone_mask,[title=Телефон]").prop("required", true);
 			Inputmask.extendAliases({
 				"customAlias": {
 					mask: "+7 (999) 999-99-99",
@@ -1719,7 +1719,7 @@ $(document).ready(function () {
 	if ($("[type=tel],[title=Телефон],.js-phone_mask").length) {
 		console.log("inputmask");
 		$("[title=Телефон],.js-phone_mask").attr("type", "tel");
-		$("[title=Телефон],.js-phone_mask,[title=Телефон]").prop("required", true);
+		// $("[title=Телефон],.js-phone_mask,[title=Телефон]").prop("required", true);
 		Inputmask.extendAliases({
 			"customAlias": {
 				mask: "+7 (999) 999-99-99",
