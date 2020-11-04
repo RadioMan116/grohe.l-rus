@@ -56,6 +56,8 @@ body {
 	background-color: #fff;
 	// height: 100%;
 	width: inherit;
+	min-height: fill-available;
+	min-height: -moz-available;
 	min-height: -webkit-fill-available;
 }
 
