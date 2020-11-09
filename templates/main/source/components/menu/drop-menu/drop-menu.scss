@@ -55,7 +55,7 @@
 			box-shadow: 0 2px 21px 0 transparent;
 			letter-spacing: -0.1px;
 			cursor: pointer;
-			background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 97% 12px/14px no-repeat;
+			background: url("https://icongr.am/entypo/chevron-down.svg?color=d6d6d6") 97% 50%/14px no-repeat;
 			white-space: nowrap;
 
 			&.last {
@@ -77,7 +77,7 @@
 				box-shadow: 0 -10px 21px 0 rgba(0, 0, 0, 0.1);
 				background-color: #ffffff;
 				color: $base;
-				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 97% 12px/14px no-repeat;
+				background: url("https://icongr.am/entypo/chevron-down.svg?color=394791") 97% 50%/14px no-repeat;
 			}
 
 			&.last {
@@ -298,7 +298,7 @@
 				z-index: 999;
 				position: relative;
 				color: $base;
-				background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 97% 12px/14px no-repeat;
+				background: url("https://icongr.am/entypo/chevron-up.svg?color=394791") 97% 50%/14px no-repeat;
 			}
 
 			.dropdown-menu__parent {
@@ -689,7 +689,7 @@
 	}
 
 	.header__dropdown-menu {
-		height: 90%;
+		// height: 90%;
 		left: 3%;
 		right: 3%;
 		width: 100%;
@@ -733,6 +733,7 @@
 
 			&:nth-child(3) {
 				background: url("../images/collections.svg") no-repeat -1px 14px;
+
 
 			}
 
@@ -789,9 +790,10 @@
 				&.new-collection {
 					>.dropdown-menu__parent {
 						width: 100% !important;
-						overflow-y: scroll !important;
+						overflow: unset !important;
 						height: 100% !important;
 						height: auto !important;
+						max-height: unset !important;
 					}
 
 					.collection__banner {
