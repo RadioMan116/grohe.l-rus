@@ -954,6 +954,7 @@
 			display: flex;
 			padding: 5px 0;
 			justify-content: space-evenly;
+			// max-width: 273px;
 		}
 
 		th {
@@ -1010,6 +1011,7 @@
 			// margin-right: 40px !important;
 			// width: 90%;
 			margin: 0;
+			width: auto;
 		}
 
 		.rel__prev {

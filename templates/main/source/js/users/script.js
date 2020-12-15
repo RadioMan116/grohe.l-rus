@@ -74,39 +74,7 @@ $(document).ready(function () {
 			$(".special-offers__text").matchHeight();
 		});
 	}
-	var mySwiper9 = new Swiper(".js-product-card__rel", {
-		slidesPerView: 2,
-		slidesPerGroup: 1,
-		spaceBetween: 30,
-		touchRatio: 1,
-		allowTouchMove: false,
-		navigation: {
-			nextEl: ".rel__next",
-			prevEl: ".rel__prev"
-		},
-		pagination: {
-			el: ".rel__pagination",
-			clickable: true
-		},
-		breakpoints: {
-			479: {
-				allowTouchMove: true,
-				slidesPerView: 1,
-				// slidesPerGroup: 1,
-			},
-			600: {
-				allowTouchMove: true,
-				slidesPerView: 1.3,
-				// slidesPerGroup: 1,
-			},
-			767: {
-				allowTouchMove: true,
-				slidesPerView: 2,
-				// slidesPerGroup: 1,
-				spaceBetween: 18
-			},
-		},
-	});
+
 	var mySwiper6 = new Swiper(".js-gallery__item", {
 		slidesPerView: 1,
 		slidesPerGroup: 1,
@@ -450,11 +418,11 @@ $(document).ready(function () {
 				$(this).addClass("active");
 				mySwiper6.slideNext(500);
 			} else
-			if ($(this).hasClass("active")) {
-				console.log("55");
-				$(this).removeClass("active");
-				mySwiper6.slidePrev(500);
-			}
+				if ($(this).hasClass("active")) {
+					console.log("55");
+					$(this).removeClass("active");
+					mySwiper6.slidePrev(500);
+				}
 		});
 		setInterval(function () {
 			$(".js-button__open").addClass("blink_on");
@@ -1979,6 +1947,21 @@ $(document).ready(function () {
 			}
 		});
 	});
+	tippy(".js-tooltip", {
+		arrow: true,
+		placement: "auto", // top, right, bottom, left
+		// trigger: 'click',
+		// maxWidth: 300, //px or string
+		interactive: true,
+		// leave these as they are
+		// followCursor: true,
+		allowHTML: true,
+		hideOnClick: true,
+		theme: "light",
+		appendTo: () => document.body,
+		// ignoreAttributes: true,
+		content: this.querySelector(".popup-gloss")
+	});
 });
 $(window).on("load", function () {
 	var windowWidth2 = $(window).width();
@@ -2451,5 +2434,39 @@ $(window).on("load", function () {
 	btn.on("click", function (e) {
 		e.preventDefault();
 		$("html, body").animate({ scrollTop: 0 }, "300");
+	});
+
+	var mySwiper9 = new Swiper(".js-product-card__rel", {
+		slidesPerView: 2,
+		slidesPerGroup: 1,
+		spaceBetween: 30,
+		touchRatio: 1,
+		allowTouchMove: false,
+		navigation: {
+			nextEl: ".rel__next",
+			prevEl: ".rel__prev"
+		},
+		pagination: {
+			el: ".rel__pagination",
+			clickable: true
+		},
+		breakpoints: {
+			479: {
+				allowTouchMove: true,
+				slidesPerView: 1,
+				// slidesPerGroup: 1,
+			},
+			600: {
+				allowTouchMove: true,
+				slidesPerView: 1.3,
+				// slidesPerGroup: 1,
+			},
+			767: {
+				allowTouchMove: true,
+				slidesPerView: 2,
+				// slidesPerGroup: 1,
+				spaceBetween: 18
+			},
+		},
 	});
 });
